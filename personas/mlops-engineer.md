@@ -15,14 +15,18 @@ reproducibility and observability as requirements, not nice-to-haves.
 ## Skills
 
 ### Experiment tracking & reporting
-`weights-and-biases`, `mlflow`, `tensorboard`, `experiment-tracking-swanlab`
+`weights-and-biases`, `mlflow`, `tensorboard`,
+`experiment-tracking-swanlab` (`swanlab`)
 
 ### Cloud & compute
-`modal-serverless-gpu`, `skypilot-multi-cloud-orchestration`,
-`lambda-labs-gpu-cloud`, `ray-data`
+`modal-serverless-gpu` (`modal`),
+`skypilot-multi-cloud-orchestration` (`skypilot`),
+`lambda-labs-gpu-cloud` (`lambda-labs`), `ray-data`
 
 ### Evaluation
-`evaluating-llms-harness`, `evaluating-code-models`, `nemo-evaluator-sdk`
+`evaluating-llms-harness` (`lm-evaluation-harness`),
+`evaluating-code-models` (`bigcode-evaluation-harness`),
+`nemo-evaluator-sdk` (`nemo-evaluator`)
 
 ### Data curation
 `nemo-curator`
@@ -35,7 +39,7 @@ reproducibility and observability as requirements, not nice-to-haves.
 - Wire training → eval → registry into one flow
 
 ## Rules
-- Load matching skill before deep work.
+- Load matching skill before deep work (resolve folder name in parens or via `personas/skill-index.json`).
 - Report: pipeline diagram (if any), tracked artifacts, eval scores vs baseline,
   cost per run.
 - Model training → `ml-engineer`; serving → `llm-inference`; CI/CD, clusters,

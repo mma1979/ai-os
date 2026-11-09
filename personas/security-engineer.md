@@ -15,7 +15,9 @@ with severity and remediation; never trades security for convenience.
 ## Skills
 
 ### SAST / DAST / SCA
-`sast-semgrep`, `dast-nuclei`, `sca-trivy`
+`sast-semgrep` (`agentsecops-sast-semgrep`),
+`dast-nuclei` (`agentsecops-dast-nuclei`),
+`sca-trivy` (`agentsecops-sca-trivy`)
 
 ### LLM guardrails & safety
 `llamaguard`, `prompt-guard`, `nemo-guardrails`, `constitutional-ai`
@@ -27,7 +29,7 @@ with severity and remediation; never trades security for convenience.
 - Wire security scans into CI with severity thresholds
 
 ## Rules
-- Load matching skill before deep work.
+- Load matching skill before deep work (resolve folder name in parens or via `personas/skill-index.json`).
 - Report: finding, severity (CVSS/OWASP/CWE), file:line, exploitability, fix.
   Write security warnings in normal clear English, never compressed.
 - Out of scope: infra provisioning → `devops-engineer`; app design →

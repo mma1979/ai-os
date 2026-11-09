@@ -1,124 +1,72 @@
 ---
 name: tool-discovery
-description: "Recommend the right agents and skills for any task. Covers both heavyweight agents (Task tool) and lightweight skills (Skill tool). Triggers on: which agent, which skill, what tool should I use, help me choose, recommend agent, find the right tool."
+description: "Recommend the right workspace personas, utility subagents, and skills for any task across all 13 personas and 158 installed skills. Triggers on: which agent, which persona, which skill, what tool should I use, help me choose, recommend agent, find the right tool."
 license: MIT
 allowed-tools: "Read Glob"
 metadata:
-  author: claude-mods
-  related-skills: claude-code-ops
+  author: workspace-agents
+  related-skills: harness-creator, cavecrew
 ---
 
-# Tool Discovery
+# Tool Discovery (Workspace Persona & Skill Router)
 
-Recommend the right agents and skills for any task.
+Route any engineering, research, infrastructure, or documentation task to the right **Domain Persona**, **Utility Subagent**, or **Skill** installed in `D:\workspaces\agents\` (`~/.agents/`).
 
 ## Decision Flowchart
 
-```
-Is this a reference/lookup task?
-├── YES → Use a SKILL (lightweight, auto-injects)
-└── NO → Does it require reasoning/decisions?
-         ├── YES → Use an AGENT (heavyweight, spawns subagent)
-         └── MAYBE → Check catalogs below
-```
-
-**Rule:** Skills = patterns/reference. Agents = decisions/expertise.
-
-## Quick Skill Reference
-
-| Skill | Triggers |
-|-------|----------|
-| **file-search** | fd, rg, fzf, find files |
-| **find-replace** | sd, batch replace |
-| **code-stats** | tokei, difft, line counts |
-| **data-processing** | jq, yq, json, yaml |
-| **structural-search** | ast-grep, sg, ast pattern |
-| **git-ops** | git, gh, lazygit, delta, commit, PR, release, rebase |
-| **python-env** | uv, venv, pyproject |
-| **go-ops** | golang, go, goroutine, channel, context, errgroup, go test |
-| **rust-ops** | rust, cargo, ownership, tokio, serde, trait, Result, Option |
-| **typescript-ops** | typescript, type system, generics, utility types, Zod |
-| **docker-ops** | docker, Dockerfile, docker-compose, multi-stage build |
-| **ci-cd-ops** | github actions, CI, CD, pipeline, release, workflow |
-| **api-design-ops** | api design, gRPC, GraphQL, REST advanced, protobuf |
-| **rest-ops** | http methods, status codes |
-| **sql-ops** | cte, window functions |
-| **postgres-ops** | postgresql, postgres, EXPLAIN ANALYZE, vacuum, pgbouncer, JSONB, RLS, replication |
-| **sqlite-ops** | sqlite, aiosqlite |
-| **tailwind-ops** | tailwind, tw classes, dark mode, responsive |
-| **mcp-ops** | mcp server, fastmcp, tool handler, transport |
-| **react-ops** | react, hooks, useState, next.js, RSC, zustand |
-| **vue-ops** | vue, composition api, pinia, nuxt, script setup |
-| **javascript-ops** | javascript, node, esm, async/await, event loop |
-| **astro-ops** | astro, islands, content collections, partial hydration |
-| **laravel-ops** | laravel, eloquent, artisan, sanctum, pest |
-| **payloadcms-ops** | payload, payload cms, headless cms, collections |
-| **craftcms-ops** | craft, craftcms, twig, matrix fields |
-| **asus-router-ops** | asus router, asuswrt, merlin, network hardening |
-| **nginx-ops** | nginx, reverse proxy, ssl, load balancer, proxy_pass |
-| **cloudflare-ops** | cloudflare, workers, KV, D1, R2, pages, wrangler, edge |
-| **cypress-ops** | cypress, e2e, component testing, custom commands, stubbing |
-| **bash-ops** | bash, shell scripting, traps, CI scripts, defensive scripting |
-| **claude-code-ops** | claude code extensions, skills, agents, hooks, MCP, plugins |
-| **auth-ops** | jwt, oauth2, session, rbac, passkey, mfa, login |
-| **monitoring-ops** | prometheus, grafana, opentelemetry, SLO, alerting |
-| **debug-ops** | debug, crash, memory leak, race condition, bisect |
-| **perf-ops** | performance, profiling, flamegraph, bundle size, load test, benchmark |
-| **migrate-ops** | migrate, upgrade, breaking changes, codemod, version upgrade |
-| **refactor-ops** | refactor, extract, code smell, dead code, rename, restructure |
-| **scaffold** | scaffold, boilerplate, project template, init project, new project |
-| **log-ops** | JSONL, log analysis, parse logs, lnav, log search, timeline |
-
-## Quick Agent Reference
-
-| Agent | Triggers |
-|-------|----------|
-| **firecrawl-expert** | web scraping, crawling, anti-bot |
-| **project-organizer** | restructure, organize, cleanup |
-| **git-agent** | commit, push, PR (dispatched by git-ops) |
-| **Explore** | "where is", "find" |
-| **Plan** | design, architect |
-
-For Cloudflare/Workers, Cypress/E2E, shell scripting, Claude Code extension work, and CMS/device domains (Payload, Craft, Asus routers), use the matching `-ops` skill (`cloudflare-ops`, `cypress-ops`, `bash-ops`, `claude-code-ops`, `payloadcms-ops`, `craftcms-ops`, `asus-router-ops`). For language/framework work (Python, TypeScript, React, Postgres, etc.), use the matching `-ops` skill — or dispatch `general-purpose` with an instruction to read that skill's SKILL.md first.
-
-## How to Launch
-
-**Skills:**
-```
-Skill tool → skill: "file-search"
+```text
+What kind of task is this?
+├── 1. Fast Code Search / Exploration?
+│   ├── Semantic / intent search → Use `mcp__semble__search` (or spawn `semble-search`)
+│   └── Symbol locate (`Defs`/`Refs`/`Callers`) → Spawn `cavecrew-investigator`
+├── 2. Surgical 1-2 File Edit or Diff Review?
+│   ├── Obvious 1-2 file edit → Spawn `cavecrew-builder`
+│   └── Diff / PR / branch audit → Spawn `cavecrew-reviewer` (or load `open-code-review`)
+└── 3. Domain Engineering, Architecture, or Research?
+    └── Match one of the 9 Domain Personas below → Load only the 1-2 skills needed from its roster
 ```
 
-**Agents:**
-```
-Task tool → subagent_type: "firecrawl-expert"
-         → prompt: "Your task"
-```
+**Core Rule:** Personas define the *role, reporting contract, and handoff boundaries*. Skills (`skills/<folder>/SKILL.md`) provide the *concrete workflow, recipes, and references*.
 
-## Match by Task Type
+---
 
-| Task | Skill First | Agent If Needed |
-|------|-------------|-----------------|
-| "How to write a CTE?" | sql-ops | — |
-| "Optimize this query" | postgres-ops | — |
-| "Find files named X" | file-search | Explore |
-| "Set up Python project" | python-env | — |
-| "What HTTP status for X?" | rest-ops | — |
-| "React Server Components?" | react-ops | — |
-| "Vue 3 composable pattern" | vue-ops | — |
-| "Configure nginx SSL" | nginx-ops | — |
-| "JWT vs session auth" | auth-ops | — |
-| "Set up Prometheus" | monitoring-ops | — |
-| "Debug memory leak" | debug-ops | — |
-| "Scrape a blocked site" | jina-ops | firecrawl-expert |
+## 1. Domain Personas (9) & Utility Subagents (4)
 
-## Tips
+| Persona / Subagent | When to Activate / Spawn | Key Skills (Slug → Folder if different) |
+|---|---|---|
+| **`ml-engineer`** | Pretrain, fine-tune (LoRA/QLoRA/TRL), RLHF/GRPO/verl, distributed launch (DeepSpeed/FSDP2/Megatron/TorchTitan), multimodal/VLA robotics, interpretability | `peft-fine-tuning` (`peft`), `unsloth`, `grpo-rl-training`, `verl-rl-training` (`verl`), `deepspeed`, `pytorch-fsdp2`, `optimizing-attention-flash` (`flash-attention`), `transformer-lens-interpretability` (`transformer-lens`) |
+| **`llm-inference`** | Serve LLMs (vLLM/SGLang/TRT-LLM/llama.cpp), quantize (AWQ/GPTQ/GGUF/HQQ/bnb), speculative decoding, long-context/KV-cache optimization | `serving-llms-vllm` (`vllm`), `sglang`, `tensorrt-llm`, `gguf-quantization` (`gguf`), `awq-quantization` (`awq`), `speculative-decoding`, `long-context`, `context-optimization` (`chakshugautam-context-optimization`) |
+| **`mlops-engineer`** | Experiment tracking (W&B/MLflow/SwanLab), cloud GPU orchestration (Modal/SkyPilot/Lambda), LLM/code eval harnesses, data curation | `weights-and-biases`, `mlflow`, `skypilot-multi-cloud-orchestration` (`skypilot`), `modal-serverless-gpu` (`modal`), `evaluating-llms-harness` (`lm-evaluation-harness`), `nemo-curator` |
+| **`rag-data-engineer`** | RAG pipelines, vector DBs (Qdrant/Chroma/Pinecone/FAISS/AgentDB), local semantic memory (`leann-memory`), embeddings, tokenizers, analytics | `llamaindex`, `langchain`, `qdrant-vector-search` (`qdrant`), `leann-memory`, `sentence-transformers`, `huggingface-tokenizers`, `business-analyst` (`sickn33-business-analyst`) |
+| **`agent-engineer`** | Agent workflows (CrewAI/AutoGPT/DSPy), Claude API/SDKs, MCP servers, structured output (Instructor/Outlines/Guidance), tracing, harnesses & skills | `harness-creator`, `mcp-builder`, `skill-creator`, `claude-api`, `dspy`, `instructor`, `outlines`, `langsmith-observability` (`langsmith`), `phoenix-observability` (`phoenix`) |
+| **`software-architect`** | System design, C4/Mermaid diagrams, backend/API design, CLI/tool design, implementation plans, React/shadcn UI bundles, Playwright E2E testing | `c4-architecture` (`softaworks-c4-architecture`), `mermaid-diagrams` (`softaworks-mermaid-diagrams`), `sop-api-development` (`dnyoussef-sop-api-development`), `tool-design` (`sickn33-tool-design`), `writing-plans`, `frontend-design`, `webapp-testing` |
+| **`research-scientist`** | Research ideation, hypothesis generation, autonomous loops (`autoresearch`), ML/systems paper writing, plots, LaTeX posters, talks, ARA artifacts | `autoresearch` (`0-autoresearch-skill`), `hypothesis-generation` (`k-dense-ai-hypothesis-generation`), `ml-paper-writing`, `systems-paper-writing`, `academic-plotting`, `latex-posters` (`davila7-latex-posters`), `ara-compiler` |
+| **`security-engineer`** | SAST (`Semgrep`), DAST (`Nuclei`), SCA/container/IaC scanning (`Trivy`), LLM guardrails (`LlamaGuard`, `PromptGuard`, `NeMo Guardrails`, `Constitutional AI`) | `sast-semgrep` (`agentsecops-sast-semgrep`), `dast-nuclei` (`agentsecops-dast-nuclei`), `sca-trivy` (`agentsecops-sca-trivy`), `llamaguard`, `nemo-guardrails` |
+| **`devops-engineer`** | Cloud infra (AWS/GCP/Azure), Kubernetes, Terraform, CI/CD orchestration, incident troubleshooting, runbooks, DORA/infra reporting | `cloud-devops` (`sickn33-cloud-devops`), `senior-devops` (`alirezarezvani-senior-devops`), `devops-orchestrator` (`brownbull-devops-orchestrator`), `devops-troubleshooter` (`sickn33-devops-troubleshooter`), `devops-runbooks` (`89jobrien-devops-runbooks`) |
+| **`semble-search`** | Semantic code/docs/config search across repositories | Built-in `semble search` / `semble find-related` workflow |
+| **`cavecrew-investigator`** | Read-only symbol/call-site locator with ~60% token compression | Controlled via `cavecrew` meta-skill |
+| **`cavecrew-builder`** | Surgical 1–2 file edits with diff receipt | Controlled via `cavecrew` meta-skill |
+| **`cavecrew-reviewer`** | Compact severity-tagged (`🔴`/`🟡`/`🔵`/`❓`) diff review | Controlled via `cavecrew` meta-skill |
 
-- **Skills are cheaper** - Use for lookups, patterns
-- **Agents are powerful** - Use for decisions, optimization
-- **Don't over-recommend** - Max 2-3 tools per task
+---
+
+## 2. Meta-Skills Quick Reference (Any Persona)
+
+| Category | Skills (`slug` → `folder` if different) |
+|---|---|
+| **Planning & Execution** | `brainstorming`, `writing-plans`, `subagent-driven-development` |
+| **Code Review & Delegation** | `open-code-review`, `open-code-review-delegate`, `cavecrew` |
+| **Token Efficiency Modes** | `caveman`, `caveman-commit`, `caveman-compress`, `caveman-review`, `caveman-stats`, `caveman-help` |
+| **Office & Documents** | `docx`, `pdf`, `pptx`, `xlsx`, `doc-coauthoring`, `internal-comms` |
+
+---
+
+## 3. Resolving Skill Paths (`slug` vs. `folder`)
+
+70+ skills in `D:\workspaces\agents\skills\` have a directory name that differs from their YAML frontmatter `name` (e.g., `optimizing-attention-flash` lives in `skills/flash-attention/SKILL.md`).
+- **Always check `personas/skill-index.json`** or `./references/skills-catalog.md` before calling `Read` on a skill path if the folder name is not identical to the slug.
 
 ## Additional Resources
 
-For complete catalogs, load:
-- `./references/agents-catalog.md` - All agents with capabilities
-- `./references/skills-catalog.md` - All skills with details
+- `./references/agents-catalog.md` — Full catalog of all 13 workspace personas and subagents
+- `./references/skills-catalog.md` — Complete mapping of all 158 skills (`slug`, `folder`, `persona`, and `description`)

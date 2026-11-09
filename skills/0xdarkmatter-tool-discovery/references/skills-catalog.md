@@ -1,661 +1,164 @@
-# Skills Catalog
-
-Complete reference for all available skills.
-
-## Language & Framework Skills
-
-Comprehensive operational expertise for specific languages and frameworks.
-
-### go-ops
-
-**Triggers:** golang, go, goroutine, channel, context, errgroup, go test, go mod, interface, generics, go build, worker pool
-
-**Use For:**
-- Concurrency patterns (goroutines, channels, errgroup, worker pools)
-- Error handling (sentinel errors, custom types, wrapping, errors.Is/As)
-- Testing (table-driven, httptest, benchmarks, fuzz, mocking with interfaces)
-- Interface design, generics, functional options
-- Project structure, module management, workspaces
-- Performance profiling (pprof, trace, escape analysis)
-
-**References:** concurrency.md, error-handling.md, testing.md, interfaces-generics.md, project-structure.md, performance.md
-
----
-
-### rust-ops
-
-**Triggers:** rust, cargo, ownership, borrow checker, lifetime, tokio, serde, trait, Result, Option, async rust, crate
-
-**Use For:**
-- Ownership, borrowing, lifetimes, interior mutability
-- Traits, generics, associated types, derive macros
-- Error handling (thiserror, anyhow, Result/Option combinators)
-- Async with tokio (spawn, channels, select, graceful shutdown)
-- Ecosystem (serde, clap, reqwest, sqlx, axum, tracing, rayon)
-- Testing (mockall, proptest, criterion, insta)
-
-**References:** ownership-lifetimes.md, traits-generics.md, error-handling.md, async-tokio.md, ecosystem.md, testing.md
-
----
-
-### typescript-ops
-
-**Triggers:** typescript, type system, generics, utility types, Zod, mapped types, conditional types, tsconfig, strict mode
-
-**Use For:**
-- Type narrowing, type guards, discriminated unions
-- Generics, conditional types, mapped types, template literal types
-- Utility types (Partial, Pick, Omit, Record, ReturnType, etc.)
-- tsconfig configuration, strict mode migration
-- Runtime validation (Zod, Valibot), type-safe APIs (tRPC)
-
-**References:** type-system.md, generics-patterns.md, utility-types.md, config-strict.md, ecosystem.md
-
----
-
-## Infrastructure Skills
-
-### docker-ops
-
-**Triggers:** docker, Dockerfile, docker-compose, container, image, multi-stage build, distroless, BuildKit
-
-**Use For:**
-- Dockerfile best practices, multi-stage builds (Go, Rust, Node, Python)
-- Docker Compose patterns (services, volumes, networking, health checks)
-- Image optimization, layer caching, security scanning
-- BuildKit features, cross-platform builds
-
-**References:** multi-stage-builds.md, compose-patterns.md, optimization.md
-
----
-
-### ci-cd-ops
-
-**Triggers:** github actions, CI, CD, pipeline, workflow, release, semantic release, changesets, goreleaser
-
-**Use For:**
-- GitHub Actions workflow syntax, triggers, matrix strategy
-- Caching strategies (node_modules, go modules, cargo, pip)
-- Release automation (semantic-release, changesets, goreleaser)
-- Testing pipelines, code coverage, deployment gates
-
-**References:** github-actions.md, release-automation.md, testing-pipelines.md
-
----
-
-### api-design-ops
-
-**Triggers:** api design, gRPC, GraphQL, protobuf, api versioning, pagination, rate limiting, webhook, idempotency
-
-**Use For:**
-- API style selection (REST vs gRPC vs GraphQL)
-- REST advanced patterns (pagination, PATCH, bulk ops, webhooks)
-- gRPC (protobuf, streaming, Go/Rust implementations)
-- GraphQL (schema design, DataLoader, federation)
-- API security (JWT, OAuth2, rate limiting, OWASP API Top 10)
-
-**References:** rest-advanced.md, grpc.md, graphql.md, api-security.md
-
----
-
-## Pattern Skills
-
-Quick reference for common patterns and syntax.
-
-### rest-ops
-
-**Triggers:** rest api, http methods, status codes, api design, endpoint design
-
-**Use For:**
-- HTTP method semantics (GET, POST, PUT, PATCH, DELETE)
-- Status code selection
-- API versioning strategies
-- Caching and rate limiting
-- Error response formats
-
-**References:** status-codes.md, caching-patterns.md, rate-limiting.md, response-formats.md
-
----
-
-### postgres-ops
-
-**Triggers:** postgresql, postgres, EXPLAIN ANALYZE, vacuum, autovacuum, pgbouncer, JSONB, RLS, replication, partitioning, pg_stat, GIN, GiST, BRIN, tsvector, WAL, connection pooling, postgresql.conf
-
-**Use For:**
-- Schema design, normalization, data types (JSONB, arrays, ranges)
-- Index selection (B-tree, GIN, GiST, BRIN, Hash)
-- Query tuning with EXPLAIN ANALYZE
-- Backup/restore (pg_dump, pg_basebackup, WAL, PITR)
-- Vacuum and autovacuum tuning
-- Connection pooling (pgBouncer, pgPool)
-- Replication (streaming, logical), failover
-- Partitioning (range, list, hash)
-- Monitoring (pg_stat_statements, bloat, locks)
-- Row-level security, full-text search, extensions
-
-**References:** schema-design.md, indexing.md, query-tuning.md, operations.md, replication.md, config-tuning.md
-
----
-
-### sql-ops
-
-**Triggers:** sql patterns, cte example, window functions, sql join, index strategy
-
-**Use For:**
-- CTE (Common Table Expressions)
-- Window functions (ROW_NUMBER, LAG, running totals)
-- JOIN reference
-- Pagination patterns
-- Vendor-neutral index strategies
-
-**References:** window-functions.md, indexing-strategies.md
-
----
-
-### tailwind-ops
-
-**Triggers:** tailwind, utility classes, responsive design, tailwind config, dark mode
-
-**Use For:**
-- Responsive breakpoints
-- Layout patterns (flex, grid)
-- Component patterns (cards, forms, navbars)
-- Dark mode configuration
-- State modifiers
-
-**References:** component-patterns.md
-
----
-
-### sqlite-ops
-
-**Triggers:** sqlite, sqlite3, aiosqlite, local database, database schema
-
-**Use For:**
-- Schema design patterns (state, cache, events)
-- Python sqlite3 usage
-- Async operations with aiosqlite
-- WAL mode configuration
-- Migration patterns
-
-**References:** schema-patterns.md, async-patterns.md, migration-patterns.md
-
----
-
-### react-ops
-
-**Triggers:** react, hooks, useState, useEffect, jsx, tsx, next.js, nextjs, app router, server components, RSC, zustand, react query
-
-**Use For:**
-- Hook patterns (built-in, custom, React 19)
-- Component architecture (compound, render props, HOCs)
-- State management (Context, Zustand, Jotai, Redux Toolkit, TanStack Query)
-- React Server Components, Server Actions, streaming
-- Performance optimization (memo, code splitting, virtualization)
-- Testing (React Testing Library, MSW, Vitest)
-
-**References:** hooks-patterns.md, component-architecture.md, state-management.md, server-components.md, performance.md, testing.md
-
----
-
-### vue-ops
-
-**Triggers:** vue, vuejs, composition api, pinia, vue router, nuxt, nuxt3, script setup, composable, reactive, defineProps
-
-**Use For:**
-- Composition API and composables
-- Pinia state management
-- Vue Router (guards, lazy loading, meta)
-- Nuxt 3 (SSR/SSG, useFetch, server routes, modules)
-- Testing (Vitest, Vue Test Utils, Pinia testing)
-
-**References:** composition-api.md, state-routing.md, nuxt.md, testing.md
-
----
-
-### javascript-ops
-
-**Triggers:** javascript, js, node, nodejs, esm, commonjs, promise, async await, event loop, v8, npm, es2024
-
-**Use For:**
-- Async patterns (Promises, async/await, streams, workers)
-- Module systems (ESM, CJS, dual-package)
-- Modern JS features (ES2022-2025)
-- Node.js patterns (built-in test runner, worker_threads, streams)
-- V8 optimization and memory management
-
-**References:** async-patterns.md, modules-runtime.md, modern-features.md, node-patterns.md
-
----
-
-### astro-ops
-
-**Triggers:** astro, islands architecture, content collections, astro cloudflare, view transitions, partial hydration
-
-**Use For:**
-- Rendering strategies (SSG, SSR, hybrid)
-- Islands architecture and partial hydration
-- Content Collections (schema, queries, MDX)
-- Deployment (Cloudflare, Vercel, Netlify, Node)
-
-**References:** content-collections.md, islands-rendering.md, deployment.md
-
----
-
-### laravel-ops
-
-**Triggers:** laravel, eloquent, artisan, blade, php, sanctum, livewire, inertia, pest, phpunit
-
-**Use For:**
-- Eloquent ORM (relationships, scopes, query optimization)
-- Architecture (Service Container, providers, facades, middleware)
-- Authentication (Sanctum, Fortify, policies/gates)
-- Testing (Pest, PHPUnit, factories, facade fakes)
-
-**References:** eloquent-queries.md, architecture.md, testing-auth.md
-
----
-
-### mcp-ops
-
-**Triggers:** mcp, model context protocol, mcp server, mcp tool, mcp resource, fastmcp, mcp transport, stdio, sse
-
-**Use For:**
-- MCP server development (Python FastMCP, TypeScript SDK)
-- Tool design (schema, validation, error handling)
-- Resources and prompts
-- Transport configuration (stdio, SSE, streamable HTTP)
-- Authentication and session management
-- Testing and debugging (MCP Inspector)
-
-**References:** server-architecture.md, tool-handlers.md, resources-prompts.md, transport-auth.md, testing-debugging.md
-
----
-
-### tailwind-ops
-
-**Triggers:** tailwind, tailwindcss, utility classes, responsive design, dark mode, tailwind v4, container queries
-
-**Use For:**
-- Layout patterns (flex, grid, container queries)
-- Responsive design and dark mode
-- Component patterns (cards, forms, navbars, modals)
-- Tailwind v4 migration (CSS-first config, @theme)
-- Configuration and plugins
-
-**References:** component-patterns.md, v4-migration.md, configuration.md
-
----
-
-## Infrastructure & Operations Skills
-
-### nginx-ops
-
-**Triggers:** nginx, reverse proxy, load balancer, proxy_pass, ssl certificate, lets encrypt, web server
-
-**Use For:**
-- Reverse proxy configuration and load balancing
-- SSL/TLS setup (Let's Encrypt, HSTS, OCSP)
-- Security headers and rate limiting
-- Performance tuning (gzip, caching, worker config)
-- Docker patterns (nginx as sidecar)
-
-**References:** reverse-proxy.md, ssl-security.md, performance.md
-
----
-
-### auth-ops
-
-**Triggers:** authentication, authorization, jwt, oauth, oauth2, session, login, rbac, abac, passkey, mfa, api key
-
-**Use For:**
-- Authentication methods (JWT, sessions, OAuth2, passkeys)
-- Authorization models (RBAC, ABAC, ReBAC)
-- OAuth2/OIDC flows (Authorization Code + PKCE, Client Credentials)
-- Password handling, MFA, session management
-- Implementation patterns across Node.js, Python, Go
-
-**References:** jwt-sessions.md, oauth2-oidc.md, authorization.md, implementation.md
-
----
-
-### monitoring-ops
-
-**Triggers:** monitoring, observability, prometheus, grafana, metrics, alerting, opentelemetry, SLO, distributed tracing
-
-**Use For:**
-- Metrics (Prometheus, PromQL, OpenTelemetry)
-- Structured logging (Loki, ELK, language-specific)
-- Distributed tracing (OpenTelemetry, Jaeger)
-- Alerting and SLO/SLI design
-- Infrastructure monitoring and health checks
-
-**References:** metrics-alerting.md, logging.md, tracing.md, infrastructure.md
-
----
-
-### debug-ops
-
-**Triggers:** debug, debugging, bug, crash, memory leak, race condition, deadlock, bisect, root cause, profiling
-
-**Use For:**
-- Systematic debugging methodology
-- Language-specific debugger usage (Node, Python, Go, Rust)
-- Common scenarios (memory leaks, deadlocks, race conditions)
-- Root cause analysis and reproduction techniques
-
-**References:** systematic-methods.md, tool-specific.md, common-scenarios.md
-
----
-
-## CLI Tool Skills
-
-Modern command-line tools for development workflows.
-
-### file-search
-
-**Triggers:** fd, ripgrep, rg, find files, search code, fzf, fuzzy find
-
-**Use For:**
-- Finding files by name (fd)
-- Searching file contents (rg)
-- Interactive selection (fzf)
-- Combined workflows
-
-**References:** advanced-workflows.md
-
----
-
-### find-replace
-
-**Triggers:** sd, find replace, batch replace, string replacement
-
-**Use For:**
-- Modern find-and-replace with sd
-- Regex patterns
-- Batch operations
-- Preview before applying
-
-**References:** advanced-patterns.md
-
----
-
-### code-stats
-
-**Triggers:** tokei, difft, line counts, code statistics, semantic diff
-
-**Use For:**
-- Codebase statistics (tokei)
-- Semantic diffs (difft)
-- Language breakdown
-- Before/after comparisons
-
-**References:** tokei-advanced.md, difft-advanced.md
-
----
-
-### data-processing
-
-**Triggers:** jq, yq, json, yaml, toml
-
-**Use For:**
-- JSON processing and transformation
-- YAML/TOML operations
-- Structured data queries
-- Config file manipulation
-
-**References:** jq-patterns.md, yq-patterns.md, shell-integration.md
-
----
-
-### structural-search
-
-**Triggers:** ast-grep, sg, ast pattern, find function calls, semantic search
-
-**Use For:**
-- Search by AST structure
-- Pattern matching in code
-- Refactoring operations
-- Security scans
-
-**References:** js-ts-patterns.md, python-patterns.md, go-rust-patterns.md, security-ops.md, advanced-usage.md
-
----
-
-## Workflow Skills
-
-Project and development workflow automation.
-
-### git-ops
-
-**Triggers:** commit, push, pull request, create PR, git status, git diff, rebase, stash, branch, merge, release, tag, changelog, semver, cherry-pick, bisect, worktree, lazygit, gh, delta
-
-**Use For:**
-- Commit, push, and branch management (dispatched to background Sonnet agent)
-- PR creation with contextual titles and descriptions
-- Release workflows - tagging, GitHub releases, changelog generation
-- Semantic versioning analysis from Conventional Commits
-- Interactive git operations (lazygit)
-- GitHub CLI (gh) commands
-- Safety-tiered operations (read-only inline, safe writes dispatched, destructive with preflight)
-
-**Agent:** git-agent (model: sonnet, background)
-
-**References:** rebase-patterns.md, stash-patterns.md, advanced-git.md
-
----
-
-### python-env
-
-**Triggers:** uv, venv, pip, pyproject, python environment
-
-**Use For:**
-- Fast environment setup with uv
-- Virtual environment creation
-- Dependency management
-- pyproject.toml configuration
-
-**References:** pyproject-patterns.md, dependency-management.md
-
----
-
-### task-runner
-
-**Triggers:** just, justfile, run tests, build project, list tasks
-
-**Use For:**
-- Project task execution
-- Justfile configuration
-- Common development commands
-
----
-
-### doc-scanner
-
-**Triggers:** AGENTS.md, conventions, scan docs, project documentation
-
-**Use For:**
-- Finding project documentation
-- Synthesizing AI agent instructions
-- Consolidating multiple doc files
-- Creating AGENTS.md
-
-**References:** file-patterns.md, templates.md
-
----
-
-### project-planner
-
-**Triggers:** plan, sync plan, track, project planning
-
-**Use For:**
-- Session state with /save and /sync
-- Progress tracking
-- Context preservation
-
----
-
-## Selection Guide
-
-### By File Type
-
-| Working With | Skill |
-|--------------|-------|
-| JSON files | data-processing |
-| YAML/TOML | data-processing |
-| SQL databases | sql-ops, postgres-ops, sqlite-ops |
-| Go | go-ops |
-| Rust | rust-ops |
-| TypeScript/JS | typescript-ops, javascript-ops, file-search, structural-search |
-| React/Next.js | react-ops, typescript-ops |
-| Vue/Nuxt | vue-ops, typescript-ops |
-| Astro | astro-ops, typescript-ops |
-| PHP/Laravel | laravel-ops |
-| Python | python-env, structural-search |
-| API design | api-design-ops, rest-ops |
-| Docker/containers | docker-ops, container-orchestration |
-| CI/CD | ci-cd-ops, git-ops |
-| CSS/Tailwind | tailwind-ops |
-| Nginx/web server | nginx-ops |
-| Auth/security | auth-ops, security-ops |
-| Monitoring | monitoring-ops, python-observability-ops |
-
-### By Task
-
-| Task | Skill |
-|------|-------|
-| Find files by name | file-search |
-| Search code content | file-search |
-| Replace across files | find-replace |
-| Count lines of code | code-stats |
-| Compare code changes | code-stats |
-| Process JSON/YAML | data-processing |
-| Git operations | git-ops |
-| Set up Python project | python-env |
-| Run project tasks | task-runner |
-| Find project docs | doc-scanner |
-| Plan implementation | project-planner |
-| Debug a crash/leak | debug-ops |
-| Configure nginx | nginx-ops |
-| Set up auth | auth-ops |
-| Add monitoring | monitoring-ops |
-
-### By Complexity
-
-**Quick Lookups (< 1 min):**
-- rest-ops: Status code lookup
-- sql-ops: CTE syntax
-- tailwind-ops: Breakpoint reference
-- file-search: Basic fd/rg commands
-
-**Medium Tasks (1-5 min):**
-- find-replace: Batch replacements
-- data-processing: JSON transformations
-- git-ops: Rebase, PR creation, release workflows
-- python-env: Project setup
-
-**Complex Workflows (5+ min):**
-- structural-search: Security scans
-- doc-scanner: Documentation consolidation
-- project-planner: Session planning
-- migrate-ops: Framework version upgrades
-- refactor-ops: Large-scale refactoring
-
----
-
-### migrate-ops
-
-**Triggers:** migrate, upgrade, migration, version upgrade, breaking changes, codemod, rector, jscodeshift, framework upgrade, dependency audit
-
-**Use For:**
-- Framework version upgrades (React 18→19, Vue 2→3, Next.js Pages→App Router, Laravel 10→11)
-- Language upgrades (Python 3.9→3.13, Node 18→22, TypeScript 4→5, Go, Rust editions)
-- Dependency audit and upgrade workflows (npm audit, pip-audit, cargo audit, govulncheck)
-- Breaking change detection and codemod application
-- Rollback strategies and pre-migration checklists
-
-**References:** framework-upgrades.md, language-upgrades.md, dependency-management.md
-
----
-
-### refactor-ops
-
-**Triggers:** refactor, extract function, extract component, code smell, dead code, rename, restructure, technical debt, cyclomatic complexity
-
-**Use For:**
-- Extract patterns (function, component, hook, module, class, configuration)
-- Code smell detection (long functions, god objects, feature envy, duplicate code)
-- Dead code detection and removal workflows
-- Test-driven refactoring methodology (characterization tests, strangler fig)
-- Safe rename and move operations across codebase
-
-**References:** extract-patterns.md, code-smells.md, safe-methodology.md
-
----
-
-### scaffold
-
-**Triggers:** scaffold, boilerplate, project template, init project, create project, starter, new project, setup project
-
-**Use For:**
-- API project scaffolding (FastAPI, Express, Gin, Axum)
-- Web app scaffolding (Next.js, Nuxt, Astro, SvelteKit)
-- CLI tool scaffolding (Typer, Commander, Cobra, Clap)
-- Library/package scaffolding (npm, PyPI, crate, Go module)
-- Monorepo scaffolding (Turborepo, Nx, workspaces)
-- Common additions (CI/CD, Docker, linting, pre-commit)
-
-**References:** api-templates.md, frontend-templates.md, tooling-templates.md
-
----
-
-### perf-ops
-
-**Triggers:** performance, profiling, flamegraph, memory leak, bundle size, load test, benchmark, slow, latency, optimization, pprof, py-spy, clinic.js
-
-**Use For:**
-- CPU profiling (flamegraphs, pprof, py-spy, clinic.js, samply)
-- Memory profiling (heaptrack, memray, Chrome DevTools, Valgrind)
-- Bundle analysis (webpack-bundle-analyzer, source-map-explorer)
-- Load testing (k6, artillery, vegeta, locust)
-- Benchmarking (hyperfine, criterion, pytest-benchmark, vitest bench)
-- Optimization patterns (caching, lazy loading, connection pooling)
-
-**References:** cpu-memory-profiling.md, load-testing.md, optimization-patterns.md
-
----
-
-### log-ops
-
-**Triggers:** log analysis, JSONL, log file, parse logs, search logs, lnav, jq logs, structured logs, log aggregation, timeline reconstruction, cross-log correlation
-
-**Use For:**
-- JSONL streaming extraction and aggregation with jq
-- Two-stage rg+jq pipelines for large log files
-- Timeline reconstruction from log timestamps
-- Cross-log correlation across multiple files
-- Agent conversation log analysis (tool calls, errors, phases)
-- Cross-directory log searching (fd + rg + jq composition)
-- Interactive log exploration with lnav
-
-**References:** jsonl-patterns.md, analysis-workflows.md, tool-setup.md
-
----
-
-## When to Use Skills vs Agents
-
-**Use a Skill when:**
-- You need quick reference (syntax, patterns)
-- Task is well-defined (replace X with Y)
-- Looking up how to do something
-- Executing a known workflow
-
-**Use an Agent when:**
-- Requires reasoning or decisions
-- Complex problem-solving needed
-- Multiple approaches to evaluate
-- Architecture or optimization
-
-**Example:**
-- "What's the HTTP status for unauthorized?" → rest-ops (skill)
-- "Design authentication for my API" → general-purpose agent preloading auth-ops + the relevant framework `-ops` skill
+# Workspace Skills Catalog (Auto-Generated)
+
+Total installed skills: **158**
+
+| Slug (`name`) | Folder (`skills/<folder>`) | Persona / Scope | Summary |
+|---|---|---|---|
+| `academic-plotting` | `academic-plotting` | `research-scientist` | Generates publication-quality figures for ML papers from research context. Given a paper section or description, extracts system componen... |
+| `academy-guide` | `academy-guide` | `meta` | Look up courses, tutorials, and use cases from Claude Academy (academy.claude.com). Use ONLY when the user explicitly asks for Claude Aca... |
+| `agentdb-semantic-vector-search` | `dnyoussef-agentdb-semantic-vector-search` | `rag-data-engineer` | Build semantic vector search systems with AgentDB for intelligent document retrieval, RAG applications, and knowledge bases using embeddi... |
+| `algorithmic-art` | `algorithmic-art` | `software-architect` | Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating a... |
+| `ara-compiler` | `ara-compiler` | `research-scientist` | Compiles any research input — PDF papers, GitHub repositories, experiment logs, code directories, or raw notes — into a complete Agent-Na... |
+| `ara-research-manager` | `ara-research-manager` | `research-scientist` | Records research provenance as a post-task epilogue, scanning conversation history at the end of a coding or research session to extract ... |
+| `ara-rigor-reviewer` | `ara-rigor-reviewer` | `research-scientist` | Performs ARA Seal Level 2 semantic epistemic review on Agent-Native Research Artifacts, scoring six dimensions (evidence relevance, falsi... |
+| `audiocraft-audio-generation` | `audiocraft` | `ml-engineer` | PyTorch library for audio generation including text-to-music (MusicGen) and text-to-sound (AudioGen). Use when you need to generate music... |
+| `autogpt-agents` | `autogpt` | `agent-engineer` | Autonomous AI agent platform for building and deploying continuous agents. Use when creating visual workflow agents, deploying persistent... |
+| `autoresearch` | `0-autoresearch-skill` | `research-scientist` | Orchestrates end-to-end autonomous AI research projects using a two-loop architecture. The inner loop runs rapid experiment iterations wi... |
+| `awq-quantization` | `awq` | `llm-inference` | Activation-aware weight quantization for 4-bit LLM compression with 3x speedup and minimal accuracy loss. Use when deploying large models... |
+| `axolotl` | `axolotl` | `ml-engineer` | Expert guidance for fine-tuning LLMs with Axolotl - YAML configs, 100+ models, LoRA/QLoRA, DPO/KTO/ORPO/GRPO, multimodal support |
+| `blip-2-vision-language` | `blip-2` | `ml-engineer` | Vision-language pre-training framework bridging frozen image encoders and LLMs. Use when you need image captioning, visual question answe... |
+| `brainstorming` | `brainstorming` | `meta` | You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or plannin... |
+| `brainstorming-research-ideas` | `brainstorming-research-ideas` | `research-scientist` | Guides researchers through structured ideation frameworks to discover high-impact research directions. Use when exploring new problem spa... |
+| `brand-guidelines` | `brand-guidelines` | `software-architect` | Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. ... |
+| `business-analyst` | `sickn33-business-analyst` | `rag-data-engineer` | Master modern business analysis with AI-powered analytics, real-time dashboards, and data-driven insights. Build comprehensive KPI framew... |
+| `c4-architecture` | `softaworks-c4-architecture` | `software-architect` | Generate architecture documentation using C4 model Mermaid diagrams. Use when asked to create architecture diagrams, document system arch... |
+| `c4-modeling` | `consiliency-c4-modeling` | `software-architect` | C4 architectural modeling for documenting software architecture. Use when creating architecture diagrams, planning new systems, communica... |
+| `canvas-design` | `canvas-design` | `software-architect` | Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a ... |
+| `cavecrew` | `cavecrew` | `meta` | Decision guide for delegating to caveman-style subagents. Tells the main thread WHEN to spawn `cavecrew-investigator` (locate code), `cav... |
+| `caveman` | `caveman` | `meta` | Ultra-compressed communication mode. Cuts token usage ~75% by speaking like caveman while keeping full technical accuracy. Supports inten... |
+| `caveman-commit` | `caveman-commit` | `meta` | Ultra-compressed commit message generator. Cuts noise from commit messages while preserving intent and reasoning. Conventional Commits fo... |
+| `caveman-compress` | `caveman-compress` | `meta` | Compress natural language memory files (CLAUDE.md, todos, preferences) into caveman format to save input tokens. Preserves all technical ... |
+| `caveman-help` | `caveman-help` | `meta` | Quick-reference card for all caveman modes, skills, and commands. One-shot display, not a persistent mode. Trigger: /caveman-help, "cavem... |
+| `caveman-review` | `caveman-review` | `meta` | Ultra-compressed code review comments. Cuts noise from PR feedback while preserving the actionable signal. Each comment is one line: loca... |
+| `caveman-stats` | `caveman-stats` | `meta` | Show real token usage and estimated savings for the current session. Reads directly from the Claude Code session log — no AI estimation. ... |
+| `chroma` | `chroma` | `rag-data-engineer` | Open-source embedding database for AI applications. Store embeddings and metadata, perform vector and full-text search, filter by metadat... |
+| `claude-api` | `claude-api` | `agent-engineer` | Reference for the Claude API and official Anthropic SDKs (Python, TypeScript, Go, Java, C#, Ruby, PHP, cURL) — model IDs, adaptive thinki... |
+| `cli-design-expert` | `dammianmiller-cli-design-expert` | `software-architect` | Expert CLI/TUI designer for building intuitive, user-friendly, and professional command-line interfaces. Focuses on UX patterns, help sys... |
+| `clip` | `clip` | `ml-engineer` | OpenAI's model connecting vision and language. Enables zero-shot image classification, image-text matching, and cross-modal retrieval. Tr... |
+| `cloud-devops` | `sickn33-cloud-devops` | `devops-engineer` | Cloud infrastructure and DevOps workflow covering AWS, Azure, GCP, Kubernetes, Terraform, CI/CD, monitoring, and cloud-native development. |
+| `constitutional-ai` | `constitutional-ai` | `security-engineer` | Anthropic's method for training harmless AI through self-improvement. Two-phase approach - supervised learning with self-critique/revisio... |
+| `context-optimization` | `chakshugautam-context-optimization` | `llm-inference` | This skill should be used when the user asks to "optimize context", "reduce token costs", "improve context efficiency", "implement KV-cac... |
+| `creative-thinking-for-research` | `creative-thinking-for-research` | `research-scientist` | Applies cognitive science frameworks for creative thinking to CS and AI research ideation. Use when seeking genuinely novel research dire... |
+| `crewai-multi-agent` | `crewai` | `agent-engineer` | Multi-agent orchestration framework for autonomous AI collaboration. Use when building teams of specialized agents working together on co... |
+| `dast-nuclei` | `agentsecops-dast-nuclei` | `security-engineer` | Fast, template-based vulnerability scanning using ProjectDiscovery's Nuclei with extensive community templates covering CVEs, OWASP Top 1... |
+| `deepspeed` | `deepspeed` | `ml-engineer` | Expert guidance for distributed training with DeepSpeed - ZeRO optimization stages, pipeline parallelism, FP16/BF16/FP8, 1-bit Adam, spar... |
+| `devops-orchestrator` | `brownbull-devops-orchestrator` | `devops-engineer` | Coordinates infrastructure, CI/CD, and deployment tasks. Use when provisioning infrastructure, setting up pipelines, configuring monitori... |
+| `devops-runbooks` | `89jobrien-devops-runbooks` | `devops-engineer` | Operational runbook and procedure documentation specialist. Use when creating incident response procedures, operational playbooks, or sys... |
+| `devops-troubleshooter` | `sickn33-devops-troubleshooter` | `devops-engineer` | Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability. |
+| `discernment-nudge` | `discernment-nudge` | `meta` | Generate 2-3 critical-thinking follow-up questions to stress-test assumptions, fact-check claims, and surface missing context in a propos... |
+| `distributed-llm-pretraining-torchtitan` | `torchtitan` | `ml-engineer` | Provides PyTorch-native distributed LLM pretraining using torchtitan with 4D parallelism (FSDP2, TP, PP, CP). Use when pretraining Llama ... |
+| `doc-coauthoring` | `doc-coauthoring` | `meta` | Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technica... |
+| `docx` | `docx` | `meta` | Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files).... |
+| `dspy` | `dspy` | `agent-engineer` | Build complex AI systems with declarative programming, optimize prompts automatically, create modular RAG systems and agents with DSPy - ... |
+| `evaluating-code-models` | `bigcode-evaluation-harness` | `mlops-engineer` | Evaluates code generation models across HumanEval, MBPP, MultiPL-E, and 15+ benchmarks with pass@k metrics. Use when benchmarking code mo... |
+| `evaluating-cosmos-policy` | `cosmos-policy` | `ml-engineer` | Evaluates NVIDIA Cosmos Policy on LIBERO and RoboCasa simulation environments. Use when setting up cosmos-policy for robot manipulation e... |
+| `evaluating-llms-harness` | `lm-evaluation-harness` | `mlops-engineer` | Evaluates LLMs across 60+ academic benchmarks (MMLU, HumanEval, GSM8K, TruthfulQA, HellaSwag). Use when benchmarking model quality, compa... |
+| `evolving-ai-agents` | `a-evolve` | `agent-engineer` | Provides guidance for automatically evolving and optimizing AI agents across any domain using LLM-driven evolution algorithms. Use when b... |
+| `experiment-tracking-swanlab` | `swanlab` | `mlops-engineer` | Provides guidance for experiment tracking with SwanLab. Use when you need open-source run tracking, local or self-hosted dashboards, and ... |
+| `faiss` | `faiss` | `rag-data-engineer` | Facebook's library for efficient similarity search and clustering of dense vectors. Supports billions of vectors, GPU acceleration, and v... |
+| `fine-tuning-openvla-oft` | `openvla-oft` | `ml-engineer` | Fine-tunes and evaluates OpenVLA-OFT and OpenVLA-OFT+ policies for robot action generation with continuous action heads, LoRA adaptation,... |
+| `fine-tuning-serving-openpi` | `openpi` | `ml-engineer` | Fine-tune and serve Physical Intelligence OpenPI models (pi0, pi0-fast, pi0.5) using JAX or PyTorch backends for robot policy inference a... |
+| `fine-tuning-with-trl` | `trl-fine-tuning` | `ml-engineer` | Fine-tune LLMs using reinforcement learning with TRL - SFT for instruction tuning, DPO for preference alignment, PPO/GRPO for reward opti... |
+| `frontend-design` | `frontend-design` | `software-architect` | Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, ty... |
+| `gguf-quantization` | `gguf` | `llm-inference` | GGUF format and llama.cpp quantization for efficient CPU/GPU inference. Use when deploying models on consumer hardware, Apple Silicon, or... |
+| `gptq` | `gptq` | `llm-inference` | Post-training 4-bit quantization for LLMs with minimal accuracy loss. Use for deploying large models (70B, 405B) on consumer GPUs, when y... |
+| `grpo-rl-training` | `grpo-rl-training` | `ml-engineer` | Expert guidance for GRPO/RL fine-tuning with TRL for reasoning and task-specific model training |
+| `guidance` | `guidance` | `agent-engineer` | Control LLM output with regex and grammars, guarantee valid JSON/XML/code generation, enforce structured formats, and build multi-step wo... |
+| `harness-creator` | `harness-creator` | `agent-engineer` | Build, audit, and improve harnesses that make AI coding agents reliable: AGENTS.md/CLAUDE.md instruction files, feature/state tracking, v... |
+| `hqq-quantization` | `hqq` | `llm-inference` | Half-Quadratic Quantization for LLMs without calibration data. Use when quantizing models to 4/3/2-bit precision without needing calibrat... |
+| `huggingface-accelerate` | `accelerate` | `ml-engineer` | Simplest distributed training API. 4 lines to add distributed support to any PyTorch script. Unified API for DeepSpeed/FSDP/Megatron/DDP.... |
+| `huggingface-tokenizers` | `huggingface-tokenizers` | `rag-data-engineer` | Fast tokenizers optimized for research and production. Rust-based implementation tokenizes 1GB in <20 seconds. Supports BPE, WordPiece, a... |
+| `hypothesis-generation` | `k-dense-ai-hypothesis-generation` | `research-scientist` | Structured hypothesis formulation from observations. Use when you have experimental observations or data and need to formulate testable h... |
+| `implementing-llms-litgpt` | `litgpt` | `ml-engineer` | Implements and trains LLMs using Lightning AI's LitGPT with 20+ pretrained architectures (Llama, Gemma, Phi, Qwen, Mistral). Use when nee... |
+| `infrastructure-reporting` | `dataknifeai-infrastructure-reporting` | `devops-engineer` | Generate comprehensive network infrastructure reports including health status, performance analysis, security audits, and capacity planni... |
+| `instructor` | `instructor` | `agent-engineer` | Extract structured data from LLM responses with Pydantic validation, retry failed extractions automatically, parse complex JSON with type... |
+| `internal-comms` | `internal-comms` | `meta` | A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should u... |
+| `knowledge-distillation` | `knowledge-distillation` | `llm-inference` | Compress large language models using knowledge distillation from teacher to student models. Use when deploying smaller models with retain... |
+| `lambda-labs-gpu-cloud` | `lambda-labs` | `mlops-engineer` | Reserved and on-demand GPU cloud instances for ML training and inference. Use when you need dedicated GPU instances with simple SSH acces... |
+| `langchain` | `langchain` | `rag-data-engineer` | Framework for building LLM-powered applications with agents, chains, and RAG. Supports multiple providers (OpenAI, Anthropic, Google), 50... |
+| `langsmith-observability` | `langsmith` | `agent-engineer` | LLM observability platform for tracing, evaluation, and monitoring. Use when debugging LLM applications, evaluating model outputs against... |
+| `latex-posters` | `davila7-latex-posters` | `research-scientist` | Create professional research posters in LaTeX using beamerposter, tikzposter, or baposter. Support for conference presentations, academic... |
+| `leann-memory` | `leann-memory` | `rag-data-engineer` | High-performance local semantic search and memory index (97% storage compression) using leann-core. Use when indexing or searching local ... |
+| `llama-cpp` | `llama-cpp` | `llm-inference` | Runs LLM inference on CPU, Apple Silicon, and consumer GPUs without NVIDIA hardware. Use for edge deployment, M1/M2/M3 Macs, AMD/Intel GP... |
+| `llama-factory` | `llama-factory` | `ml-engineer` | Expert guidance for fine-tuning LLMs with LLaMA-Factory - WebUI no-code, 100+ models, 2/3/4/5/6/8-bit QLoRA, multimodal support |
+| `llamaguard` | `llamaguard` | `security-engineer` | Meta's 7-8B specialized moderation model for LLM input/output filtering. 6 safety categories - violence/hate, sexual content, weapons, su... |
+| `llamaindex` | `llamaindex` | `rag-data-engineer` | Data framework for building LLM applications with RAG. Specializes in document ingestion (300+ connectors), indexing, and querying. Featu... |
+| `llava` | `llava` | `ml-engineer` | Large Language and Vision Assistant. Enables visual instruction tuning and image-based conversations. Combines CLIP vision encoder with V... |
+| `long-context` | `long-context` | `llm-inference` | Extend context windows of transformer models using RoPE, YaRN, ALiBi, and position interpolation techniques. Use when processing long doc... |
+| `mamba-architecture` | `mamba` | `llm-inference` | State-space model with O(n) complexity vs Transformers' O(n²). 5× faster inference, million-token sequences, no KV cache. Selective SSM w... |
+| `mcp-builder` | `mcp-builder` | `agent-engineer` | Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-des... |
+| `mermaid-diagrams` | `softaworks-mermaid-diagrams` | `software-architect` | Comprehensive guide for creating software diagrams using Mermaid syntax. Use when users need to create, visualize, or document software t... |
+| `miles-rl-training` | `miles` | `ml-engineer` | Provides guidance for enterprise-grade RL training using miles, a production-ready fork of slime. Use when training large MoE models with... |
+| `ml-paper-writing` | `ml-paper-writing` | `research-scientist` | Write publication-ready ML/AI papers for NeurIPS, ICML, ICLR, ACL, AAAI, COLM. Use when drafting papers from research repos, structuring ... |
+| `ml-training-recipes` | `ml-training-recipes` | `ml-engineer` | Battle-tested PyTorch training recipes for all domains — LLMs, vision, diffusion, medical imaging, protein/drug discovery, spatial omics,... |
+| `mlflow` | `mlflow` | `mlops-engineer` | Track ML experiments, manage model registry with versioning, deploy models to production, and reproduce experiments with MLflow - framewo... |
+| `modal-serverless-gpu` | `modal` | `mlops-engineer` | Serverless GPU cloud platform for running ML workloads. Use when you need on-demand GPU access without infrastructure management, deployi... |
+| `model-merging` | `model-merging` | `llm-inference` | Merge multiple fine-tuned models using mergekit to combine capabilities without retraining. Use when creating specialized models by blend... |
+| `model-pruning` | `model-pruning` | `llm-inference` | Reduce LLM size and accelerate inference using pruning techniques like Wanda and SparseGPT. Use when compressing models without retrainin... |
+| `moe-training` | `moe-training` | `ml-engineer` | Train Mixture of Experts (MoE) models using DeepSpeed or HuggingFace. Use when training large-scale models with limited compute (5× cost ... |
+| `nanogpt` | `nanogpt` | `ml-engineer` | Educational GPT implementation in ~300 lines. Reproduces GPT-2 (124M) on OpenWebText. Clean, hackable code for learning transformers. By ... |
+| `nemo-curator` | `nemo-curator` | `mlops-engineer` | GPU-accelerated data curation for LLM training. Supports text/image/video/audio. Features fuzzy deduplication (16× faster), quality filte... |
+| `nemo-evaluator-sdk` | `nemo-evaluator` | `mlops-engineer` | Evaluates LLMs across 100+ benchmarks from 18+ harnesses (MMLU, HumanEval, GSM8K, safety, VLM) with multi-backend execution. Use when nee... |
+| `nemo-guardrails` | `nemo-guardrails` | `security-engineer` | NVIDIA's runtime safety framework for LLM applications. Features jailbreak detection, input/output validation, fact-checking, hallucinati... |
+| `nnsight-remote-interpretability` | `nnsight` | `ml-engineer` | Provides guidance for interpreting and manipulating neural network internals using nnsight with optional NDIF remote execution. Use when ... |
+| `open-code-review` | `open-code-review` | `meta` | Performs AI-powered code review on Git changes using the `ocr` CLI from alibaba/open-code-review. Use when the user asks to review code, ... |
+| `open-code-review-delegate` | `open-code-review-delegate` | `meta` | Delegation mode for open-code-review (OCR). Instead of OCR calling an LLM endpoint, this skill instructs the host agent to perform the co... |
+| `openrlhf-training` | `openrlhf` | `ml-engineer` | High-performance RLHF framework with Ray+vLLM acceleration. Use for PPO, GRPO, RLOO, DPO training of large models (7B-70B+). Built on Ray... |
+| `optimizing-attention-flash` | `flash-attention` | `llm-inference, ml-engineer` | Optimizes transformer attention with Flash Attention for 2-4x speedup and 10-20x memory reduction. Use when training/running transformers... |
+| `outlines` | `outlines` | `agent-engineer` | Guarantee valid JSON/XML/code structure during generation, use Pydantic models for type-safe outputs, support local models (Transformers,... |
+| `pdf` | `pdf` | `meta` | Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combinin... |
+| `peft-fine-tuning` | `peft` | `ml-engineer` | Parameter-efficient fine-tuning for LLMs using LoRA, QLoRA, and 25+ methods. Use when fine-tuning large models (7B-70B) with limited GPU ... |
+| `phoenix-observability` | `phoenix` | `agent-engineer` | Open-source AI observability platform for LLM tracing, evaluation, and monitoring. Use when debugging LLM applications with detailed trac... |
+| `pinecone` | `pinecone` | `rag-data-engineer` | Managed vector database for production AI applications. Fully managed, auto-scaling, with hybrid search (dense + sparse), metadata filter... |
+| `pptx` | `pptx` | `meta` | Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pi... |
+| `presenting-conference-talks` | `presenting-conference-talks` | `research-scientist` | Generates conference presentation slides (Beamer LaTeX PDF and editable PPTX) from a compiled paper with speaker notes and talk script. U... |
+| `prompt-guard` | `prompt-guard` | `security-engineer` | Meta's 86M prompt injection and jailbreak detector. Filters malicious prompts and third-party data for LLM apps. 99%+ TPR, <1% FPR. Fast ... |
+| `pytorch-fsdp2` | `pytorch-fsdp2` | `ml-engineer` | Adds PyTorch FSDP2 (fully_shard) to training scripts with correct init, sharding, mixed precision/offload config, and distributed checkpo... |
+| `pytorch-lightning` | `pytorch-lightning` | `ml-engineer` | High-level PyTorch framework with Trainer class, automatic distributed training (DDP/FSDP/DeepSpeed), callbacks system, and minimal boile... |
+| `pyvene-interventions` | `pyvene` | `ml-engineer` | Provides guidance for performing causal interventions on PyTorch models using pyvene's declarative intervention framework. Use when condu... |
+| `qdrant-vector-search` | `qdrant` | `rag-data-engineer` | High-performance vector similarity search engine for RAG and semantic search. Use when building production RAG systems requiring fast nea... |
+| `quantizing-models-bitsandbytes` | `bitsandbytes` | `llm-inference` | Quantizes LLMs to 8-bit or 4-bit for 50-75% memory reduction with minimal accuracy loss. Use when GPU memory is limited, need to fit larg... |
+| `ray-data` | `ray-data` | `mlops-engineer` | Scalable data processing for ML workloads. Streaming execution across CPU/GPU, supports Parquet/CSV/JSON/images. Integrates with Ray Trai... |
+| `ray-train` | `ray-train` | `ml-engineer` | Distributed training orchestration across clusters. Scales PyTorch/TensorFlow/HuggingFace from laptop to 1000s of nodes. Built-in hyperpa... |
+| `rwkv-architecture` | `rwkv` | `llm-inference` | RNN+Transformer hybrid with O(n) inference. Linear time, infinite context, no KV cache. Train like GPT (parallel), infer like RNN (sequen... |
+| `sast-semgrep` | `agentsecops-sast-semgrep` | `security-engineer` | Static application security testing (SAST) using Semgrep for vulnerability detection, security code review, and secure coding guidance wi... |
+| `sca-trivy` | `agentsecops-sca-trivy` | `security-engineer` | Software Composition Analysis (SCA) and container vulnerability scanning using Aqua Trivy for identifying CVE vulnerabilities in dependen... |
+| `segment-anything-model` | `segment-anything` | `ml-engineer` | Foundation model for image segmentation with zero-shot transfer. Use when you need to segment any object in images using points, boxes, o... |
+| `senior-architect` | `davila7-senior-architect` | `software-architect` | Comprehensive software architecture skill for designing scalable, maintainable systems using ReactJS, NextJS, NodeJS, Express, React Nati... |
+| `senior-backend` | `alirezarezvani-senior-backend` | `software-architect` | Comprehensive backend development skill for building scalable backend systems using NodeJS, Express, Go, Python, Postgres, GraphQL, REST ... |
+| `senior-devops` | `alirezarezvani-senior-devops` | `devops-engineer` | Comprehensive DevOps skill for CI/CD, infrastructure automation, containerization, and cloud platforms (AWS, GCP, Azure). Includes pipeli... |
+| `senior-ml-engineer` | `davila7-senior-ml-engineer` | `ml-engineer` | World-class ML engineering skill for productionizing ML models, MLOps, and building scalable ML systems. Expertise in PyTorch, TensorFlow... |
+| `senior-prompt-engineer` | `alirezarezvani-senior-prompt-engineer` | `agent-engineer` | World-class prompt engineering skill for LLM optimization, prompt patterns, structured outputs, and AI product development. Expertise in ... |
+| `sentence-transformers` | `sentence-transformers` | `rag-data-engineer` | Framework for state-of-the-art sentence, text, and image embeddings. Provides 5000+ pre-trained models for semantic similarity, clusterin... |
+| `sentencepiece` | `sentencepiece` | `rag-data-engineer` | Language-independent tokenizer treating text as raw Unicode. Supports BPE and Unigram algorithms. Fast (50k sentences/sec), lightweight (... |
+| `serving-llms-vllm` | `vllm` | `llm-inference` | Serves LLMs with high throughput using vLLM's PagedAttention and continuous batching. Use when deploying production LLM APIs, optimizing ... |
+| `sglang` | `sglang` | `llm-inference` | Fast structured generation and serving for LLMs with RadixAttention prefix caching. Use for JSON/regex outputs, constrained decoding, age... |
+| `simpo-training` | `simpo` | `ml-engineer` | Simple Preference Optimization for LLM alignment. Reference-free alternative to DPO with better performance (+6.4 points on AlpacaEval 2.... |
+| `skill-creator` | `skill-creator` | `agent-engineer` | Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch,... |
+| `skypilot-multi-cloud-orchestration` | `skypilot` | `mlops-engineer` | Multi-cloud orchestration for ML workloads with automatic cost optimization. Use when you need to run training or batch jobs across multi... |
+| `slack-gif-creator` | `slack-gif-creator` | `software-architect` | Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. U... |
+| `slime-rl-training` | `slime` | `ml-engineer` | Provides guidance for LLM post-training with RL using slime, a Megatron+SGLang framework. Use when training GLM models, implementing cust... |
+| `software-architecture` | `sickn33-software-architecture` | `software-architect` | Guide for quality focused software architecture. This skill should be used when users want to write code, design architecture, analyze co... |
+| `sop-api-development` | `dnyoussef-sop-api-development` | `software-architect` | Complete REST API development workflow coordinating backend, database, testing, documentation, and DevOps agents. 2-week timeline with TD... |
+| `sparse-autoencoder-training` | `saelens` | `ml-engineer` | Provides guidance for training and analyzing Sparse Autoencoders (SAEs) using SAELens to decompose neural network activations into interp... |
+| `speculative-decoding` | `speculative-decoding` | `llm-inference` | Accelerate LLM inference using speculative decoding, Medusa multiple heads, and lookahead decoding techniques. Use when optimizing infere... |
+| `stable-diffusion-image-generation` | `stable-diffusion` | `ml-engineer` | State-of-the-art text-to-image generation with Stable Diffusion models via HuggingFace Diffusers. Use when generating images from text pr... |
+| `subagent-driven-development` | `subagent-driven-development` | `meta` | Use when executing implementation plans with independent tasks in the current session |
+| `systems-paper-writing` | `systems-paper-writing` | `research-scientist` | Comprehensive guide for writing systems papers targeting OSDI, SOSP, ASPLOS, NSDI, and EuroSys. Provides paragraph-level structural bluep... |
+| `teardown` | `teardown` | `software-architect` | Build an interactive 3D simulator of a real machine or mechanism (an engine, a landing gear, a walking linkage, a pump, a gearbox) as one... |
+| `tensorboard` | `tensorboard` | `mlops-engineer` | Visualize training metrics, debug models with histograms, compare experiments, visualize model graphs, and profile performance with Tenso... |
+| `tensorrt-llm` | `tensorrt-llm` | `llm-inference` | Optimizes LLM inference with NVIDIA TensorRT for maximum throughput and lowest latency. Use for production deployment on NVIDIA GPUs (A10... |
+| `theme-factory` | `theme-factory` | `software-architect` | Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-se... |
+| `tool-design` | `sickn33-tool-design` | `software-architect` | Build tools that agents can use effectively, including architectural reduction patterns |
+| `tool-discovery` | `0xdarkmatter-tool-discovery` | `meta` | Recommend the right workspace personas, utility subagents, and skills for any task across all 13 personas and 158 installed skills. Trigg... |
+| `torchforge-rl-training` | `torchforge` | `ml-engineer` | Provides guidance for PyTorch-native agentic RL using torchforge, Meta's library separating infra from algorithms. Use when you want clea... |
+| `training-llms-megatron` | `megatron-core` | `ml-engineer` | Trains large language models (2B-462B parameters) using NVIDIA Megatron-Core with advanced parallelism strategies. Use when training mode... |
+| `transformer-lens-interpretability` | `transformer-lens` | `ml-engineer` | Provides guidance for mechanistic interpretability research using TransformerLens to inspect and manipulate transformer internals via Hoo... |
+| `unsloth` | `unsloth` | `ml-engineer` | Expert guidance for fast fine-tuning with Unsloth - 2-5x faster training, 50-80% less memory, LoRA/QLoRA optimization |
+| `verl-rl-training` | `verl` | `ml-engineer` | Provides guidance for training LLMs with reinforcement learning using verl (Volcano Engine RL). Use when implementing RLHF, GRPO, PPO, or... |
+| `web-artifacts-builder` | `web-artifacts-builder` | `software-architect` | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind C... |
+| `webapp-testing` | `webapp-testing` | `software-architect` | Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI... |
+| `weights-and-biases` | `weights-and-biases` | `mlops-engineer` | Track ML experiments with automatic logging, visualize training in real-time, optimize hyperparameters with sweeps, and manage model regi... |
+| `whisper` | `whisper` | `ml-engineer` | OpenAI's general-purpose speech recognition model. Supports 99 languages, transcription, translation to English, and language identificat... |
+| `writing-plans` | `writing-plans` | `software-architect` | Use when you have a spec or requirements for a multi-step task, before touching code |
+| `xlsx` | `xlsx` | `meta` | Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit,... |

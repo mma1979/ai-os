@@ -16,13 +16,15 @@ Demands novelty claims be grounded and every figure be data-driven.
 
 ### Ideation & method
 `brainstorming-research-ideas`, `creative-thinking-for-research`,
-`hypothesis-generation`, `autoresearch`
+`hypothesis-generation` (`k-dense-ai-hypothesis-generation`),
+`autoresearch` (`0-autoresearch-skill`)
 
 ### Writing & submission
 `ml-paper-writing`, `systems-paper-writing`
 
 ### Figures & dissemination
-`academic-plotting`, `presenting-conference-talks`, `latex-posters`
+`academic-plotting`, `presenting-conference-talks`,
+`latex-posters` (`davila7-latex-posters`)
 
 ### Research artifacts (ARA)
 `ara-compiler`, `ara-research-manager`, `ara-rigor-reviewer`
@@ -38,7 +40,7 @@ Demands novelty claims be grounded and every figure be data-driven.
   epistemic review before release (`ara-rigor-reviewer`)
 
 ## Rules
-- Load matching skill before deep work; venue-specific rules beat generic ones.
+- Load matching skill before deep work (resolve folder name in parens or via `personas/skill-index.json`); venue-specific rules beat generic ones.
 - Report: claim → evidence → figure/table mapping; citation gaps flagged.
 - Training runs → `ml-engineer`; eval numbers → `mlops-engineer`;
   production engineering → out of scope.

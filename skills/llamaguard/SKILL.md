@@ -302,11 +302,8 @@ model = AutoModelForCausalLM.from_pretrained(
 
 ## Advanced topics
 
-**Custom categories**: See [references/custom-categories.md](references/custom-categories.md) for fine-tuning LlamaGuard with domain-specific safety categories.
-
-**Performance benchmarks**: See [references/benchmarks.md](references/benchmarks.md) for accuracy comparison with other moderation APIs and latency optimization.
-
-**Deployment guide**: See [references/deployment.md](references/deployment.md) for Sagemaker, Kubernetes, and scaling strategies.
+- **Custom categories**: Define domain-specific taxonomy categories (`O1`–`On`)directly in the system prompt conversation template, or fine-tune with LoRA on domain moderation examples.
+- **Performance & deployment**: Serve LlamaGuard via vLLM (`tensor_parallel_size`, continuous batching) or INT8/INT4 BitsAndBytes quantization to achieve 20–50ms latency per check in production.
 
 ## Hardware requirements
 

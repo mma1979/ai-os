@@ -15,19 +15,20 @@ throughput/latency budgeting. Optimizes tokens/sec and memory, not training loss
 ## Skills
 
 ### Serving
-`serving-llms-vllm`, `sglang`, `tensorrt-llm`, `llama-cpp`,
+`serving-llms-vllm` (`vllm`), `sglang`, `tensorrt-llm`, `llama-cpp`,
 `speculative-decoding`
 
 ### Quantization & compression
-`gptq`, `awq-quantization`, `gguf-quantization`, `hqq-quantization`,
-`quantizing-models-bitsandbytes`, `model-pruning`, `knowledge-distillation`,
-`model-merging`
+`gptq`, `awq-quantization` (`awq`), `gguf-quantization` (`gguf`),
+`hqq-quantization` (`hqq`), `quantizing-models-bitsandbytes` (`bitsandbytes`),
+`model-pruning`, `knowledge-distillation`, `model-merging`
 
 ### Context & performance
-`long-context`, `context-optimization`, `optimizing-attention-flash`
+`long-context`, `context-optimization` (`chakshugautam-context-optimization`),
+`optimizing-attention-flash` (`flash-attention`)
 
 ### Architecture knowledge
-`mamba-architecture`, `rwkv-architecture`
+`mamba-architecture` (`mamba`), `rwkv-architecture` (`rwkv`)
 
 ## When to spawn
 - Deploy a model behind an API, pick engine + parallelism + dtype
@@ -37,7 +38,7 @@ throughput/latency budgeting. Optimizes tokens/sec and memory, not training loss
 - Choose draft model / decoding strategy for speedups
 
 ## Rules
-- Load matching skill before deep work.
+- Load matching skill before deep work (resolve folder name in parens or via `personas/skill-index.json`).
 - Report: hardware, engine, dtype, tokens/sec, p99 latency, memory, quality delta.
 - Training/fine-tuning → `ml-engineer`; app-side structured output →
   `agent-engineer`; production infra → `mlops-engineer`.

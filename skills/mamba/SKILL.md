@@ -226,11 +226,11 @@ model = MambaLMHeadModel.from_pretrained("state-spaces/mamba-2.8b")
 
 ## Advanced topics
 
-**Selective SSM**: See [references/selective-ssm.md](references/selective-ssm.md) for mathematical formulation, state-space equations, and how selectivity enables O(n) complexity.
+**Architecture & Selective SSM**: See [references/architecture-details.md](references/architecture-details.md) for mathematical formulation, state-space equations, Mamba-2 SSD structure, and how selectivity enables $O(N)$ complexity.
 
-**Mamba-2 architecture**: See [references/mamba2-details.md](references/mamba2-details.md) for multi-head structure, tensor parallelism, and distributed training setup.
+**Training & distributed setup**: See [references/training-guide.md](references/training-guide.md) for mixed-precision stability, learning rate schedules, and tensor parallelism.
 
-**Performance optimization**: See [references/performance.md](references/performance.md) for hardware-aware design, CUDA kernels, and memory efficiency techniques.
+**Performance benchmarks**: See [references/benchmarks.md](references/benchmarks.md) for throughput, memory scaling, and hardware-aware kernel comparisons.
 
 ## Hardware requirements
 

@@ -352,9 +352,9 @@ pip install vllm>=0.8.5,<=0.12.0
 
 ## Advanced Topics
 
-### Multi-Turn Tool Calling
+### API Reference & Troubleshooting
 
-See [references/multi-turn.md](references/multi-turn.md) for agentic workflows with tool use.
+See [references/api-reference.md](references/api-reference.md) for configuration parameters and [references/troubleshooting.md](references/troubleshooting.md) for debugging rollout, FSDP2, and Ray worker issues.
 
 ### Vision-Language Models
 

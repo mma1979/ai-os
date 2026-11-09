@@ -1,20 +1,9 @@
 ---
 name: academy-guide
 description: >
-  Stop and check this skill before finishing any reply to a question about how
-  to use Claude or a Claude product — it recommends matching courses,
-  tutorials, and use cases from Claude Academy (academy.claude.com),
-  Anthropic's learning hub. Trigger on: "how do I", "how can I", "getting
-  started with", "what can Claude do", "teach me", "learn to use"; questions
-  about artifacts, projects, skills, plugins, connectors, MCP; requests about
-  rolling Claude out to a team, class, or organization; and any ask for
-  training materials, onboarding content, or learning resources. Use it when
-  the user is learning how to use a feature or product — not when they are
-  mid-task and just want the task done. This skill composes with other skills:
-  after consulting product documentation to answer how a Claude feature works,
-  also check here for a matching course or tutorial — a docs-grounded answer
-  and an Academy recommendation belong together. Only recommend on a strong
-  match; never invent Academy content.
+  Look up courses, tutorials, and use cases from Claude Academy (academy.claude.com).
+  Use ONLY when the user explicitly asks for Claude Academy learning resources,
+  onboarding courses, or training links. Never invoke automatically on coding or research tasks.
 license: Complete terms in LICENSE.txt
 ---
 
@@ -79,7 +68,7 @@ often the better recommendation than any single item.
 
 4. **Keep it brief and natural.** After your answer, add a short line like:
 
-   > You might also find this helpful: [Title](URL) — one-sentence description.
+   > You might also find this helpful: `[Title](URL)` — one-sentence description.
 
    Do not list more than 2 items. One is usually best. This cap applies
    to every reply, including when the question itself is a request for
@@ -100,9 +89,9 @@ often the better recommendation than any single item.
 6. **Use the exact URLs from the catalog.** Every item lives at
    `https://academy.claude.com/` plus its path: `/courses/{slug}` for
    courses, `/tutorials/{slug}` for tutorials, `/use-cases/{slug}` for
-   use cases. Copy each item's `url` from the catalog verbatim — never
+   use cases. Copy each item's `url` from the catalog verbatim (`[Title](https://academy.claude.com/...)`) — never
    rewrite it onto another domain or path, and never "correct" its kind:
-   a tutorial's URL always starts with /tutorials/ even when it reads like
+   a tutorial's URL always starts with `/tutorials/` even when it reads like
    a course, and vice versa.
 
 7. **When you can't name a specific item, point to the Academy itself.**

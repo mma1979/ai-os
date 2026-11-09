@@ -1,0 +1,35 @@
+{
+  "project": "agents-workspace",
+  "description": "Canonical AI agent personas, skills library, and harness configuration",
+  "features": [
+    {
+      "id": "FEAT-001",
+      "name": "Persona & Skill Routing Architecture",
+      "description": "Map all 158 workspace skills across 9 domain personas, 4 utility subagents, and 20 meta-skills with O(1) folder resolution in personas/skill-index.json.",
+      "status": "completed",
+      "dependencies": [],
+      "verification": "pwsh -NoProfile -File scripts/validate-workspace.ps1"
+    },
+    {
+      "id": "FEAT-002",
+      "name": "Tool Discovery & Skill Reference Integrity",
+      "description": "Align tool-discovery catalogs with installed workspace skills, add leann-memory SKILL.md, and resolve all broken relative reference links across SKILL.md files.",
+      "status": "completed",
+      "dependencies": [
+        "FEAT-001"
+      ],
+      "verification": "pwsh -NoProfile -File scripts/validate-workspace.ps1"
+    },
+    {
+      "id": "FEAT-003",
+      "name": "AGENTS.md & Harness Subsystem Compliance",
+      "description": "Refactor AGENTS.md with read-only recon gate, Tier 1/Tier 2 deliverable ergonomics, subagent handoff contracts, and 5-subsystem harness artifacts.",
+      "status": "completed",
+      "dependencies": [
+        "FEAT-001",
+        "FEAT-002"
+      ],
+      "verification": "node skills/harness-creator/scripts/validate-harness.mjs --target ."
+    }
+  ]
+}

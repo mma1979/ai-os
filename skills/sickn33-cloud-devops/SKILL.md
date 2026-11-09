@@ -5,232 +5,50 @@ source: personal
 risk: safe
 domain: cloud-devops
 category: workflow-bundle
-version: 1.0.0
+version: 2.0.0
 ---
 
 # Cloud/DevOps Workflow Bundle
 
 ## Overview
 
-Comprehensive cloud and DevOps workflow for infrastructure provisioning, container orchestration, CI/CD pipelines, monitoring, and cloud-native application development.
+End-to-end cloud and DevOps workflow for infrastructure provisioning, container orchestration, CI/CD pipelines, observability, security scanning, and incident operations, grounded in the workspace's installed skills.
 
-## When to Use This Workflow
+## Workspace Skill Routing for DevOps Phases
 
-Use this workflow when:
-- Setting up cloud infrastructure
-- Implementing CI/CD pipelines
-- Deploying Kubernetes applications
-- Configuring monitoring and observability
-- Managing cloud costs
-- Implementing DevOps practices
+| Phase | Workspace Skills & Personas to Load |
+|---|---|
+| **1. Architecture & Diagrams** | `senior-architect` (`davila7-senior-architect`), `c4-architecture` (`softaworks-c4-architecture`), `mermaid-diagrams` (`softaworks-mermaid-diagrams`) |
+| **2. Cloud & IaC Provisioning** | `senior-devops` (`alirezarezvani-senior-devops`), `devops-orchestrator` (`brownbull-devops-orchestrator`) |
+| **3. GPU & ML Cloud Compute** | `skypilot-multi-cloud-orchestration` (`skypilot`), `modal-serverless-gpu` (`modal`), `lambda-labs-gpu-cloud` (`lambda-labs`) — hand off to `mlops-engineer` |
+| **4. Security & Container/IaC Scanning** | `sca-trivy` (`agentsecops-sca-trivy`), `sast-semgrep` (`agentsecops-sast-semgrep`), `dast-nuclei` (`agentsecops-dast-nuclei`) — hand off to `security-engineer` |
+| **5. Incident Response & Runbooks** | `devops-troubleshooter` (`sickn33-devops-troubleshooter`), `devops-runbooks` (`89jobrien-devops-runbooks`), `infrastructure-reporting` (`dataknifeai-infrastructure-reporting`) |
 
 ## Workflow Phases
 
-### Phase 1: Cloud Infrastructure Setup
+### Phase 1: Cloud & IaC Design
+1. Define network topology (VPC, subnets, security groups, least-privilege IAM).
+2. Manage state remotely with locking (e.g., S3 + DynamoDB / GCS backend for Terraform).
+3. Separate environment configurations (`dev`, `staging`, `prod`) using modules or workspaces.
+4. Generate C4 Deployment diagrams (`c4-architecture`) before applying high-blast-radius changes.
 
-#### Skills to Invoke
-- `cloud-architect` - Cloud architecture
-- `aws-skills` - AWS development
-- `azure-functions` - Azure development
-- `gcp-cloud-run` - GCP development
-- `terraform-skill` - Terraform IaC
-- `terraform-specialist` - Advanced Terraform
+### Phase 2: Containerization & Kubernetes
+1. Author multi-stage, non-root `Dockerfile` builds with pinned base image digests.
+2. Scan container images and Kubernetes manifests using `sca-trivy` (`trivy image`, `trivy config`).
+3. Define resource `requests`/`limits`, `livenessProbe`/`readinessProbe`, `PodDisruptionBudget`, and `HorizontalPodAutoscaler`.
 
-#### Actions
-1. Design cloud architecture
-2. Set up accounts and billing
-3. Configure networking
-4. Provision resources
-5. Set up IAM
+### Phase 3: CI/CD Pipelines
+1. Enforce fast fail-gates: Lint → Unit Test → SAST/SCA (`sast-semgrep`, `sca-trivy`) → Build → Staging Deploy → Smoke Test → Prod Rollout.
+2. Prefer progressive delivery (canary or blue/green) with automated rollback triggers on error-rate spikes.
+3. Track DORA metrics (Deployment Frequency, Lead Time for Changes, Change Failure Rate, MTTR).
 
-#### Copy-Paste Prompts
-```
-Use @cloud-architect to design multi-cloud architecture
-```
-
-```
-Use @terraform-skill to provision AWS infrastructure
-```
-
-### Phase 2: Container Orchestration
-
-#### Skills to Invoke
-- `kubernetes-architect` - Kubernetes architecture
-- `docker-expert` - Docker containerization
-- `helm-chart-scaffolding` - Helm charts
-- `k8s-manifest-generator` - K8s manifests
-- `k8s-security-policies` - K8s security
-
-#### Actions
-1. Design container architecture
-2. Create Dockerfiles
-3. Build container images
-4. Write K8s manifests
-5. Deploy to cluster
-6. Configure networking
-
-#### Copy-Paste Prompts
-```
-Use @kubernetes-architect to design K8s architecture
-```
-
-```
-Use @docker-expert to containerize application
-```
-
-```
-Use @helm-chart-scaffolding to create Helm chart
-```
-
-### Phase 3: CI/CD Implementation
-
-#### Skills to Invoke
-- `deployment-engineer` - Deployment engineering
-- `cicd-automation-workflow-automate` - CI/CD automation
-- `github-actions-templates` - GitHub Actions
-- `gitlab-ci-patterns` - GitLab CI
-- `deployment-pipeline-design` - Pipeline design
-
-#### Actions
-1. Design deployment pipeline
-2. Configure build automation
-3. Set up test automation
-4. Configure deployment stages
-5. Implement rollback strategies
-6. Set up notifications
-
-#### Copy-Paste Prompts
-```
-Use @cicd-automation-workflow-automate to set up CI/CD pipeline
-```
-
-```
-Use @github-actions-templates to create GitHub Actions workflow
-```
-
-### Phase 4: Monitoring and Observability
-
-#### Skills to Invoke
-- `observability-engineer` - Observability engineering
-- `grafana-dashboards` - Grafana dashboards
-- `prometheus-configuration` - Prometheus setup
-- `datadog-automation` - Datadog integration
-- `sentry-automation` - Sentry error tracking
-
-#### Actions
-1. Design monitoring strategy
-2. Set up metrics collection
-3. Configure log aggregation
-4. Implement distributed tracing
-5. Create dashboards
-6. Set up alerts
-
-#### Copy-Paste Prompts
-```
-Use @observability-engineer to set up observability stack
-```
-
-```
-Use @grafana-dashboards to create monitoring dashboards
-```
-
-### Phase 5: Cloud Security
-
-#### Skills to Invoke
-- `cloud-penetration-testing` - Cloud pentesting
-- `aws-penetration-testing` - AWS security
-- `k8s-security-policies` - K8s security
-- `secrets-management` - Secrets management
-- `mtls-configuration` - mTLS setup
-
-#### Actions
-1. Assess cloud security
-2. Configure security groups
-3. Set up secrets management
-4. Implement network policies
-5. Configure encryption
-6. Set up audit logging
-
-#### Copy-Paste Prompts
-```
-Use @cloud-penetration-testing to assess cloud security
-```
-
-```
-Use @secrets-management to configure secrets
-```
-
-### Phase 6: Cost Optimization
-
-#### Skills to Invoke
-- `cost-optimization` - Cloud cost optimization
-- `database-cloud-optimization-cost-optimize` - Database cost optimization
-
-#### Actions
-1. Analyze cloud spending
-2. Identify optimization opportunities
-3. Right-size resources
-4. Implement auto-scaling
-5. Use reserved instances
-6. Set up cost alerts
-
-#### Copy-Paste Prompts
-```
-Use @cost-optimization to reduce cloud costs
-```
-
-### Phase 7: Disaster Recovery
-
-#### Skills to Invoke
-- `incident-responder` - Incident response
-- `incident-runbook-templates` - Runbook creation
-- `postmortem-writing` - Postmortem documentation
-
-#### Actions
-1. Design DR strategy
-2. Set up backups
-3. Create runbooks
-4. Test failover
-5. Document procedures
-6. Train team
-
-#### Copy-Paste Prompts
-```
-Use @incident-runbook-templates to create runbooks
-```
-
-## Cloud Provider Workflows
-
-### AWS
-```
-Skills: aws-skills, aws-serverless, aws-penetration-testing
-Services: EC2, Lambda, S3, RDS, ECS, EKS
-```
-
-### Azure
-```
-Skills: azure-functions, azure-ai-projects-py, azure-monitor-opentelemetry-py
-Services: Functions, App Service, AKS, Cosmos DB
-```
-
-### GCP
-```
-Skills: gcp-cloud-run
-Services: Cloud Run, GKE, Cloud Functions, BigQuery
-```
+### Phase 4: Observability, Incidents & Runbooks
+1. Instrument golden signals (Latency, Traffic, Errors, Saturation) and structured JSON logs.
+2. Triage production incidents systematically using `devops-troubleshooter`.
+3. Document repeatable operational and recovery procedures with `devops-runbooks` and summarize capacity/health with `infrastructure-reporting`.
 
 ## Quality Gates
-
-- [ ] Infrastructure provisioned
-- [ ] CI/CD pipeline working
-- [ ] Monitoring configured
-- [ ] Security measures in place
-- [ ] Cost optimization applied
-- [ ] DR procedures documented
-
-## Related Workflow Bundles
-
-- `development` - Application development
-- `security-audit` - Security testing
-- `database` - Database operations
-- `testing-qa` - Testing workflows
+- [ ] Blast radius and rollback path documented before mutating infrastructure
+- [ ] IaC validated (`terraform fmt -check`, `terraform validate`, `trivy config`)
+- [ ] CI/CD pipeline includes automated rollback and secret scanning
+- [ ] Runbooks and health reporting updated (`devops-runbooks`, `infrastructure-reporting`)

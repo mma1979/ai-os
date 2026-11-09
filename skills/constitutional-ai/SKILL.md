@@ -259,11 +259,9 @@ final_preference = majority_vote(prefs_1, prefs_2, prefs_3)
 
 ## Advanced topics
 
-**Constitution design**: See [references/constitution-design.md](references/constitution-design.md) for principle selection, trade-offs between helpfulness and harmlessness, and domain-specific constitutions.
-
-**RLAIF vs RLHF**: See [references/rlaif-comparison.md](references/rlaif-comparison.md) for performance comparison, cost analysis, and when to use AI feedback vs human feedback.
-
-**Chain-of-thought reasoning**: See [references/cot-critique.md](references/cot-critique.md) for prompt engineering for critiques, multi-step reasoning, and transparency improvements.
+- **Constitution design**: Balance helpfulness vs. harmlessness by preferring thoughtful engagement with caveats over evasive refusals, and tailor principles to domain-specific risks.
+- **RLAIF vs RLHF**: Use AI feedback (RLAIF) with multi-evaluator majority voting for scalable preference generation; combine with targeted human preference data (RLHF/DPO) on high-risk edge cases.
+- **Chain-of-thought critique**: Prompt the critic model to reason step-by-step over each constitutional principle before generating the revised response.
 
 ## Hardware requirements
 

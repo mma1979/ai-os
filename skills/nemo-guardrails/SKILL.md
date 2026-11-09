@@ -265,11 +265,9 @@ async def strict_fact_check(context):
 
 ## Advanced topics
 
-**Colang 2.0 DSL**: See [references/colang-guide.md](references/colang-guide.md) for flow syntax, actions, variables, and advanced patterns.
-
-**Integration guide**: See [references/integrations.md](references/integrations.md) for LlamaGuard, Presidio, ActiveFence, and custom models.
-
-**Performance optimization**: See [references/performance.md](references/performance.md) for latency reduction, caching, and batching strategies.
+- **Colang 2.0 DSL**: Define programmable input/dialog/output rails using `define flow`, `parallel:` blocks, and custom `@action()` Python coroutines.
+- **Integrations**: Combine NeMo Guardrails with LlamaGuard (input/output moderation), Microsoft Presidio (PII redaction), and groundedness/fact-checking actions.
+- **Performance optimization**: Run input safety checks inside `parallel:` Colang blocks and cache embedding lookups to keep guardrail overhead under 100–300ms.
 
 ## Hardware requirements
 

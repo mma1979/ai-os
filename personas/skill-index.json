@@ -1,0 +1,1273 @@
+{
+  "generated_at": "2026-11-09T09:34:29Z",
+  "total_skills": 158,
+  "skills": [
+    {
+      "slug": "autoresearch",
+      "folder": "0-autoresearch-skill",
+      "path": "skills/0-autoresearch-skill/SKILL.md",
+      "personas": "research-scientist",
+      "lines": 411,
+      "summary": "Orchestrates end-to-end autonomous AI research projects using a two-loop architecture. The inner loop runs rapid experiment iterations wi..."
+    },
+    {
+      "slug": "tool-discovery",
+      "folder": "0xdarkmatter-tool-discovery",
+      "path": "skills/0xdarkmatter-tool-discovery/SKILL.md",
+      "personas": "meta",
+      "lines": 72,
+      "summary": "Recommend the right workspace personas, utility subagents, and skills for any task across all 13 personas and 158 installed skills. Trigg..."
+    },
+    {
+      "slug": "devops-runbooks",
+      "folder": "89jobrien-devops-runbooks",
+      "path": "skills/89jobrien-devops-runbooks/SKILL.md",
+      "personas": "devops-engineer",
+      "lines": 56,
+      "summary": "Operational runbook and procedure documentation specialist. Use when creating incident response procedures, operational playbooks, or sys..."
+    },
+    {
+      "slug": "evolving-ai-agents",
+      "folder": "a-evolve",
+      "path": "skills/a-evolve/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 383,
+      "summary": "Provides guidance for automatically evolving and optimizing AI agents across any domain using LLM-driven evolution algorithms. Use when b..."
+    },
+    {
+      "slug": "academic-plotting",
+      "folder": "academic-plotting",
+      "path": "skills/academic-plotting/SKILL.md",
+      "personas": "research-scientist",
+      "lines": 479,
+      "summary": "Generates publication-quality figures for ML papers from research context. Given a paper section or description, extracts system componen..."
+    },
+    {
+      "slug": "academy-guide",
+      "folder": "academy-guide",
+      "path": "skills/academy-guide/SKILL.md",
+      "personas": "meta",
+      "lines": 136,
+      "summary": "Look up courses, tutorials, and use cases from Claude Academy (academy.claude.com). Use ONLY when the user explicitly asks for Claude Aca..."
+    },
+    {
+      "slug": "huggingface-accelerate",
+      "folder": "accelerate",
+      "path": "skills/accelerate/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 332,
+      "summary": "Simplest distributed training API. 4 lines to add distributed support to any PyTorch script. Unified API for DeepSpeed/FSDP/Megatron/DDP...."
+    },
+    {
+      "slug": "dast-nuclei",
+      "folder": "agentsecops-dast-nuclei",
+      "path": "skills/agentsecops-dast-nuclei/SKILL.md",
+      "personas": "security-engineer",
+      "lines": 510,
+      "summary": "Fast, template-based vulnerability scanning using ProjectDiscovery's Nuclei with extensive community templates covering CVEs, OWASP Top 1..."
+    },
+    {
+      "slug": "sast-semgrep",
+      "folder": "agentsecops-sast-semgrep",
+      "path": "skills/agentsecops-sast-semgrep/SKILL.md",
+      "personas": "security-engineer",
+      "lines": 284,
+      "summary": "Static application security testing (SAST) using Semgrep for vulnerability detection, security code review, and secure coding guidance wi..."
+    },
+    {
+      "slug": "sca-trivy",
+      "folder": "agentsecops-sca-trivy",
+      "path": "skills/agentsecops-sca-trivy/SKILL.md",
+      "personas": "security-engineer",
+      "lines": 457,
+      "summary": "Software Composition Analysis (SCA) and container vulnerability scanning using Aqua Trivy for identifying CVE vulnerabilities in dependen..."
+    },
+    {
+      "slug": "algorithmic-art",
+      "folder": "algorithmic-art",
+      "path": "skills/algorithmic-art/SKILL.md",
+      "personas": "software-architect",
+      "lines": 405,
+      "summary": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating a..."
+    },
+    {
+      "slug": "senior-backend",
+      "folder": "alirezarezvani-senior-backend",
+      "path": "skills/alirezarezvani-senior-backend/SKILL.md",
+      "personas": "software-architect",
+      "lines": 209,
+      "summary": "Comprehensive backend development skill for building scalable backend systems using NodeJS, Express, Go, Python, Postgres, GraphQL, REST ..."
+    },
+    {
+      "slug": "senior-devops",
+      "folder": "alirezarezvani-senior-devops",
+      "path": "skills/alirezarezvani-senior-devops/SKILL.md",
+      "personas": "devops-engineer",
+      "lines": 209,
+      "summary": "Comprehensive DevOps skill for CI/CD, infrastructure automation, containerization, and cloud platforms (AWS, GCP, Azure). Includes pipeli..."
+    },
+    {
+      "slug": "senior-prompt-engineer",
+      "folder": "alirezarezvani-senior-prompt-engineer",
+      "path": "skills/alirezarezvani-senior-prompt-engineer/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 226,
+      "summary": "World-class prompt engineering skill for LLM optimization, prompt patterns, structured outputs, and AI product development. Expertise in ..."
+    },
+    {
+      "slug": "ara-compiler",
+      "folder": "ara-compiler",
+      "path": "skills/ara-compiler/SKILL.md",
+      "personas": "research-scientist",
+      "lines": 245,
+      "summary": "Compiles any research input — PDF papers, GitHub repositories, experiment logs, code directories, or raw notes — into a complete Agent-Na..."
+    },
+    {
+      "slug": "ara-research-manager",
+      "folder": "ara-research-manager",
+      "path": "skills/ara-research-manager/SKILL.md",
+      "personas": "research-scientist",
+      "lines": 324,
+      "summary": "Records research provenance as a post-task epilogue, scanning conversation history at the end of a coding or research session to extract ..."
+    },
+    {
+      "slug": "ara-rigor-reviewer",
+      "folder": "ara-rigor-reviewer",
+      "path": "skills/ara-rigor-reviewer/SKILL.md",
+      "personas": "research-scientist",
+      "lines": 322,
+      "summary": "Performs ARA Seal Level 2 semantic epistemic review on Agent-Native Research Artifacts, scoring six dimensions (evidence relevance, falsi..."
+    },
+    {
+      "slug": "audiocraft-audio-generation",
+      "folder": "audiocraft",
+      "path": "skills/audiocraft/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 564,
+      "summary": "PyTorch library for audio generation including text-to-music (MusicGen) and text-to-sound (AudioGen). Use when you need to generate music..."
+    },
+    {
+      "slug": "autogpt-agents",
+      "folder": "autogpt",
+      "path": "skills/autogpt/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 403,
+      "summary": "Autonomous AI agent platform for building and deploying continuous agents. Use when creating visual workflow agents, deploying persistent..."
+    },
+    {
+      "slug": "awq-quantization",
+      "folder": "awq",
+      "path": "skills/awq/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 310,
+      "summary": "Activation-aware weight quantization for 4-bit LLM compression with 3x speedup and minimal accuracy loss. Use when deploying large models..."
+    },
+    {
+      "slug": "axolotl",
+      "folder": "axolotl",
+      "path": "skills/axolotl/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 158,
+      "summary": "Expert guidance for fine-tuning LLMs with Axolotl - YAML configs, 100+ models, LoRA/QLoRA, DPO/KTO/ORPO/GRPO, multimodal support"
+    },
+    {
+      "slug": "evaluating-code-models",
+      "folder": "bigcode-evaluation-harness",
+      "path": "skills/bigcode-evaluation-harness/SKILL.md",
+      "personas": "mlops-engineer",
+      "lines": 405,
+      "summary": "Evaluates code generation models across HumanEval, MBPP, MultiPL-E, and 15+ benchmarks with pass@k metrics. Use when benchmarking code mo..."
+    },
+    {
+      "slug": "quantizing-models-bitsandbytes",
+      "folder": "bitsandbytes",
+      "path": "skills/bitsandbytes/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 411,
+      "summary": "Quantizes LLMs to 8-bit or 4-bit for 50-75% memory reduction with minimal accuracy loss. Use when GPU memory is limited, need to fit larg..."
+    },
+    {
+      "slug": "blip-2-vision-language",
+      "folder": "blip-2",
+      "path": "skills/blip-2/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 564,
+      "summary": "Vision-language pre-training framework bridging frozen image encoders and LLMs. Use when you need image captioning, visual question answe..."
+    },
+    {
+      "slug": "brainstorming",
+      "folder": "brainstorming",
+      "path": "skills/brainstorming/SKILL.md",
+      "personas": "meta",
+      "lines": 294,
+      "summary": "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or plannin..."
+    },
+    {
+      "slug": "brainstorming-research-ideas",
+      "folder": "brainstorming-research-ideas",
+      "path": "skills/brainstorming-research-ideas/SKILL.md",
+      "personas": "research-scientist",
+      "lines": 384,
+      "summary": "Guides researchers through structured ideation frameworks to discover high-impact research directions. Use when exploring new problem spa..."
+    },
+    {
+      "slug": "brand-guidelines",
+      "folder": "brand-guidelines",
+      "path": "skills/brand-guidelines/SKILL.md",
+      "personas": "software-architect",
+      "lines": 73,
+      "summary": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. ..."
+    },
+    {
+      "slug": "devops-orchestrator",
+      "folder": "brownbull-devops-orchestrator",
+      "path": "skills/brownbull-devops-orchestrator/SKILL.md",
+      "personas": "devops-engineer",
+      "lines": 271,
+      "summary": "Coordinates infrastructure, CI/CD, and deployment tasks. Use when provisioning infrastructure, setting up pipelines, configuring monitori..."
+    },
+    {
+      "slug": "canvas-design",
+      "folder": "canvas-design",
+      "path": "skills/canvas-design/SKILL.md",
+      "personas": "software-architect",
+      "lines": 130,
+      "summary": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a ..."
+    },
+    {
+      "slug": "cavecrew",
+      "folder": "cavecrew",
+      "path": "skills/cavecrew/SKILL.md",
+      "personas": "meta",
+      "lines": 82,
+      "summary": "Decision guide for delegating to caveman-style subagents. Tells the main thread WHEN to spawn `cavecrew-investigator` (locate code), `cav..."
+    },
+    {
+      "slug": "caveman",
+      "folder": "caveman",
+      "path": "skills/caveman/SKILL.md",
+      "personas": "meta",
+      "lines": 78,
+      "summary": "Ultra-compressed communication mode. Cuts token usage ~75% by speaking like caveman while keeping full technical accuracy. Supports inten..."
+    },
+    {
+      "slug": "caveman-commit",
+      "folder": "caveman-commit",
+      "path": "skills/caveman-commit/SKILL.md",
+      "personas": "meta",
+      "lines": 65,
+      "summary": "Ultra-compressed commit message generator. Cuts noise from commit messages while preserving intent and reasoning. Conventional Commits fo..."
+    },
+    {
+      "slug": "caveman-compress",
+      "folder": "caveman-compress",
+      "path": "skills/caveman-compress/SKILL.md",
+      "personas": "meta",
+      "lines": 111,
+      "summary": "Compress natural language memory files (CLAUDE.md, todos, preferences) into caveman format to save input tokens. Preserves all technical ..."
+    },
+    {
+      "slug": "caveman-help",
+      "folder": "caveman-help",
+      "path": "skills/caveman-help/SKILL.md",
+      "personas": "meta",
+      "lines": 63,
+      "summary": "Quick-reference card for all caveman modes, skills, and commands. One-shot display, not a persistent mode. Trigger: /caveman-help, \"cavem..."
+    },
+    {
+      "slug": "caveman-review",
+      "folder": "caveman-review",
+      "path": "skills/caveman-review/SKILL.md",
+      "personas": "meta",
+      "lines": 55,
+      "summary": "Ultra-compressed code review comments. Cuts noise from PR feedback while preserving the actionable signal. Each comment is one line: loca..."
+    },
+    {
+      "slug": "caveman-stats",
+      "folder": "caveman-stats",
+      "path": "skills/caveman-stats/SKILL.md",
+      "personas": "meta",
+      "lines": 10,
+      "summary": "Show real token usage and estimated savings for the current session. Reads directly from the Claude Code session log — no AI estimation. ..."
+    },
+    {
+      "slug": "context-optimization",
+      "folder": "chakshugautam-context-optimization",
+      "path": "skills/chakshugautam-context-optimization/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 179,
+      "summary": "This skill should be used when the user asks to \"optimize context\", \"reduce token costs\", \"improve context efficiency\", \"implement KV-cac..."
+    },
+    {
+      "slug": "chroma",
+      "folder": "chroma",
+      "path": "skills/chroma/SKILL.md",
+      "personas": "rag-data-engineer",
+      "lines": 406,
+      "summary": "Open-source embedding database for AI applications. Store embeddings and metadata, perform vector and full-text search, filter by metadat..."
+    },
+    {
+      "slug": "claude-api",
+      "folder": "claude-api",
+      "path": "skills/claude-api/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 614,
+      "summary": "Reference for the Claude API and official Anthropic SDKs (Python, TypeScript, Go, Java, C#, Ruby, PHP, cURL) — model IDs, adaptive thinki..."
+    },
+    {
+      "slug": "clip",
+      "folder": "clip",
+      "path": "skills/clip/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 253,
+      "summary": "OpenAI's model connecting vision and language. Enables zero-shot image classification, image-text matching, and cross-modal retrieval. Tr..."
+    },
+    {
+      "slug": "c4-modeling",
+      "folder": "consiliency-c4-modeling",
+      "path": "skills/consiliency-c4-modeling/SKILL.md",
+      "personas": "software-architect",
+      "lines": 109,
+      "summary": "C4 architectural modeling for documenting software architecture. Use when creating architecture diagrams, planning new systems, communica..."
+    },
+    {
+      "slug": "constitutional-ai",
+      "folder": "constitutional-ai",
+      "path": "skills/constitutional-ai/SKILL.md",
+      "personas": "security-engineer",
+      "lines": 288,
+      "summary": "Anthropic's method for training harmless AI through self-improvement. Two-phase approach - supervised learning with self-critique/revisio..."
+    },
+    {
+      "slug": "evaluating-cosmos-policy",
+      "folder": "cosmos-policy",
+      "path": "skills/cosmos-policy/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 402,
+      "summary": "Evaluates NVIDIA Cosmos Policy on LIBERO and RoboCasa simulation environments. Use when setting up cosmos-policy for robot manipulation e..."
+    },
+    {
+      "slug": "creative-thinking-for-research",
+      "folder": "creative-thinking-for-research",
+      "path": "skills/creative-thinking-for-research/SKILL.md",
+      "personas": "research-scientist",
+      "lines": 366,
+      "summary": "Applies cognitive science frameworks for creative thinking to CS and AI research ideation. Use when seeking genuinely novel research dire..."
+    },
+    {
+      "slug": "crewai-multi-agent",
+      "folder": "crewai",
+      "path": "skills/crewai/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 498,
+      "summary": "Multi-agent orchestration framework for autonomous AI collaboration. Use when building teams of specialized agents working together on co..."
+    },
+    {
+      "slug": "cli-design-expert",
+      "folder": "dammianmiller-cli-design-expert",
+      "path": "skills/dammianmiller-cli-design-expert/SKILL.md",
+      "personas": "software-architect",
+      "lines": 576,
+      "summary": "Expert CLI/TUI designer for building intuitive, user-friendly, and professional command-line interfaces. Focuses on UX patterns, help sys..."
+    },
+    {
+      "slug": "infrastructure-reporting",
+      "folder": "dataknifeai-infrastructure-reporting",
+      "path": "skills/dataknifeai-infrastructure-reporting/SKILL.md",
+      "personas": "devops-engineer",
+      "lines": 98,
+      "summary": "Generate comprehensive network infrastructure reports including health status, performance analysis, security audits, and capacity planni..."
+    },
+    {
+      "slug": "latex-posters",
+      "folder": "davila7-latex-posters",
+      "path": "skills/davila7-latex-posters/SKILL.md",
+      "personas": "research-scientist",
+      "lines": 958,
+      "summary": "Create professional research posters in LaTeX using beamerposter, tikzposter, or baposter. Support for conference presentations, academic..."
+    },
+    {
+      "slug": "senior-architect",
+      "folder": "davila7-senior-architect",
+      "path": "skills/davila7-senior-architect/SKILL.md",
+      "personas": "software-architect",
+      "lines": 209,
+      "summary": "Comprehensive software architecture skill for designing scalable, maintainable systems using ReactJS, NextJS, NodeJS, Express, React Nati..."
+    },
+    {
+      "slug": "senior-ml-engineer",
+      "folder": "davila7-senior-ml-engineer",
+      "path": "skills/davila7-senior-ml-engineer/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 226,
+      "summary": "World-class ML engineering skill for productionizing ML models, MLOps, and building scalable ML systems. Expertise in PyTorch, TensorFlow..."
+    },
+    {
+      "slug": "deepspeed",
+      "folder": "deepspeed",
+      "path": "skills/deepspeed/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 141,
+      "summary": "Expert guidance for distributed training with DeepSpeed - ZeRO optimization stages, pipeline parallelism, FP16/BF16/FP8, 1-bit Adam, spar..."
+    },
+    {
+      "slug": "discernment-nudge",
+      "folder": "discernment-nudge",
+      "path": "skills/discernment-nudge/SKILL.md",
+      "personas": "meta",
+      "lines": 197,
+      "summary": "Generate 2-3 critical-thinking follow-up questions to stress-test assumptions, fact-check claims, and surface missing context in a propos..."
+    },
+    {
+      "slug": "agentdb-semantic-vector-search",
+      "folder": "dnyoussef-agentdb-semantic-vector-search",
+      "path": "skills/dnyoussef-agentdb-semantic-vector-search/SKILL.md",
+      "personas": "rag-data-engineer",
+      "lines": 124,
+      "summary": "Build semantic vector search systems with AgentDB for intelligent document retrieval, RAG applications, and knowledge bases using embeddi..."
+    },
+    {
+      "slug": "sop-api-development",
+      "folder": "dnyoussef-sop-api-development",
+      "path": "skills/dnyoussef-sop-api-development/SKILL.md",
+      "personas": "software-architect",
+      "lines": 547,
+      "summary": "Complete REST API development workflow coordinating backend, database, testing, documentation, and DevOps agents. 2-week timeline with TD..."
+    },
+    {
+      "slug": "doc-coauthoring",
+      "folder": "doc-coauthoring",
+      "path": "skills/doc-coauthoring/SKILL.md",
+      "personas": "meta",
+      "lines": 375,
+      "summary": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technica..."
+    },
+    {
+      "slug": "docx",
+      "folder": "docx",
+      "path": "skills/docx/SKILL.md",
+      "personas": "meta",
+      "lines": 91,
+      "summary": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files)...."
+    },
+    {
+      "slug": "dspy",
+      "folder": "dspy",
+      "path": "skills/dspy/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 590,
+      "summary": "Build complex AI systems with declarative programming, optimize prompts automatically, create modular RAG systems and agents with DSPy - ..."
+    },
+    {
+      "slug": "faiss",
+      "folder": "faiss",
+      "path": "skills/faiss/SKILL.md",
+      "personas": "rag-data-engineer",
+      "lines": 221,
+      "summary": "Facebook's library for efficient similarity search and clustering of dense vectors. Supports billions of vectors, GPU acceleration, and v..."
+    },
+    {
+      "slug": "optimizing-attention-flash",
+      "folder": "flash-attention",
+      "path": "skills/flash-attention/SKILL.md",
+      "personas": [
+        "llm-inference",
+        "ml-engineer"
+      ],
+      "lines": 365,
+      "summary": "Optimizes transformer attention with Flash Attention for 2-4x speedup and 10-20x memory reduction. Use when training/running transformers..."
+    },
+    {
+      "slug": "frontend-design",
+      "folder": "frontend-design",
+      "path": "skills/frontend-design/SKILL.md",
+      "personas": "software-architect",
+      "lines": 71,
+      "summary": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, ty..."
+    },
+    {
+      "slug": "gguf-quantization",
+      "folder": "gguf",
+      "path": "skills/gguf/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 427,
+      "summary": "GGUF format and llama.cpp quantization for efficient CPU/GPU inference. Use when deploying models on consumer hardware, Apple Silicon, or..."
+    },
+    {
+      "slug": "gptq",
+      "folder": "gptq",
+      "path": "skills/gptq/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 450,
+      "summary": "Post-training 4-bit quantization for LLMs with minimal accuracy loss. Use for deploying large models (70B, 405B) on consumer GPUs, when y..."
+    },
+    {
+      "slug": "grpo-rl-training",
+      "folder": "grpo-rl-training",
+      "path": "skills/grpo-rl-training/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 572,
+      "summary": "Expert guidance for GRPO/RL fine-tuning with TRL for reasoning and task-specific model training"
+    },
+    {
+      "slug": "guidance",
+      "folder": "guidance",
+      "path": "skills/guidance/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 572,
+      "summary": "Control LLM output with regex and grammars, guarantee valid JSON/XML/code generation, enforce structured formats, and build multi-step wo..."
+    },
+    {
+      "slug": "harness-creator",
+      "folder": "harness-creator",
+      "path": "skills/harness-creator/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 111,
+      "summary": "Build, audit, and improve harnesses that make AI coding agents reliable: AGENTS.md/CLAUDE.md instruction files, feature/state tracking, v..."
+    },
+    {
+      "slug": "hqq-quantization",
+      "folder": "hqq",
+      "path": "skills/hqq/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 445,
+      "summary": "Half-Quadratic Quantization for LLMs without calibration data. Use when quantizing models to 4/3/2-bit precision without needing calibrat..."
+    },
+    {
+      "slug": "huggingface-tokenizers",
+      "folder": "huggingface-tokenizers",
+      "path": "skills/huggingface-tokenizers/SKILL.md",
+      "personas": "rag-data-engineer",
+      "lines": 516,
+      "summary": "Fast tokenizers optimized for research and production. Rust-based implementation tokenizes 1GB in <20 seconds. Supports BPE, WordPiece, a..."
+    },
+    {
+      "slug": "instructor",
+      "folder": "instructor",
+      "path": "skills/instructor/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 740,
+      "summary": "Extract structured data from LLM responses with Pydantic validation, retry failed extractions automatically, parse complex JSON with type..."
+    },
+    {
+      "slug": "internal-comms",
+      "folder": "internal-comms",
+      "path": "skills/internal-comms/SKILL.md",
+      "personas": "meta",
+      "lines": 32,
+      "summary": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should u..."
+    },
+    {
+      "slug": "hypothesis-generation",
+      "folder": "k-dense-ai-hypothesis-generation",
+      "path": "skills/k-dense-ai-hypothesis-generation/SKILL.md",
+      "personas": "research-scientist",
+      "lines": 299,
+      "summary": "Structured hypothesis formulation from observations. Use when you have experimental observations or data and need to formulate testable h..."
+    },
+    {
+      "slug": "knowledge-distillation",
+      "folder": "knowledge-distillation",
+      "path": "skills/knowledge-distillation/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 458,
+      "summary": "Compress large language models using knowledge distillation from teacher to student models. Use when deploying smaller models with retain..."
+    },
+    {
+      "slug": "lambda-labs-gpu-cloud",
+      "folder": "lambda-labs",
+      "path": "skills/lambda-labs/SKILL.md",
+      "personas": "mlops-engineer",
+      "lines": 545,
+      "summary": "Reserved and on-demand GPU cloud instances for ML training and inference. Use when you need dedicated GPU instances with simple SSH acces..."
+    },
+    {
+      "slug": "langchain",
+      "folder": "langchain",
+      "path": "skills/langchain/SKILL.md",
+      "personas": "rag-data-engineer",
+      "lines": 480,
+      "summary": "Framework for building LLM-powered applications with agents, chains, and RAG. Supports multiple providers (OpenAI, Anthropic, Google), 50..."
+    },
+    {
+      "slug": "langsmith-observability",
+      "folder": "langsmith",
+      "path": "skills/langsmith/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 422,
+      "summary": "LLM observability platform for tracing, evaluation, and monitoring. Use when debugging LLM applications, evaluating model outputs against..."
+    },
+    {
+      "slug": "leann-memory",
+      "folder": "leann-memory",
+      "path": "skills/leann-memory/SKILL.md",
+      "personas": "rag-data-engineer",
+      "lines": 53,
+      "summary": "High-performance local semantic search and memory index (97% storage compression) using leann-core. Use when indexing or searching local ..."
+    },
+    {
+      "slug": "implementing-llms-litgpt",
+      "folder": "litgpt",
+      "path": "skills/litgpt/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 469,
+      "summary": "Implements and trains LLMs using Lightning AI's LitGPT with 20+ pretrained architectures (Llama, Gemma, Phi, Qwen, Mistral). Use when nee..."
+    },
+    {
+      "slug": "llama-cpp",
+      "folder": "llama-cpp",
+      "path": "skills/llama-cpp/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 258,
+      "summary": "Runs LLM inference on CPU, Apple Silicon, and consumer GPUs without NVIDIA hardware. Use for edge deployment, M1/M2/M3 Macs, AMD/Intel GP..."
+    },
+    {
+      "slug": "llama-factory",
+      "folder": "llama-factory",
+      "path": "skills/llama-factory/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 80,
+      "summary": "Expert guidance for fine-tuning LLMs with LLaMA-Factory - WebUI no-code, 100+ models, 2/3/4/5/6/8-bit QLoRA, multimodal support"
+    },
+    {
+      "slug": "llamaguard",
+      "folder": "llamaguard",
+      "path": "skills/llamaguard/SKILL.md",
+      "personas": "security-engineer",
+      "lines": 334,
+      "summary": "Meta's 7-8B specialized moderation model for LLM input/output filtering. 6 safety categories - violence/hate, sexual content, weapons, su..."
+    },
+    {
+      "slug": "llamaindex",
+      "folder": "llamaindex",
+      "path": "skills/llamaindex/SKILL.md",
+      "personas": "rag-data-engineer",
+      "lines": 569,
+      "summary": "Data framework for building LLM applications with RAG. Specializes in document ingestion (300+ connectors), indexing, and querying. Featu..."
+    },
+    {
+      "slug": "llava",
+      "folder": "llava",
+      "path": "skills/llava/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 304,
+      "summary": "Large Language and Vision Assistant. Enables visual instruction tuning and image-based conversations. Combines CLIP vision encoder with V..."
+    },
+    {
+      "slug": "evaluating-llms-harness",
+      "folder": "lm-evaluation-harness",
+      "path": "skills/lm-evaluation-harness/SKILL.md",
+      "personas": "mlops-engineer",
+      "lines": 490,
+      "summary": "Evaluates LLMs across 60+ academic benchmarks (MMLU, HumanEval, GSM8K, TruthfulQA, HellaSwag). Use when benchmarking model quality, compa..."
+    },
+    {
+      "slug": "long-context",
+      "folder": "long-context",
+      "path": "skills/long-context/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 536,
+      "summary": "Extend context windows of transformer models using RoPE, YaRN, ALiBi, and position interpolation techniques. Use when processing long doc..."
+    },
+    {
+      "slug": "mamba-architecture",
+      "folder": "mamba",
+      "path": "skills/mamba/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 260,
+      "summary": "State-space model with O(n) complexity vs Transformers' O(n²). 5× faster inference, million-token sequences, no KV cache. Selective SSM w..."
+    },
+    {
+      "slug": "mcp-builder",
+      "folder": "mcp-builder",
+      "path": "skills/mcp-builder/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 252,
+      "summary": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-des..."
+    },
+    {
+      "slug": "training-llms-megatron",
+      "folder": "megatron-core",
+      "path": "skills/megatron-core/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 366,
+      "summary": "Trains large language models (2B-462B parameters) using NVIDIA Megatron-Core with advanced parallelism strategies. Use when training mode..."
+    },
+    {
+      "slug": "miles-rl-training",
+      "folder": "miles",
+      "path": "skills/miles/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 315,
+      "summary": "Provides guidance for enterprise-grade RL training using miles, a production-ready fork of slime. Use when training large MoE models with..."
+    },
+    {
+      "slug": "ml-paper-writing",
+      "folder": "ml-paper-writing",
+      "path": "skills/ml-paper-writing/SKILL.md",
+      "personas": "research-scientist",
+      "lines": 982,
+      "summary": "Write publication-ready ML/AI papers for NeurIPS, ICML, ICLR, ACL, AAAI, COLM. Use when drafting papers from research repos, structuring ..."
+    },
+    {
+      "slug": "ml-training-recipes",
+      "folder": "ml-training-recipes",
+      "path": "skills/ml-training-recipes/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 319,
+      "summary": "Battle-tested PyTorch training recipes for all domains — LLMs, vision, diffusion, medical imaging, protein/drug discovery, spatial omics,..."
+    },
+    {
+      "slug": "mlflow",
+      "folder": "mlflow",
+      "path": "skills/mlflow/SKILL.md",
+      "personas": "mlops-engineer",
+      "lines": 704,
+      "summary": "Track ML experiments, manage model registry with versioning, deploy models to production, and reproduce experiments with MLflow - framewo..."
+    },
+    {
+      "slug": "modal-serverless-gpu",
+      "folder": "modal",
+      "path": "skills/modal/SKILL.md",
+      "personas": "mlops-engineer",
+      "lines": 341,
+      "summary": "Serverless GPU cloud platform for running ML workloads. Use when you need on-demand GPU access without infrastructure management, deployi..."
+    },
+    {
+      "slug": "model-merging",
+      "folder": "model-merging",
+      "path": "skills/model-merging/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 497,
+      "summary": "Merge multiple fine-tuned models using mergekit to combine capabilities without retraining. Use when creating specialized models by blend..."
+    },
+    {
+      "slug": "model-pruning",
+      "folder": "model-pruning",
+      "path": "skills/model-pruning/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 495,
+      "summary": "Reduce LLM size and accelerate inference using pruning techniques like Wanda and SparseGPT. Use when compressing models without retrainin..."
+    },
+    {
+      "slug": "moe-training",
+      "folder": "moe-training",
+      "path": "skills/moe-training/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 526,
+      "summary": "Train Mixture of Experts (MoE) models using DeepSpeed or HuggingFace. Use when training large-scale models with limited compute (5× cost ..."
+    },
+    {
+      "slug": "nanogpt",
+      "folder": "nanogpt",
+      "path": "skills/nanogpt/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 290,
+      "summary": "Educational GPT implementation in ~300 lines. Reproduces GPT-2 (124M) on OpenWebText. Clean, hackable code for learning transformers. By ..."
+    },
+    {
+      "slug": "nemo-curator",
+      "folder": "nemo-curator",
+      "path": "skills/nemo-curator/SKILL.md",
+      "personas": "mlops-engineer",
+      "lines": 383,
+      "summary": "GPU-accelerated data curation for LLM training. Supports text/image/video/audio. Features fuzzy deduplication (16× faster), quality filte..."
+    },
+    {
+      "slug": "nemo-evaluator-sdk",
+      "folder": "nemo-evaluator",
+      "path": "skills/nemo-evaluator/SKILL.md",
+      "personas": "mlops-engineer",
+      "lines": 494,
+      "summary": "Evaluates LLMs across 100+ benchmarks from 18+ harnesses (MMLU, HumanEval, GSM8K, safety, VLM) with multi-backend execution. Use when nee..."
+    },
+    {
+      "slug": "nemo-guardrails",
+      "folder": "nemo-guardrails",
+      "path": "skills/nemo-guardrails/SKILL.md",
+      "personas": "security-engineer",
+      "lines": 295,
+      "summary": "NVIDIA's runtime safety framework for LLM applications. Features jailbreak detection, input/output validation, fact-checking, hallucinati..."
+    },
+    {
+      "slug": "nnsight-remote-interpretability",
+      "folder": "nnsight",
+      "path": "skills/nnsight/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 436,
+      "summary": "Provides guidance for interpreting and manipulating neural network internals using nnsight with optional NDIF remote execution. Use when ..."
+    },
+    {
+      "slug": "open-code-review",
+      "folder": "open-code-review",
+      "path": "skills/open-code-review/SKILL.md",
+      "personas": "meta",
+      "lines": 256,
+      "summary": "Performs AI-powered code review on Git changes using the `ocr` CLI from alibaba/open-code-review. Use when the user asks to review code, ..."
+    },
+    {
+      "slug": "open-code-review-delegate",
+      "folder": "open-code-review-delegate",
+      "path": "skills/open-code-review-delegate/SKILL.md",
+      "personas": "meta",
+      "lines": 189,
+      "summary": "Delegation mode for open-code-review (OCR). Instead of OCR calling an LLM endpoint, this skill instructs the host agent to perform the co..."
+    },
+    {
+      "slug": "fine-tuning-serving-openpi",
+      "folder": "openpi",
+      "path": "skills/openpi/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 480,
+      "summary": "Fine-tune and serve Physical Intelligence OpenPI models (pi0, pi0-fast, pi0.5) using JAX or PyTorch backends for robot policy inference a..."
+    },
+    {
+      "slug": "openrlhf-training",
+      "folder": "openrlhf",
+      "path": "skills/openrlhf/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 249,
+      "summary": "High-performance RLHF framework with Ray+vLLM acceleration. Use for PPO, GRPO, RLOO, DPO training of large models (7B-70B+). Built on Ray..."
+    },
+    {
+      "slug": "fine-tuning-openvla-oft",
+      "folder": "openvla-oft",
+      "path": "skills/openvla-oft/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 441,
+      "summary": "Fine-tunes and evaluates OpenVLA-OFT and OpenVLA-OFT+ policies for robot action generation with continuous action heads, LoRA adaptation,..."
+    },
+    {
+      "slug": "outlines",
+      "folder": "outlines",
+      "path": "skills/outlines/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 652,
+      "summary": "Guarantee valid JSON/XML/code structure during generation, use Pydantic models for type-safe outputs, support local models (Transformers,..."
+    },
+    {
+      "slug": "pdf",
+      "folder": "pdf",
+      "path": "skills/pdf/SKILL.md",
+      "personas": "meta",
+      "lines": 314,
+      "summary": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combinin..."
+    },
+    {
+      "slug": "peft-fine-tuning",
+      "folder": "peft",
+      "path": "skills/peft/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 431,
+      "summary": "Parameter-efficient fine-tuning for LLMs using LoRA, QLoRA, and 25+ methods. Use when fine-tuning large models (7B-70B) with limited GPU ..."
+    },
+    {
+      "slug": "phoenix-observability",
+      "folder": "phoenix",
+      "path": "skills/phoenix/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 475,
+      "summary": "Open-source AI observability platform for LLM tracing, evaluation, and monitoring. Use when debugging LLM applications with detailed trac..."
+    },
+    {
+      "slug": "pinecone",
+      "folder": "pinecone",
+      "path": "skills/pinecone/SKILL.md",
+      "personas": "rag-data-engineer",
+      "lines": 358,
+      "summary": "Managed vector database for production AI applications. Fully managed, auto-scaling, with hybrid search (dense + sparse), metadata filter..."
+    },
+    {
+      "slug": "pptx",
+      "folder": "pptx",
+      "path": "skills/pptx/SKILL.md",
+      "personas": "meta",
+      "lines": 238,
+      "summary": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pi..."
+    },
+    {
+      "slug": "presenting-conference-talks",
+      "folder": "presenting-conference-talks",
+      "path": "skills/presenting-conference-talks/SKILL.md",
+      "personas": "research-scientist",
+      "lines": 298,
+      "summary": "Generates conference presentation slides (Beamer LaTeX PDF and editable PPTX) from a compiled paper with speaker notes and talk script. U..."
+    },
+    {
+      "slug": "prompt-guard",
+      "folder": "prompt-guard",
+      "path": "skills/prompt-guard/SKILL.md",
+      "personas": "security-engineer",
+      "lines": 312,
+      "summary": "Meta's 86M prompt injection and jailbreak detector. Filters malicious prompts and third-party data for LLM apps. 99%+ TPR, <1% FPR. Fast ..."
+    },
+    {
+      "slug": "pytorch-fsdp2",
+      "folder": "pytorch-fsdp2",
+      "path": "skills/pytorch-fsdp2/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 231,
+      "summary": "Adds PyTorch FSDP2 (fully_shard) to training scripts with correct init, sharding, mixed precision/offload config, and distributed checkpo..."
+    },
+    {
+      "slug": "pytorch-lightning",
+      "folder": "pytorch-lightning",
+      "path": "skills/pytorch-lightning/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 346,
+      "summary": "High-level PyTorch framework with Trainer class, automatic distributed training (DDP/FSDP/DeepSpeed), callbacks system, and minimal boile..."
+    },
+    {
+      "slug": "pyvene-interventions",
+      "folder": "pyvene",
+      "path": "skills/pyvene/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 473,
+      "summary": "Provides guidance for performing causal interventions on PyTorch models using pyvene's declarative intervention framework. Use when condu..."
+    },
+    {
+      "slug": "qdrant-vector-search",
+      "folder": "qdrant",
+      "path": "skills/qdrant/SKILL.md",
+      "personas": "rag-data-engineer",
+      "lines": 493,
+      "summary": "High-performance vector similarity search engine for RAG and semantic search. Use when building production RAG systems requiring fast nea..."
+    },
+    {
+      "slug": "ray-data",
+      "folder": "ray-data",
+      "path": "skills/ray-data/SKILL.md",
+      "personas": "mlops-engineer",
+      "lines": 326,
+      "summary": "Scalable data processing for ML workloads. Streaming execution across CPU/GPU, supports Parquet/CSV/JSON/images. Integrates with Ray Trai..."
+    },
+    {
+      "slug": "ray-train",
+      "folder": "ray-train",
+      "path": "skills/ray-train/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 404,
+      "summary": "Distributed training orchestration across clusters. Scales PyTorch/TensorFlow/HuggingFace from laptop to 1000s of nodes. Built-in hyperpa..."
+    },
+    {
+      "slug": "rwkv-architecture",
+      "folder": "rwkv",
+      "path": "skills/rwkv/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 260,
+      "summary": "RNN+Transformer hybrid with O(n) inference. Linear time, infinite context, no KV cache. Train like GPT (parallel), infer like RNN (sequen..."
+    },
+    {
+      "slug": "sparse-autoencoder-training",
+      "folder": "saelens",
+      "path": "skills/saelens/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 386,
+      "summary": "Provides guidance for training and analyzing Sparse Autoencoders (SAEs) using SAELens to decompose neural network activations into interp..."
+    },
+    {
+      "slug": "segment-anything-model",
+      "folder": "segment-anything",
+      "path": "skills/segment-anything/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 500,
+      "summary": "Foundation model for image segmentation with zero-shot transfer. Use when you need to segment any object in images using points, boxes, o..."
+    },
+    {
+      "slug": "sentence-transformers",
+      "folder": "sentence-transformers",
+      "path": "skills/sentence-transformers/SKILL.md",
+      "personas": "rag-data-engineer",
+      "lines": 255,
+      "summary": "Framework for state-of-the-art sentence, text, and image embeddings. Provides 5000+ pre-trained models for semantic similarity, clusterin..."
+    },
+    {
+      "slug": "sentencepiece",
+      "folder": "sentencepiece",
+      "path": "skills/sentencepiece/SKILL.md",
+      "personas": "rag-data-engineer",
+      "lines": 235,
+      "summary": "Language-independent tokenizer treating text as raw Unicode. Supports BPE and Unigram algorithms. Fast (50k sentences/sec), lightweight (..."
+    },
+    {
+      "slug": "sglang",
+      "folder": "sglang",
+      "path": "skills/sglang/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 442,
+      "summary": "Fast structured generation and serving for LLMs with RadixAttention prefix caching. Use for JSON/regex outputs, constrained decoding, age..."
+    },
+    {
+      "slug": "business-analyst",
+      "folder": "sickn33-business-analyst",
+      "path": "skills/sickn33-business-analyst/SKILL.md",
+      "personas": "rag-data-engineer",
+      "lines": 182,
+      "summary": "Master modern business analysis with AI-powered analytics, real-time dashboards, and data-driven insights. Build comprehensive KPI framew..."
+    },
+    {
+      "slug": "cloud-devops",
+      "folder": "sickn33-cloud-devops",
+      "path": "skills/sickn33-cloud-devops/SKILL.md",
+      "personas": "devops-engineer",
+      "lines": 54,
+      "summary": "Cloud infrastructure and DevOps workflow covering AWS, Azure, GCP, Kubernetes, Terraform, CI/CD, monitoring, and cloud-native development."
+    },
+    {
+      "slug": "devops-troubleshooter",
+      "folder": "sickn33-devops-troubleshooter",
+      "path": "skills/sickn33-devops-troubleshooter/SKILL.md",
+      "personas": "devops-engineer",
+      "lines": 162,
+      "summary": "Expert DevOps troubleshooter specializing in rapid incident response, advanced debugging, and modern observability."
+    },
+    {
+      "slug": "software-architecture",
+      "folder": "sickn33-software-architecture",
+      "path": "skills/sickn33-software-architecture/SKILL.md",
+      "personas": "software-architect",
+      "lines": 75,
+      "summary": "Guide for quality focused software architecture. This skill should be used when users want to write code, design architecture, analyze co..."
+    },
+    {
+      "slug": "tool-design",
+      "folder": "sickn33-tool-design",
+      "path": "skills/sickn33-tool-design/SKILL.md",
+      "personas": "software-architect",
+      "lines": 313,
+      "summary": "Build tools that agents can use effectively, including architectural reduction patterns"
+    },
+    {
+      "slug": "simpo-training",
+      "folder": "simpo",
+      "path": "skills/simpo/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 219,
+      "summary": "Simple Preference Optimization for LLM alignment. Reference-free alternative to DPO with better performance (+6.4 points on AlpacaEval 2...."
+    },
+    {
+      "slug": "skill-creator",
+      "folder": "skill-creator",
+      "path": "skills/skill-creator/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 485,
+      "summary": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch,..."
+    },
+    {
+      "slug": "skypilot-multi-cloud-orchestration",
+      "folder": "skypilot",
+      "path": "skills/skypilot/SKILL.md",
+      "personas": "mlops-engineer",
+      "lines": 509,
+      "summary": "Multi-cloud orchestration for ML workloads with automatic cost optimization. Use when you need to run training or batch jobs across multi..."
+    },
+    {
+      "slug": "slack-gif-creator",
+      "folder": "slack-gif-creator",
+      "path": "skills/slack-gif-creator/SKILL.md",
+      "personas": "software-architect",
+      "lines": 254,
+      "summary": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. U..."
+    },
+    {
+      "slug": "slime-rl-training",
+      "folder": "slime",
+      "path": "skills/slime/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 464,
+      "summary": "Provides guidance for LLM post-training with RL using slime, a Megatron+SGLang framework. Use when training GLM models, implementing cust..."
+    },
+    {
+      "slug": "c4-architecture",
+      "folder": "softaworks-c4-architecture",
+      "path": "skills/softaworks-c4-architecture/SKILL.md",
+      "personas": "software-architect",
+      "lines": 295,
+      "summary": "Generate architecture documentation using C4 model Mermaid diagrams. Use when asked to create architecture diagrams, document system arch..."
+    },
+    {
+      "slug": "mermaid-diagrams",
+      "folder": "softaworks-mermaid-diagrams",
+      "path": "skills/softaworks-mermaid-diagrams/SKILL.md",
+      "personas": "software-architect",
+      "lines": 216,
+      "summary": "Comprehensive guide for creating software diagrams using Mermaid syntax. Use when users need to create, visualize, or document software t..."
+    },
+    {
+      "slug": "speculative-decoding",
+      "folder": "speculative-decoding",
+      "path": "skills/speculative-decoding/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 467,
+      "summary": "Accelerate LLM inference using speculative decoding, Medusa multiple heads, and lookahead decoding techniques. Use when optimizing infere..."
+    },
+    {
+      "slug": "stable-diffusion-image-generation",
+      "folder": "stable-diffusion",
+      "path": "skills/stable-diffusion/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 519,
+      "summary": "State-of-the-art text-to-image generation with Stable Diffusion models via HuggingFace Diffusers. Use when generating images from text pr..."
+    },
+    {
+      "slug": "subagent-driven-development",
+      "folder": "subagent-driven-development",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "personas": "meta",
+      "lines": 250,
+      "summary": "Use when executing implementation plans with independent tasks in the current session"
+    },
+    {
+      "slug": "experiment-tracking-swanlab",
+      "folder": "swanlab",
+      "path": "skills/swanlab/SKILL.md",
+      "personas": "mlops-engineer",
+      "lines": 406,
+      "summary": "Provides guidance for experiment tracking with SwanLab. Use when you need open-source run tracking, local or self-hosted dashboards, and ..."
+    },
+    {
+      "slug": "systems-paper-writing",
+      "folder": "systems-paper-writing",
+      "path": "skills/systems-paper-writing/SKILL.md",
+      "personas": "research-scientist",
+      "lines": 270,
+      "summary": "Comprehensive guide for writing systems papers targeting OSDI, SOSP, ASPLOS, NSDI, and EuroSys. Provides paragraph-level structural bluep..."
+    },
+    {
+      "slug": "teardown",
+      "folder": "teardown",
+      "path": "skills/teardown/SKILL.md",
+      "personas": "software-architect",
+      "lines": 144,
+      "summary": "Build an interactive 3D simulator of a real machine or mechanism (an engine, a landing gear, a walking linkage, a pump, a gearbox) as one..."
+    },
+    {
+      "slug": "tensorboard",
+      "folder": "tensorboard",
+      "path": "skills/tensorboard/SKILL.md",
+      "personas": "mlops-engineer",
+      "lines": 629,
+      "summary": "Visualize training metrics, debug models with histograms, compare experiments, visualize model graphs, and profile performance with Tenso..."
+    },
+    {
+      "slug": "tensorrt-llm",
+      "folder": "tensorrt-llm",
+      "path": "skills/tensorrt-llm/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 187,
+      "summary": "Optimizes LLM inference with NVIDIA TensorRT for maximum throughput and lowest latency. Use for production deployment on NVIDIA GPUs (A10..."
+    },
+    {
+      "slug": "theme-factory",
+      "folder": "theme-factory",
+      "path": "skills/theme-factory/SKILL.md",
+      "personas": "software-architect",
+      "lines": 59,
+      "summary": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-se..."
+    },
+    {
+      "slug": "torchforge-rl-training",
+      "folder": "torchforge",
+      "path": "skills/torchforge/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 433,
+      "summary": "Provides guidance for PyTorch-native agentic RL using torchforge, Meta's library separating infra from algorithms. Use when you want clea..."
+    },
+    {
+      "slug": "distributed-llm-pretraining-torchtitan",
+      "folder": "torchtitan",
+      "path": "skills/torchtitan/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 358,
+      "summary": "Provides PyTorch-native distributed LLM pretraining using torchtitan with 4D parallelism (FSDP2, TP, PP, CP). Use when pretraining Llama ..."
+    },
+    {
+      "slug": "transformer-lens-interpretability",
+      "folder": "transformer-lens",
+      "path": "skills/transformer-lens/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 346,
+      "summary": "Provides guidance for mechanistic interpretability research using TransformerLens to inspect and manipulate transformer internals via Hoo..."
+    },
+    {
+      "slug": "fine-tuning-with-trl",
+      "folder": "trl-fine-tuning",
+      "path": "skills/trl-fine-tuning/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 455,
+      "summary": "Fine-tune LLMs using reinforcement learning with TRL - SFT for instruction tuning, DPO for preference alignment, PPO/GRPO for reward opti..."
+    },
+    {
+      "slug": "unsloth",
+      "folder": "unsloth",
+      "path": "skills/unsloth/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 80,
+      "summary": "Expert guidance for fast fine-tuning with Unsloth - 2-5x faster training, 50-80% less memory, LoRA/QLoRA optimization"
+    },
+    {
+      "slug": "verl-rl-training",
+      "folder": "verl",
+      "path": "skills/verl/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 391,
+      "summary": "Provides guidance for training LLMs with reinforcement learning using verl (Volcano Engine RL). Use when implementing RLHF, GRPO, PPO, or..."
+    },
+    {
+      "slug": "serving-llms-vllm",
+      "folder": "vllm",
+      "path": "skills/vllm/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 364,
+      "summary": "Serves LLMs with high throughput using vLLM's PagedAttention and continuous batching. Use when deploying production LLM APIs, optimizing ..."
+    },
+    {
+      "slug": "web-artifacts-builder",
+      "folder": "web-artifacts-builder",
+      "path": "skills/web-artifacts-builder/SKILL.md",
+      "personas": "software-architect",
+      "lines": 74,
+      "summary": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind C..."
+    },
+    {
+      "slug": "webapp-testing",
+      "folder": "webapp-testing",
+      "path": "skills/webapp-testing/SKILL.md",
+      "personas": "software-architect",
+      "lines": 96,
+      "summary": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI..."
+    },
+    {
+      "slug": "weights-and-biases",
+      "folder": "weights-and-biases",
+      "path": "skills/weights-and-biases/SKILL.md",
+      "personas": "mlops-engineer",
+      "lines": 590,
+      "summary": "Track ML experiments with automatic logging, visualize training in real-time, optimize hyperparameters with sweeps, and manage model regi..."
+    },
+    {
+      "slug": "whisper",
+      "folder": "whisper",
+      "path": "skills/whisper/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 317,
+      "summary": "OpenAI's general-purpose speech recognition model. Supports 99 languages, transcription, translation to English, and language identificat..."
+    },
+    {
+      "slug": "writing-plans",
+      "folder": "writing-plans",
+      "path": "skills/writing-plans/SKILL.md",
+      "personas": "software-architect",
+      "lines": 204,
+      "summary": "Use when you have a spec or requirements for a multi-step task, before touching code"
+    },
+    {
+      "slug": "xlsx",
+      "folder": "xlsx",
+      "path": "skills/xlsx/SKILL.md",
+      "personas": "meta",
+      "lines": 99,
+      "summary": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit,..."
+    }
+  ]
+}
