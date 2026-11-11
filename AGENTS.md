@@ -16,9 +16,14 @@ Before executing any task:
 1. **Read-Only Recon First**: You may perform fast, read-only inspection (`mcp__semble__search`, `csharp-ls` for C#, `Read`, directory listing) *before* asking questions so your questions are grounded in the actual codebase rather than assumptions.
 2. **Restate & Clarify**:
    - Restate the task in 1–2 sentences to confirm understanding.
-   - Ask clarifying questions about genuine ambiguities (scope, constraints, inputs, target deliverable tier, success criteria) in a **single numbered list**.
-   - Provide a **suggested default** for every question so the user can reply `"go with defaults"` or `"proceed"`.
-3. **Wait for Confirmation**: Do not mutate files or run heavy jobs until confirmed. If the user says `"proceed"` or `"use defaults"`, execute immediately and list active assumptions at the top of your output.
+   - Ask clarifying questions about genuine ambiguities (scope, constraints, inputs, target deliverable tier, success criteria) in a **single batched call** — never drip-feed across turns.
+   - **Every question must be asked as a select**, using the `question` tool (one entry per question, all questions in one `questions` array):
+     - Each question gets a short `header` (≤30 chars) and **2–5 concrete `options`** (label 1–5 words + one-line `description`).
+     - List the **suggested default first, labeled `(Recommended)`** — this is the suggested answer the user can select with one click.
+     - Keep `custom` enabled (default) so the user can always type their own answer instead of picking an option.
+     - Add `multiple: true` only when multi-select is genuinely intended.
+   - Reserve plain-prose numbered lists for environments where the `question` tool is unavailable.
+3. **Wait for Confirmation**: Do not mutate files or run heavy jobs until confirmed. If the user selects the `(Recommended)` options or says `"go with defaults"` / `"proceed"`, execute immediately and list active assumptions at the top of your output.
 4. **Skip Gate When**: The request is trivial/unambiguous, or the user explicitly says `"no questions"`, `"proceed"`, or `"just do it"`.
 
 ---
@@ -29,6 +34,7 @@ Route every non-trivial task through a domain persona or utility subagent.
 - **Source of Truth**: `~/.agents/personas/`
 - **Full Skill → Persona Map & Index**: [`personas/README.md`](personas/README.md) and [`personas/skill-index.json`](personas/skill-index.json)
 - Ask me which skills or personas apply to this task. Recommend the most relevant ones, but do not load anything until I confirm. Also suggest other useful skill to activate along the selected persona.
+- Ask this as a **select** via the `question` tool: one question, options = recommended persona/skill set first (labeled `(Recommended)`), then 2–4 plausible alternatives, `custom` enabled for free-text; `multiple: true` when several skills should be activated together.
 - Confirm the chosen domain and persona back to me before proceeding.
 - Once confirmed, load only the selected files and state which are active.
 
@@ -82,7 +88,7 @@ Route every non-trivial task through a domain persona or utility subagent.
 
 ## 3. Deliverable Tiers & Output Location
 
-Always ask user to select tier to use:
+Always ask user to select tier to use — as a `question`-tool select: Tier 1 `(Recommended)` first, Tier 2 second, `custom` enabled.
 
 ### Tier 1: Lightweight / In-Place Tasks (Default for ≤2 file edits, bug fixes, config updates, or direct Q&A)
 - Apply changes directly to the requested workspace files (after confirmation) or answer directly in chat.
