@@ -32,7 +32,7 @@ Route every non-trivial task through a domain persona or utility subagent.
 - Confirm the chosen domain and persona back to me before proceeding.
 - Once confirmed, load only the selected files and state which are active.
 
-### 2.1 Domain Personas (9)
+### 2.1 Domain Personas (15)
 
 | Task Type | Persona |
 |---|---|
@@ -40,11 +40,17 @@ Route every non-trivial task through a domain persona or utility subagent.
 | Serve (vLLM/SGLang/TRT-LLM), quantize (GGUF/AWQ/GPTQ), speculative decoding, long-context perf | `llm-inference` |
 | Experiment tracking (W&B/MLflow), cloud GPU (Modal/SkyPilot), benchmark evals, data curation | `mlops-engineer` |
 | RAG pipelines, vector DBs, embeddings, tokenizers, semantic memory (`leann-memory`), analytics | `rag-data-engineer` |
-| Agents, prompts, structured output, Claude API, MCP servers (`mcp-builder`), tracing, harnesses (`harness-creator`) | `agent-engineer` |
-| System design, C4/Mermaid diagrams, backend/API, CLI/tool design, plans, frontend & Playwright testing | `software-architect` |
+| Agents, prompts, structured output, Claude/Gemini APIs, MCP servers (`mcp-builder`), tracing, harnesses (`harness-creator`), multi-agent orchestration | `agent-engineer` |
+| System design, C4/Mermaid diagrams, backend/API, CLI/tool design, plans, code review & refactoring, API/technical docs, Playwright testing | `software-architect` |
 | Research ideation, hypotheses, autonomous loops, ML/systems papers, plots, posters, talks, ARA artifacts | `research-scientist` |
-| Vulnerability scanning (Semgrep SAST, Nuclei DAST, Trivy SCA), LLM guardrails & safety filters | `security-engineer` |
-| Cloud infra, Kubernetes, Terraform, CI/CD pipelines, incident response, runbooks, DORA reporting | `devops-engineer` |
+| Vulnerability scanning (Semgrep SAST, Nuclei DAST, Trivy SCA), LLM guardrails & safety filters, audit & penetration testing | `security-engineer` |
+| Cloud infra, Kubernetes, Terraform, CI/CD pipelines, incident response, runbooks, DORA reporting, build & release | `devops-engineer` |
+| Application code in any language/framework (Python/Go/Rust/C#/Java/Kotlin/Swift/PHP…), DB access, GraphQL, embedded/game/IoT | `software-developer` |
+| Web/mobile/desktop UI (React/Angular/Vue/Next/Flutter), design systems, UX research, accessibility | `frontend-developer` |
+| Data pipelines, ETL/ELT, analytics SQL, data science, database administration | `data-engineer` |
+| Market/product/quant analysis, GTM/SEO, project delivery, legal & fintech advisory | `business-analyst` |
+| PowerShell 5.1/7 automation, Windows/AD/GPO/M365 administration, IT ops routing | `windows-automation` |
+| SLOs, performance & load testing, chaos engineering, incident response, QA & test automation | `reliability-engineer` |
 
 ### 2.2 Utility Subagents (4 — Token-Efficient Delegation)
 

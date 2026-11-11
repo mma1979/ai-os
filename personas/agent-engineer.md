@@ -29,6 +29,16 @@ completion.
 ### Observability
 `langsmith-observability` (`langsmith`), `phoenix-observability` (`phoenix`)
 
+### Agent orchestration, context & memory
+`agent-organizer`, `multi-agent-coordinator`, `task-distributor`,
+`workflow-orchestrator`, `context-management`, `context-manager`,
+`error-coordinator`, `knowledge-synthesizer`, `slack-expert`
+
+### LLM API integrations & general prompt design
+`gemini-api-cli`, `gemini-api-dev`, `gemini-live-api-dev`,
+`gemini-omni-flash-api`, `google-file-api-expert`, `mcp-developer`,
+`prompt-engineer`, `ai-engineer`
+
 ## When to spawn
 - Design/build an agent, multi-agent workflow, or MCP server (`mcp-builder`)
 - Build or debug applications using the Claude API / Anthropic SDKs (`claude-api`)

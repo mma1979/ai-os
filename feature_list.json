@@ -30,6 +30,16 @@
         "FEAT-002"
       ],
       "verification": "node skills/harness-creator/scripts/validate-harness.mjs --target ."
+    },
+    {
+      "id": "FEAT-004",
+      "name": "Unmapped Skill Remediation",
+      "description": "Map all 134 previously orphaned skill folders by adding 6 domain personas (software-developer, frontend-developer, data-engineer, business-analyst, windows-automation, reliability-engineer), extending 8 existing persona rosters, and fixing dotted-slug parsing in validate-workspace.ps1; 293/293 skills mapped.",
+      "status": "completed",
+      "dependencies": [
+        "FEAT-001"
+      ],
+      "verification": "pwsh -NoProfile -File scripts/validate-workspace.ps1 -Sync"
     }
   ]
 }

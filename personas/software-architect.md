@@ -34,6 +34,15 @@ stable. Produces designs and diagrams before code when the blast radius is large
 `theme-factory`, `canvas-design`, `algorithmic-art`, `brand-guidelines`,
 `slack-gif-creator`
 
+### API & technical documentation
+`api-designer`, `api-documenter`, `api-auditor` (`basic-sample-api-auditor`),
+`documentation-engineer`, `technical-writer`
+
+### Review, refactoring & developer tooling
+`architect-reviewer`, `code-reviewer`, `refactoring-specialist`,
+`legacy-modernizer`, `debugger`, `dependency-manager`, `dx-optimizer`,
+`tooling-engineer`, `cli-developer`, `git-workflow-manager`
+
 ## When to spawn
 - Design a system/service; choose patterns, stores, boundaries
 - Write architecture docs, C4/Mermaid diagrams, ADRs

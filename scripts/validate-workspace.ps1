@@ -22,7 +22,7 @@ foreach ($pf in $personaFiles) {
         # In our format: `slug` or `slug` (`folder`)
         $cleanBlock = [regex]::Replace($block, '\(`[^`]+`\)', '')
         $slugs = @()
-        foreach ($m in [regex]::Matches($cleanBlock, '`([a-z0-9-]+)`')) {
+        foreach ($m in [regex]::Matches($cleanBlock, '`([a-z0-9.-]+)`')) {
             $s = $m.Groups[1].Value
             $slugs += $s
             if (-not $skillToPersonas.ContainsKey($s)) { $skillToPersonas[$s] = @() }
@@ -37,7 +37,7 @@ $readmeRaw = Get-Content (Join-Path $personasDir 'README.md') -Raw
 $metaSkills = @()
 if ($readmeRaw -match '(?s)## Meta skills.*?\r?\n(.*?)## Skill sources') {
     $metaBlock = [regex]::Replace($Matches[1], '\(`[^`]+`\)', '')
-    foreach ($m in [regex]::Matches($metaBlock, '`([a-z0-9-]+)`')) {
+        foreach ($m in [regex]::Matches($metaBlock, '`([a-z0-9.-]+)`')) {
         $ms = $m.Groups[1].Value
         $metaSkills += $ms
         if (-not $skillToPersonas.ContainsKey($ms)) { $skillToPersonas[$ms] = @() }
@@ -46,7 +46,7 @@ if ($readmeRaw -match '(?s)## Meta skills.*?\r?\n(.*?)## Skill sources') {
 }
 Write-Host ("  Meta skills: " + $metaSkills.Count)
 
-Write-Host '=== 2. SCANNING ALL 158 SKILL FOLDERS ==='
+Write-Host '=== 2. SCANNING ALL SKILL FOLDERS ==='
 $skillFolders = Get-ChildItem $skillsDir -Directory | Sort-Object Name
 $indexEntries = @()
 $errors = @()
@@ -146,7 +146,7 @@ $refPointer = @(
     '# Tool Discovery Reference',
     '',
     '- Full Persona & Subagent Catalog: [references/agents-catalog.md](references/agents-catalog.md)',
-    '- Full 158-Skill Catalog: [references/skills-catalog.md](references/skills-catalog.md)',
+    '- Full Skill Catalog: [references/skills-catalog.md](references/skills-catalog.md)',
     '- Machine-Readable Index: [../../personas/skill-index.json](../../personas/skill-index.json)'
 ) -join "`r`n"
 $refPointer | Set-Content -Path (Join-Path $skillsDir '0xdarkmatter-tool-discovery\reference.md') -Encoding UTF8
@@ -154,10 +154,11 @@ $refPointer | Set-Content -Path (Join-Path $skillsDir '0xdarkmatter-tool-discove
 if ($Sync) {
     Write-Host '=== 3. SYNCING MIRRORS ==='
     if (Test-Path $opencodeAgents) {
-        Get-ChildItem $personasDir -Filter '*.md' | Where-Object { $_.Name -ne 'README.md' } | ForEach-Object {
+        $personaFiles = Get-ChildItem $personasDir -Filter '*.md' | Where-Object { $_.Name -ne 'README.md' }
+        $personaFiles | ForEach-Object {
             Copy-Item $_.FullName (Join-Path $opencodeAgents $_.Name) -Force
         }
-        Write-Host ("  Synced 13 persona/subagent files to " + $opencodeAgents)
+        Write-Host ("  Synced " + $personaFiles.Count + " persona/subagent files to " + $opencodeAgents)
     }
     if (Test-Path (Split-Path $skillsMirrorAgentsMd -Parent)) {
         Copy-Item (Join-Path $root 'AGENTS.md') $skillsMirrorAgentsMd -Force

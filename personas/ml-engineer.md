@@ -45,6 +45,9 @@ and reporting numbers over prose.
 `pyvene-interventions` (`pyvene`),
 `sparse-autoencoder-training` (`saelens`)
 
+### Production ML & NLP engineering
+`ml-engineer`, `machine-learning-engineer`, `nlp-engineer`
+
 ## When to spawn
 - Fine-tune / train / distill a model, pick hyperparameters, fix loss curves
 - Scale a job across GPUs/nodes, pick parallelism strategy

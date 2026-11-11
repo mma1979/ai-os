@@ -31,6 +31,9 @@ reproducibility and observability as requirements, not nice-to-haves.
 ### Data curation
 `nemo-curator`
 
+### ML platform
+`mlops-engineer`
+
 ## When to spawn
 - Stand up run tracking / model registry / reproducible pipeline
 - Provision GPU capacity, cut training/inference cloud cost

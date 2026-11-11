@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-09T11:14:30Z",
-  "total_skills": 158,
+  "generated_at": "2026-11-11T14:52:22Z",
+  "total_skills": 293,
   "skills": [
     {
       "slug": "autoresearch",
@@ -15,8 +15,8 @@
       "folder": "0xdarkmatter-tool-discovery",
       "path": "skills/0xdarkmatter-tool-discovery/SKILL.md",
       "personas": "meta",
-      "lines": 72,
-      "summary": "Recommend the right workspace personas, utility subagents, and skills for any task across all 13 personas and 158 installed skills. Trigg..."
+      "lines": 78,
+      "summary": "Recommend the right workspace personas, utility subagents, and skills for any task across all 19 personas and 293 installed skills. Trigg..."
     },
     {
       "slug": "devops-runbooks",
@@ -59,6 +59,30 @@
       "summary": "Simplest distributed training API. 4 lines to add distributed support to any PyTorch script. Unified API for DeepSpeed/FSDP/Megatron/DDP...."
     },
     {
+      "slug": "accessibility-tester",
+      "folder": "accessibility-tester",
+      "path": "skills/accessibility-tester/SKILL.md",
+      "personas": "frontend-developer",
+      "lines": 259,
+      "summary": "Expert accessibility tester specializing in WCAG compliance, inclusive design, and universal access. Masters screen reader compatibility,..."
+    },
+    {
+      "slug": "ad-security-reviewer",
+      "folder": "ad-security-reviewer",
+      "path": "skills/ad-security-reviewer/SKILL.md",
+      "personas": "security-engineer",
+      "lines": 57,
+      "summary": "Active Directory security specialist analyzing identity configuration, privileged group design, delegation, authentication policies, lega..."
+    },
+    {
+      "slug": "agent-organizer",
+      "folder": "agent-organizer",
+      "path": "skills/agent-organizer/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 271,
+      "summary": "Expert agent organizer specializing in multi-agent orchestration, team assembly, and workflow optimization. Masters task decomposition, a..."
+    },
+    {
       "slug": "dast-nuclei",
       "folder": "agentsecops-dast-nuclei",
       "path": "skills/agentsecops-dast-nuclei/SKILL.md",
@@ -81,6 +105,14 @@
       "personas": "security-engineer",
       "lines": 457,
       "summary": "Software Composition Analysis (SCA) and container vulnerability scanning using Aqua Trivy for identifying CVE vulnerabilities in dependen..."
+    },
+    {
+      "slug": "ai-engineer",
+      "folder": "ai-engineer",
+      "path": "skills/ai-engineer/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 269,
+      "summary": "Expert AI engineer specializing in AI system design, model implementation, and production deployment. Masters multiple AI frameworks and ..."
     },
     {
       "slug": "algorithmic-art",
@@ -115,6 +147,30 @@
       "summary": "World-class prompt engineering skill for LLM optimization, prompt patterns, structured outputs, and AI product development. Expertise in ..."
     },
     {
+      "slug": "angular-architect",
+      "folder": "angular-architect",
+      "path": "skills/angular-architect/SKILL.md",
+      "personas": "frontend-developer",
+      "lines": 269,
+      "summary": "Expert Angular architect mastering Angular 15+ with enterprise patterns. Specializes in RxJS, NgRx state management, micro-frontend archi..."
+    },
+    {
+      "slug": "api-designer",
+      "folder": "api-designer",
+      "path": "skills/api-designer/SKILL.md",
+      "personas": "software-architect",
+      "lines": 216,
+      "summary": "API architecture expert designing scalable, developer-friendly interfaces. Creates REST and GraphQL APIs with comprehensive documentation..."
+    },
+    {
+      "slug": "api-documenter",
+      "folder": "api-documenter",
+      "path": "skills/api-documenter/SKILL.md",
+      "personas": "software-architect",
+      "lines": 259,
+      "summary": "Expert API documenter specializing in creating comprehensive, developer-friendly API documentation. Masters OpenAPI/Swagger specification..."
+    },
+    {
       "slug": "ara-compiler",
       "folder": "ara-compiler",
       "path": "skills/ara-compiler/SKILL.md",
@@ -137,6 +193,14 @@
       "personas": "research-scientist",
       "lines": 322,
       "summary": "Performs ARA Seal Level 2 semantic epistemic review on Agent-Native Research Artifacts, scoring six dimensions (evidence relevance, falsi..."
+    },
+    {
+      "slug": "architect-reviewer",
+      "folder": "architect-reviewer",
+      "path": "skills/architect-reviewer/SKILL.md",
+      "personas": "software-architect",
+      "lines": 269,
+      "summary": "Expert architecture reviewer specializing in system design validation, architectural patterns, and technical decision assessment. Masters..."
     },
     {
       "slug": "audiocraft-audio-generation",
@@ -171,6 +235,30 @@
       "summary": "Expert guidance for fine-tuning LLMs with Axolotl - YAML configs, 100+ models, LoRA/QLoRA, DPO/KTO/ORPO/GRPO, multimodal support"
     },
     {
+      "slug": "azure-infra-engineer",
+      "folder": "azure-infra-engineer",
+      "path": "skills/azure-infra-engineer/SKILL.md",
+      "personas": "devops-engineer",
+      "lines": 52,
+      "summary": "Azure cloud infrastructure expert specializing in network design, identity integration, PowerShell automation with Az modules, and infras..."
+    },
+    {
+      "slug": "backend-developer",
+      "folder": "backend-developer",
+      "path": "skills/backend-developer/SKILL.md",
+      "personas": "software-developer",
+      "lines": 204,
+      "summary": "Senior backend engineer specializing in scalable API development and microservices architecture. Builds robust server-side solutions with..."
+    },
+    {
+      "slug": "api-auditor",
+      "folder": "basic-sample-api-auditor",
+      "path": "skills/basic-sample-api-auditor/SKILL.md",
+      "personas": "software-architect",
+      "lines": 14,
+      "summary": "Expertise in auditing and testing API endpoints. Use when the user asks to \"check\", \"test\", or \"audit\" a URL or API."
+    },
+    {
       "slug": "evaluating-code-models",
       "folder": "bigcode-evaluation-harness",
       "path": "skills/bigcode-evaluation-harness/SKILL.md",
@@ -193,6 +281,14 @@
       "personas": "ml-engineer",
       "lines": 564,
       "summary": "Vision-language pre-training framework bridging frozen image encoders and LLMs. Use when you need image captioning, visual question answe..."
+    },
+    {
+      "slug": "blockchain-developer",
+      "folder": "blockchain-developer",
+      "path": "skills/blockchain-developer/SKILL.md",
+      "personas": "software-developer",
+      "lines": 269,
+      "summary": "Expert blockchain developer specializing in smart contract development, DApp architecture, and DeFi protocols. Masters Solidity, Web3 int..."
     },
     {
       "slug": "brainstorming",
@@ -225,6 +321,22 @@
       "personas": "devops-engineer",
       "lines": 271,
       "summary": "Coordinates infrastructure, CI/CD, and deployment tasks. Use when provisioning infrastructure, setting up pipelines, configuring monitori..."
+    },
+    {
+      "slug": "build-engineer",
+      "folder": "build-engineer",
+      "path": "skills/build-engineer/SKILL.md",
+      "personas": "devops-engineer",
+      "lines": 269,
+      "summary": "Expert build engineer specializing in build system optimization, compilation strategies, and developer productivity. Masters modern build..."
+    },
+    {
+      "slug": "business-analyst",
+      "folder": "business-analyst",
+      "path": "skills/business-analyst/SKILL.md",
+      "personas": "rag-data-engineer",
+      "lines": 269,
+      "summary": "Expert business analyst specializing in requirements gathering, process improvement, and data-driven decision making. Masters stakeholder..."
     },
     {
       "slug": "canvas-design",
@@ -299,6 +411,14 @@
       "summary": "This skill should be used when the user asks to \"optimize context\", \"reduce token costs\", \"improve context efficiency\", \"implement KV-cac..."
     },
     {
+      "slug": "chaos-engineer",
+      "folder": "chaos-engineer",
+      "path": "skills/chaos-engineer/SKILL.md",
+      "personas": "reliability-engineer",
+      "lines": 259,
+      "summary": "Expert chaos engineer specializing in controlled failure injection, resilience testing, and building antifragile systems. Masters chaos e..."
+    },
+    {
       "slug": "chroma",
       "folder": "chroma",
       "path": "skills/chroma/SKILL.md",
@@ -315,12 +435,52 @@
       "summary": "Reference for the Claude API and official Anthropic SDKs (Python, TypeScript, Go, Java, C#, Ruby, PHP, cURL) — model IDs, adaptive thinki..."
     },
     {
+      "slug": "cli-developer",
+      "folder": "cli-developer",
+      "path": "skills/cli-developer/SKILL.md",
+      "personas": "software-architect",
+      "lines": 268,
+      "summary": "Expert CLI developer specializing in command-line interface design, developer tools, and terminal applications. Masters user experience, ..."
+    },
+    {
       "slug": "clip",
       "folder": "clip",
       "path": "skills/clip/SKILL.md",
       "personas": "ml-engineer",
       "lines": 253,
       "summary": "OpenAI's model connecting vision and language. Enables zero-shot image classification, image-text matching, and cross-modal retrieval. Tr..."
+    },
+    {
+      "slug": "cloud-architect",
+      "folder": "cloud-architect",
+      "path": "skills/cloud-architect/SKILL.md",
+      "personas": "devops-engineer",
+      "lines": 259,
+      "summary": "Expert cloud architect specializing in multi-cloud strategies, scalable architectures, and cost-effective solutions. Masters AWS, Azure, ..."
+    },
+    {
+      "slug": "code-reviewer",
+      "folder": "code-reviewer",
+      "path": "skills/code-reviewer/SKILL.md",
+      "personas": "software-architect",
+      "lines": 269,
+      "summary": "Expert code reviewer specializing in code quality, security vulnerabilities, and best practices across multiple languages. Masters static..."
+    },
+    {
+      "slug": "competitive-analyst",
+      "folder": "competitive-analyst",
+      "path": "skills/competitive-analyst/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 269,
+      "summary": "Expert competitive analyst specializing in competitor intelligence, strategic analysis, and market positioning. Masters competitive bench..."
+    },
+    {
+      "slug": "compliance-auditor",
+      "folder": "compliance-auditor",
+      "path": "skills/compliance-auditor/SKILL.md",
+      "personas": "security-engineer",
+      "lines": 259,
+      "summary": "Expert compliance auditor specializing in regulatory frameworks, data privacy laws, and security standards. Masters GDPR, HIPAA, PCI DSS,..."
     },
     {
       "slug": "c4-modeling",
@@ -339,12 +499,44 @@
       "summary": "Anthropic's method for training harmless AI through self-improvement. Two-phase approach - supervised learning with self-critique/revisio..."
     },
     {
+      "slug": "content-marketer",
+      "folder": "content-marketer",
+      "path": "skills/content-marketer/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 269,
+      "summary": "Expert content marketer specializing in content strategy, SEO optimization, and engagement-driven marketing. Masters multi-channel conten..."
+    },
+    {
+      "slug": "context-management",
+      "folder": "context-management",
+      "path": "skills/context-management/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 168,
+      "summary": "Converted capability bundle for context-management"
+    },
+    {
+      "slug": "context-manager",
+      "folder": "context-manager",
+      "path": "skills/context-manager/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 269,
+      "summary": "Expert context manager specializing in information storage, retrieval, and synchronization across multi-agent systems. Masters state mana..."
+    },
+    {
       "slug": "evaluating-cosmos-policy",
       "folder": "cosmos-policy",
       "path": "skills/cosmos-policy/SKILL.md",
       "personas": "ml-engineer",
       "lines": 402,
       "summary": "Evaluates NVIDIA Cosmos Policy on LIBERO and RoboCasa simulation environments. Use when setting up cosmos-policy for robot manipulation e..."
+    },
+    {
+      "slug": "cpp-pro",
+      "folder": "cpp-pro",
+      "path": "skills/cpp-pro/SKILL.md",
+      "personas": "software-developer",
+      "lines": 259,
+      "summary": "Expert C++ developer specializing in modern C++20/23, systems programming, and high-performance computing. Masters template metaprogrammi..."
     },
     {
       "slug": "creative-thinking-for-research",
@@ -363,12 +555,84 @@
       "summary": "Multi-agent orchestration framework for autonomous AI collaboration. Use when building teams of specialized agents working together on co..."
     },
     {
+      "slug": "csharp-developer",
+      "folder": "csharp-developer",
+      "path": "skills/csharp-developer/SKILL.md",
+      "personas": "software-developer",
+      "lines": 268,
+      "summary": "Expert C# developer specializing in modern .NET development, ASP.NET Core, and cloud-native applications. Masters C# 12 features, Blazor,..."
+    },
+    {
+      "slug": "customer-success-manager",
+      "folder": "customer-success-manager",
+      "path": "skills/customer-success-manager/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 288,
+      "summary": "Expert customer success manager specializing in customer retention, growth, and advocacy. Masters account health monitoring, strategic re..."
+    },
+    {
       "slug": "cli-design-expert",
       "folder": "dammianmiller-cli-design-expert",
       "path": "skills/dammianmiller-cli-design-expert/SKILL.md",
       "personas": "software-architect",
       "lines": 576,
       "summary": "Expert CLI/TUI designer for building intuitive, user-friendly, and professional command-line interfaces. Focuses on UX patterns, help sys..."
+    },
+    {
+      "slug": "data-analyst",
+      "folder": "data-analyst",
+      "path": "skills/data-analyst/SKILL.md",
+      "personas": "data-engineer",
+      "lines": 259,
+      "summary": "Expert data analyst specializing in business intelligence, data visualization, and statistical analysis. Masters SQL, Python, and BI tool..."
+    },
+    {
+      "slug": "data-engineer",
+      "folder": "data-engineer",
+      "path": "skills/data-engineer/SKILL.md",
+      "personas": "data-engineer",
+      "lines": 269,
+      "summary": "Expert data engineer specializing in building scalable data pipelines, ETL/ELT processes, and data infrastructure. Masters big data techn..."
+    },
+    {
+      "slug": "data-engineer-2",
+      "folder": "data-engineer-pro",
+      "path": "skills/data-engineer-pro/SKILL.md",
+      "personas": "data-engineer",
+      "lines": 500,
+      "summary": "Converted capability bundle for data-engineer-2"
+    },
+    {
+      "slug": "data-researcher",
+      "folder": "data-researcher",
+      "path": "skills/data-researcher/SKILL.md",
+      "personas": "data-engineer",
+      "lines": 271,
+      "summary": "Expert data researcher specializing in discovering, collecting, and analyzing diverse data sources. Masters data mining, statistical anal..."
+    },
+    {
+      "slug": "data-scientist",
+      "folder": "data-scientist",
+      "path": "skills/data-scientist/SKILL.md",
+      "personas": "data-engineer",
+      "lines": 269,
+      "summary": "Expert data scientist specializing in statistical analysis, machine learning, and business insights. Masters exploratory data analysis, p..."
+    },
+    {
+      "slug": "database-administrator",
+      "folder": "database-administrator",
+      "path": "skills/database-administrator/SKILL.md",
+      "personas": "data-engineer",
+      "lines": 269,
+      "summary": "Expert database administrator specializing in high-availability systems, performance optimization, and disaster recovery. Masters Postgre..."
+    },
+    {
+      "slug": "database-optimizer",
+      "folder": "database-optimizer",
+      "path": "skills/database-optimizer/SKILL.md",
+      "personas": "data-engineer",
+      "lines": 269,
+      "summary": "Expert database optimizer specializing in query optimization, performance tuning, and scalability across multiple database systems. Maste..."
     },
     {
       "slug": "infrastructure-reporting",
@@ -403,6 +667,14 @@
       "summary": "World-class ML engineering skill for productionizing ML models, MLOps, and building scalable ML systems. Expertise in PyTorch, TensorFlow..."
     },
     {
+      "slug": "debugger",
+      "folder": "debugger",
+      "path": "skills/debugger/SKILL.md",
+      "personas": "software-architect",
+      "lines": 269,
+      "summary": "Expert debugger specializing in complex issue diagnosis, root cause analysis, and systematic problem-solving. Masters debugging tools, te..."
+    },
+    {
       "slug": "deepspeed",
       "folder": "deepspeed",
       "path": "skills/deepspeed/SKILL.md",
@@ -411,12 +683,52 @@
       "summary": "Expert guidance for distributed training with DeepSpeed - ZeRO optimization stages, pipeline parallelism, FP16/BF16/FP8, 1-bit Adam, spar..."
     },
     {
+      "slug": "dependency-manager",
+      "folder": "dependency-manager",
+      "path": "skills/dependency-manager/SKILL.md",
+      "personas": "software-architect",
+      "lines": 269,
+      "summary": "Expert dependency manager specializing in package management, security auditing, and version conflict resolution across multiple ecosyste..."
+    },
+    {
+      "slug": "deployment-engineer",
+      "folder": "deployment-engineer",
+      "path": "skills/deployment-engineer/SKILL.md",
+      "personas": "devops-engineer",
+      "lines": 269,
+      "summary": "Expert deployment engineer specializing in CI/CD pipelines, release automation, and deployment strategies. Masters blue-green, canary, an..."
+    },
+    {
+      "slug": "devops-engineer",
+      "folder": "devops-engineer",
+      "path": "skills/devops-engineer/SKILL.md",
+      "personas": "devops-engineer",
+      "lines": 269,
+      "summary": "Expert DevOps engineer bridging development and operations with comprehensive automation, monitoring, and infrastructure management. Mast..."
+    },
+    {
+      "slug": "devops-incident-responder",
+      "folder": "devops-incident-responder",
+      "path": "skills/devops-incident-responder/SKILL.md",
+      "personas": "reliability-engineer",
+      "lines": 269,
+      "summary": "Expert incident responder specializing in rapid detection, diagnosis, and resolution of production issues. Masters observability tools, r..."
+    },
+    {
       "slug": "discernment-nudge",
       "folder": "discernment-nudge",
       "path": "skills/discernment-nudge/SKILL.md",
       "personas": "meta",
       "lines": 197,
       "summary": "Generate 2-3 critical-thinking follow-up questions to stress-test assumptions, fact-check claims, and surface missing context in a propos..."
+    },
+    {
+      "slug": "django-developer",
+      "folder": "django-developer",
+      "path": "skills/django-developer/SKILL.md",
+      "personas": "software-developer",
+      "lines": 269,
+      "summary": "Expert Django developer mastering Django 4+ with modern Python practices. Specializes in scalable web applications, REST API development,..."
     },
     {
       "slug": "agentdb-semantic-vector-search",
@@ -443,12 +755,36 @@
       "summary": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technica..."
     },
     {
+      "slug": "documentation-engineer",
+      "folder": "documentation-engineer",
+      "path": "skills/documentation-engineer/SKILL.md",
+      "personas": "software-architect",
+      "lines": 259,
+      "summary": "Expert documentation engineer specializing in technical documentation systems, API documentation, and developer-friendly content. Masters..."
+    },
+    {
       "slug": "docx",
       "folder": "docx",
       "path": "skills/docx/SKILL.md",
       "personas": "meta",
       "lines": 91,
       "summary": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files)...."
+    },
+    {
+      "slug": "dotnet-core-expert",
+      "folder": "dotnet-core-expert",
+      "path": "skills/dotnet-core-expert/SKILL.md",
+      "personas": "software-developer",
+      "lines": 269,
+      "summary": "Expert .NET Core specialist mastering .NET 10 with modern C# features. Specializes in cross-platform development, minimal APIs, cloud-nat..."
+    },
+    {
+      "slug": "dotnet-framework-4.8-expert",
+      "folder": "dotnet-framework-4.8-expert",
+      "path": "skills/dotnet-framework-4.8-expert/SKILL.md",
+      "personas": "software-developer",
+      "lines": 291,
+      "summary": "Expert .NET Framework 4.8 specialist mastering legacy enterprise applications. Specializes in Windows-based development, Web Forms, WCF s..."
     },
     {
       "slug": "dspy",
@@ -459,12 +795,68 @@
       "summary": "Build complex AI systems with declarative programming, optimize prompts automatically, create modular RAG systems and agents with DSPy - ..."
     },
     {
+      "slug": "dx-optimizer",
+      "folder": "dx-optimizer",
+      "path": "skills/dx-optimizer/SKILL.md",
+      "personas": "software-architect",
+      "lines": 269,
+      "summary": "Expert developer experience optimizer specializing in build performance, tooling efficiency, and workflow automation. Masters development..."
+    },
+    {
+      "slug": "electron-pro",
+      "folder": "electron-pro",
+      "path": "skills/electron-pro/SKILL.md",
+      "personas": "frontend-developer",
+      "lines": 218,
+      "summary": "Desktop application specialist building secure cross-platform solutions. Develops Electron apps with native OS integration, focusing on s..."
+    },
+    {
+      "slug": "elixir-expert",
+      "folder": "elixir-expert",
+      "path": "skills/elixir-expert/SKILL.md",
+      "personas": "software-developer",
+      "lines": 293,
+      "summary": "Expert Elixir developer specializing in concurrent, fault-tolerant systems using OTP patterns. Masters Phoenix, LiveView, and BEAM VM opt..."
+    },
+    {
+      "slug": "embedded-systems",
+      "folder": "embedded-systems",
+      "path": "skills/embedded-systems/SKILL.md",
+      "personas": "software-developer",
+      "lines": 270,
+      "summary": "Expert embedded systems engineer specializing in microcontroller programming, RTOS development, and hardware optimization. Masters low-le..."
+    },
+    {
+      "slug": "error-coordinator",
+      "folder": "error-coordinator",
+      "path": "skills/error-coordinator/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 269,
+      "summary": "Expert error coordinator specializing in distributed error handling, failure recovery, and system resilience. Masters error correlation, ..."
+    },
+    {
+      "slug": "error-detective",
+      "folder": "error-detective",
+      "path": "skills/error-detective/SKILL.md",
+      "personas": "reliability-engineer",
+      "lines": 269,
+      "summary": "Expert error detective specializing in complex error pattern analysis, correlation, and root cause discovery. Masters distributed system ..."
+    },
+    {
       "slug": "faiss",
       "folder": "faiss",
       "path": "skills/faiss/SKILL.md",
       "personas": "rag-data-engineer",
       "lines": 221,
       "summary": "Facebook's library for efficient similarity search and clustering of dense vectors. Supports billions of vectors, GPU acceleration, and v..."
+    },
+    {
+      "slug": "fintech-engineer",
+      "folder": "fintech-engineer",
+      "path": "skills/fintech-engineer/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 269,
+      "summary": "Expert fintech engineer specializing in financial systems, regulatory compliance, and secure transaction processing. Masters banking inte..."
     },
     {
       "slug": "optimizing-attention-flash",
@@ -478,12 +870,76 @@
       "summary": "Optimizes transformer attention with Flash Attention for 2-4x speedup and 10-20x memory reduction. Use when training/running transformers..."
     },
     {
+      "slug": "flutter-expert",
+      "folder": "flutter-expert",
+      "path": "skills/flutter-expert/SKILL.md",
+      "personas": "frontend-developer",
+      "lines": 273,
+      "summary": "Expert Flutter specialist mastering Flutter 3+ with modern architecture patterns. Specializes in cross-platform development, custom anima..."
+    },
+    {
       "slug": "frontend-design",
       "folder": "frontend-design",
       "path": "skills/frontend-design/SKILL.md",
       "personas": "software-architect",
       "lines": 71,
       "summary": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, ty..."
+    },
+    {
+      "slug": "frontend-developer",
+      "folder": "frontend-developer",
+      "path": "skills/frontend-developer/SKILL.md",
+      "personas": "frontend-developer",
+      "lines": 120,
+      "summary": "Expert UI engineer focused on crafting robust, scalable frontend solutions. Builds high-quality React components prioritizing maintainabi..."
+    },
+    {
+      "slug": "fullstack-developer",
+      "folder": "fullstack-developer",
+      "path": "skills/fullstack-developer/SKILL.md",
+      "personas": "frontend-developer",
+      "lines": 218,
+      "summary": "End-to-end feature owner with expertise across the entire stack. Delivers complete solutions from database to UI with focus on seamless i..."
+    },
+    {
+      "slug": "game-developer",
+      "folder": "game-developer",
+      "path": "skills/game-developer/SKILL.md",
+      "personas": "software-developer",
+      "lines": 269,
+      "summary": "Expert game developer specializing in game engine programming, graphics optimization, and multiplayer systems. Masters game design patter..."
+    },
+    {
+      "slug": "gemini-api-cli",
+      "folder": "gemini-api-cli",
+      "path": "skills/gemini-api-cli/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 144,
+      "summary": "Call the Gemini API from the shell with gemini-api. Use for media generation (images, TTS, music, video), file and YouTube analysis, audi..."
+    },
+    {
+      "slug": "gemini-api-dev",
+      "folder": "gemini-api-dev",
+      "path": "skills/gemini-api-dev/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 446,
+      "summary": "Use this skill when writing code that calls the Gemini API for text generation, multi-turn chat, multimodal understanding, image generati..."
+    },
+    {
+      "slug": "gemini-live-api-dev",
+      "folder": "gemini-live-api-dev",
+      "path": "skills/gemini-live-api-dev/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 408,
+      "summary": "Use this skill when building real-time, bidirectional streaming applications with the Gemini Live API, or migrating legacy Live models (2..."
+    },
+    {
+      "slug": "gemini-omni-flash-api",
+      "folder": "gemini-omni-flash-api",
+      "path": "skills/gemini-omni-flash-api/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 412,
+      "summary": "Use this skill for generative video editing, text-to-video, image- and video-referenced video generation, first-frame-to-video, first-and..."
     },
     {
       "slug": "gguf-quantization",
@@ -494,12 +950,44 @@
       "summary": "GGUF format and llama.cpp quantization for efficient CPU/GPU inference. Use when deploying models on consumer hardware, Apple Silicon, or..."
     },
     {
+      "slug": "git-workflow-manager",
+      "folder": "git-workflow-manager",
+      "path": "skills/git-workflow-manager/SKILL.md",
+      "personas": "software-architect",
+      "lines": 269,
+      "summary": "Expert Git workflow manager specializing in branching strategies, automation, and team collaboration. Masters Git workflows, merge confli..."
+    },
+    {
+      "slug": "golang-pro",
+      "folder": "golang-pro",
+      "path": "skills/golang-pro/SKILL.md",
+      "personas": "software-developer",
+      "lines": 258,
+      "summary": "Expert Go developer specializing in high-performance systems, concurrent programming, and cloud-native microservices. Masters idiomatic G..."
+    },
+    {
+      "slug": "google-file-api-expert",
+      "folder": "google-file-api-expert",
+      "path": "skills/google-file-api-expert/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 61,
+      "summary": "Expert in Google Gemini File API, File Search, and RAG implementation. Capable of handling file uploads, managing File Search Stores, and..."
+    },
+    {
       "slug": "gptq",
       "folder": "gptq",
       "path": "skills/gptq/SKILL.md",
       "personas": "llm-inference",
       "lines": 450,
       "summary": "Post-training 4-bit quantization for LLMs with minimal accuracy loss. Use for deploying large models (70B, 405B) on consumer GPUs, when y..."
+    },
+    {
+      "slug": "graphql-architect",
+      "folder": "graphql-architect",
+      "path": "skills/graphql-architect/SKILL.md",
+      "personas": "software-developer",
+      "lines": 216,
+      "summary": "GraphQL schema architect designing efficient, scalable API graphs. Masters federation, subscriptions, and query optimization while ensuri..."
     },
     {
       "slug": "grpo-rl-training",
@@ -542,6 +1030,14 @@
       "summary": "Fast tokenizers optimized for research and production. Rust-based implementation tokenizes 1GB in <20 seconds. Supports BPE, WordPiece, a..."
     },
     {
+      "slug": "incident-responder",
+      "folder": "incident-responder",
+      "path": "skills/incident-responder/SKILL.md",
+      "personas": "reliability-engineer",
+      "lines": 268,
+      "summary": "Expert incident responder specializing in security and operational incident management. Masters evidence collection, forensic analysis, a..."
+    },
+    {
       "slug": "instructor",
       "folder": "instructor",
       "path": "skills/instructor/SKILL.md",
@@ -558,6 +1054,38 @@
       "summary": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should u..."
     },
     {
+      "slug": "iot-engineer",
+      "folder": "iot-engineer",
+      "path": "skills/iot-engineer/SKILL.md",
+      "personas": "software-developer",
+      "lines": 273,
+      "summary": "Expert IoT engineer specializing in connected device architectures, edge computing, and IoT platform development. Masters IoT protocols, ..."
+    },
+    {
+      "slug": "it-ops-orchestrator",
+      "folder": "it-ops-orchestrator",
+      "path": "skills/it-ops-orchestrator/SKILL.md",
+      "personas": "windows-automation",
+      "lines": 61,
+      "summary": "IT operations meta-orchestrator specializing in routing tasks across PowerShell, .NET, infrastructure, Azure, and M365 subagents. Prefers..."
+    },
+    {
+      "slug": "java-architect",
+      "folder": "java-architect",
+      "path": "skills/java-architect/SKILL.md",
+      "personas": "software-developer",
+      "lines": 288,
+      "summary": "Senior Java architect specializing in enterprise-grade applications, Spring ecosystem, and cloud-native development. Masters modern Java ..."
+    },
+    {
+      "slug": "javascript-pro",
+      "folder": "javascript-pro",
+      "path": "skills/javascript-pro/SKILL.md",
+      "personas": "software-developer",
+      "lines": 261,
+      "summary": "Expert JavaScript developer specializing in modern ES2023+ features, asynchronous programming, and full-stack development. Masters both b..."
+    },
+    {
       "slug": "hypothesis-generation",
       "folder": "k-dense-ai-hypothesis-generation",
       "path": "skills/k-dense-ai-hypothesis-generation/SKILL.md",
@@ -572,6 +1100,30 @@
       "personas": "llm-inference",
       "lines": 458,
       "summary": "Compress large language models using knowledge distillation from teacher to student models. Use when deploying smaller models with retain..."
+    },
+    {
+      "slug": "knowledge-synthesizer",
+      "folder": "knowledge-synthesizer",
+      "path": "skills/knowledge-synthesizer/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 269,
+      "summary": "Expert knowledge synthesizer specializing in extracting insights from multi-agent interactions, identifying patterns, and building collec..."
+    },
+    {
+      "slug": "kotlin-specialist",
+      "folder": "kotlin-specialist",
+      "path": "skills/kotlin-specialist/SKILL.md",
+      "personas": "software-developer",
+      "lines": 268,
+      "summary": "Expert Kotlin developer specializing in coroutines, multiplatform development, and Android applications. Masters functional programming p..."
+    },
+    {
+      "slug": "kubernetes-specialist",
+      "folder": "kubernetes-specialist",
+      "path": "skills/kubernetes-specialist/SKILL.md",
+      "personas": "devops-engineer",
+      "lines": 271,
+      "summary": "Expert Kubernetes specialist mastering container orchestration, cluster management, and cloud-native architectures. Specializes in produc..."
     },
     {
       "slug": "lambda-labs-gpu-cloud",
@@ -598,12 +1150,36 @@
       "summary": "LLM observability platform for tracing, evaluation, and monitoring. Use when debugging LLM applications, evaluating model outputs against..."
     },
     {
+      "slug": "laravel-specialist",
+      "folder": "laravel-specialist",
+      "path": "skills/laravel-specialist/SKILL.md",
+      "personas": "software-developer",
+      "lines": 268,
+      "summary": "Expert Laravel specialist mastering Laravel 10+ with modern PHP practices. Specializes in elegant syntax, Eloquent ORM, queue systems, an..."
+    },
+    {
       "slug": "leann-memory",
       "folder": "leann-memory",
       "path": "skills/leann-memory/SKILL.md",
       "personas": "rag-data-engineer",
       "lines": 53,
       "summary": "High-performance local semantic search and memory index (97% storage compression) using leann-core. Use when indexing or searching local ..."
+    },
+    {
+      "slug": "legacy-modernizer",
+      "folder": "legacy-modernizer",
+      "path": "skills/legacy-modernizer/SKILL.md",
+      "personas": "software-architect",
+      "lines": 269,
+      "summary": "Expert legacy system modernizer specializing in incremental migration strategies and risk-free modernization. Masters refactoring pattern..."
+    },
+    {
+      "slug": "legal-advisor",
+      "folder": "legal-advisor",
+      "path": "skills/legal-advisor/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 269,
+      "summary": "Expert legal advisor specializing in technology law, compliance, and risk mitigation. Masters contract drafting, intellectual property, d..."
     },
     {
       "slug": "implementing-llms-litgpt",
@@ -654,6 +1230,14 @@
       "summary": "Large Language and Vision Assistant. Enables visual instruction tuning and image-based conversations. Combines CLIP vision encoder with V..."
     },
     {
+      "slug": "llm-architect",
+      "folder": "llm-architect",
+      "path": "skills/llm-architect/SKILL.md",
+      "personas": "llm-inference",
+      "lines": 269,
+      "summary": "Expert LLM architect specializing in large language model architecture, deployment, and optimization. Masters LLM system design, fine-tun..."
+    },
+    {
       "slug": "evaluating-llms-harness",
       "folder": "lm-evaluation-harness",
       "path": "skills/lm-evaluation-harness/SKILL.md",
@@ -670,12 +1254,36 @@
       "summary": "Extend context windows of transformer models using RoPE, YaRN, ALiBi, and position interpolation techniques. Use when processing long doc..."
     },
     {
+      "slug": "m365-admin",
+      "folder": "m365-admin",
+      "path": "skills/m365-admin/SKILL.md",
+      "personas": "windows-automation",
+      "lines": 47,
+      "summary": "Microsoft 365 administrator specializing in Exchange Online, Teams, SharePoint, licensing, Graph API automation, and secure identity oper..."
+    },
+    {
+      "slug": "machine-learning-engineer",
+      "folder": "machine-learning-engineer",
+      "path": "skills/machine-learning-engineer/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 259,
+      "summary": "Expert ML engineer specializing in production model deployment, serving infrastructure, and scalable ML systems. Masters model optimizati..."
+    },
+    {
       "slug": "mamba-architecture",
       "folder": "mamba",
       "path": "skills/mamba/SKILL.md",
       "personas": "llm-inference",
       "lines": 260,
       "summary": "State-space model with O(n) complexity vs Transformers' O(n²). 5× faster inference, million-token sequences, no KV cache. Selective SSM w..."
+    },
+    {
+      "slug": "market-researcher",
+      "folder": "market-researcher",
+      "path": "skills/market-researcher/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 269,
+      "summary": "Expert market researcher specializing in market analysis, consumer insights, and competitive intelligence. Masters market sizing, segment..."
     },
     {
       "slug": "mcp-builder",
@@ -686,6 +1294,14 @@
       "summary": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-des..."
     },
     {
+      "slug": "mcp-developer",
+      "folder": "mcp-developer",
+      "path": "skills/mcp-developer/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 259,
+      "summary": "Expert MCP developer specializing in Model Context Protocol server and client development. Masters protocol specification, SDK implementa..."
+    },
+    {
       "slug": "training-llms-megatron",
       "folder": "megatron-core",
       "path": "skills/megatron-core/SKILL.md",
@@ -694,12 +1310,28 @@
       "summary": "Trains large language models (2B-462B parameters) using NVIDIA Megatron-Core with advanced parallelism strategies. Use when training mode..."
     },
     {
+      "slug": "microservices-architect",
+      "folder": "microservices-architect",
+      "path": "skills/microservices-architect/SKILL.md",
+      "personas": "software-developer",
+      "lines": 221,
+      "summary": "Distributed systems architect designing scalable microservice ecosystems. Masters service boundaries, communication patterns, and operati..."
+    },
+    {
       "slug": "miles-rl-training",
       "folder": "miles",
       "path": "skills/miles/SKILL.md",
       "personas": "ml-engineer",
       "lines": 315,
       "summary": "Provides guidance for enterprise-grade RL training using miles, a production-ready fork of slime. Use when training large MoE models with..."
+    },
+    {
+      "slug": "ml-engineer",
+      "folder": "ml-engineer",
+      "path": "skills/ml-engineer/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 269,
+      "summary": "Expert ML engineer specializing in machine learning model lifecycle, production deployment, and ML system optimization. Masters both trad..."
     },
     {
       "slug": "ml-paper-writing",
@@ -724,6 +1356,30 @@
       "personas": "mlops-engineer",
       "lines": 704,
       "summary": "Track ML experiments, manage model registry with versioning, deploy models to production, and reproduce experiments with MLflow - framewo..."
+    },
+    {
+      "slug": "mlops-engineer",
+      "folder": "mlops-engineer",
+      "path": "skills/mlops-engineer/SKILL.md",
+      "personas": "mlops-engineer",
+      "lines": 269,
+      "summary": "Expert MLOps engineer specializing in ML infrastructure, platform engineering, and operational excellence for machine learning systems. M..."
+    },
+    {
+      "slug": "mobile-app-developer",
+      "folder": "mobile-app-developer",
+      "path": "skills/mobile-app-developer/SKILL.md",
+      "personas": "frontend-developer",
+      "lines": 268,
+      "summary": "Expert mobile app developer specializing in native and cross-platform development for iOS and Android. Masters performance optimization, ..."
+    },
+    {
+      "slug": "mobile-developer",
+      "folder": "mobile-developer",
+      "path": "skills/mobile-developer/SKILL.md",
+      "personas": "frontend-developer",
+      "lines": 264,
+      "summary": "Cross-platform mobile specialist building performant native experiences. Creates optimized mobile applications with React Native and Flut..."
     },
     {
       "slug": "modal-serverless-gpu",
@@ -758,6 +1414,14 @@
       "summary": "Train Mixture of Experts (MoE) models using DeepSpeed or HuggingFace. Use when training large-scale models with limited compute (5× cost ..."
     },
     {
+      "slug": "multi-agent-coordinator",
+      "folder": "multi-agent-coordinator",
+      "path": "skills/multi-agent-coordinator/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 269,
+      "summary": "Expert multi-agent coordinator specializing in complex workflow orchestration, inter-agent communication, and distributed system coordina..."
+    },
+    {
       "slug": "nanogpt",
       "folder": "nanogpt",
       "path": "skills/nanogpt/SKILL.md",
@@ -788,6 +1452,30 @@
       "personas": "security-engineer",
       "lines": 295,
       "summary": "NVIDIA's runtime safety framework for LLM applications. Features jailbreak detection, input/output validation, fact-checking, hallucinati..."
+    },
+    {
+      "slug": "network-engineer",
+      "folder": "network-engineer",
+      "path": "skills/network-engineer/SKILL.md",
+      "personas": "devops-engineer",
+      "lines": 288,
+      "summary": "Expert network engineer specializing in cloud and hybrid network architectures, security, and performance optimization. Masters network d..."
+    },
+    {
+      "slug": "nextjs-developer",
+      "folder": "nextjs-developer",
+      "path": "skills/nextjs-developer/SKILL.md",
+      "personas": "frontend-developer",
+      "lines": 288,
+      "summary": "Expert Next.js developer mastering Next.js 14+ with App Router and full-stack features. Specializes in server components, server actions,..."
+    },
+    {
+      "slug": "nlp-engineer",
+      "folder": "nlp-engineer",
+      "path": "skills/nlp-engineer/SKILL.md",
+      "personas": "ml-engineer",
+      "lines": 269,
+      "summary": "Expert NLP engineer specializing in natural language processing, understanding, and generation. Masters transformer models, text processi..."
     },
     {
       "slug": "nnsight-remote-interpretability",
@@ -846,6 +1534,14 @@
       "summary": "Guarantee valid JSON/XML/code structure during generation, use Pydantic models for type-safe outputs, support local models (Transformers,..."
     },
     {
+      "slug": "payment-integration",
+      "folder": "payment-integration",
+      "path": "skills/payment-integration/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 272,
+      "summary": "Expert payment integration specialist mastering payment gateway integration, PCI compliance, and financial transaction processing. Specia..."
+    },
+    {
       "slug": "pdf",
       "folder": "pdf",
       "path": "skills/pdf/SKILL.md",
@@ -862,6 +1558,30 @@
       "summary": "Parameter-efficient fine-tuning for LLMs using LoRA, QLoRA, and 25+ methods. Use when fine-tuning large models (7B-70B) with limited GPU ..."
     },
     {
+      "slug": "penetration-tester",
+      "folder": "penetration-tester",
+      "path": "skills/penetration-tester/SKILL.md",
+      "personas": "security-engineer",
+      "lines": 269,
+      "summary": "Expert penetration tester specializing in ethical hacking, vulnerability assessment, and security testing. Masters offensive security tec..."
+    },
+    {
+      "slug": "performance-engineer",
+      "folder": "performance-engineer",
+      "path": "skills/performance-engineer/SKILL.md",
+      "personas": "reliability-engineer",
+      "lines": 269,
+      "summary": "Expert performance engineer specializing in system optimization, bottleneck identification, and scalability engineering. Masters performa..."
+    },
+    {
+      "slug": "performance-monitor",
+      "folder": "performance-monitor",
+      "path": "skills/performance-monitor/SKILL.md",
+      "personas": "reliability-engineer",
+      "lines": 269,
+      "summary": "Expert performance monitor specializing in system-wide metrics collection, analysis, and optimization. Masters real-time monitoring, anom..."
+    },
+    {
       "slug": "phoenix-observability",
       "folder": "phoenix",
       "path": "skills/phoenix/SKILL.md",
@@ -870,12 +1590,76 @@
       "summary": "Open-source AI observability platform for LLM tracing, evaluation, and monitoring. Use when debugging LLM applications with detailed trac..."
     },
     {
+      "slug": "php-pro",
+      "folder": "php-pro",
+      "path": "skills/php-pro/SKILL.md",
+      "personas": "software-developer",
+      "lines": 268,
+      "summary": "Expert PHP developer specializing in modern PHP 8.3+ with strong typing, async programming, and enterprise frameworks. Masters Laravel, S..."
+    },
+    {
       "slug": "pinecone",
       "folder": "pinecone",
       "path": "skills/pinecone/SKILL.md",
       "personas": "rag-data-engineer",
       "lines": 358,
       "summary": "Managed vector database for production AI applications. Fully managed, auto-scaling, with hybrid search (dense + sparse), metadata filter..."
+    },
+    {
+      "slug": "platform-engineer",
+      "folder": "platform-engineer",
+      "path": "skills/platform-engineer/SKILL.md",
+      "personas": "devops-engineer",
+      "lines": 269,
+      "summary": "Expert platform engineer specializing in internal developer platforms, self-service infrastructure, and developer experience. Masters pla..."
+    },
+    {
+      "slug": "postgres-pro",
+      "folder": "postgres-pro",
+      "path": "skills/postgres-pro/SKILL.md",
+      "personas": "software-developer",
+      "lines": 269,
+      "summary": "Expert PostgreSQL specialist mastering database administration, performance optimization, and high availability. Deep expertise in Postgr..."
+    },
+    {
+      "slug": "powershell-5.1-expert",
+      "folder": "powershell-5.1-expert",
+      "path": "skills/powershell-5.1-expert/SKILL.md",
+      "personas": "windows-automation",
+      "lines": 60,
+      "summary": "Senior Windows PowerShell 5.1 automation expert specializing in legacy .NET Framework, RSAT modules, and enterprise IT operations across ..."
+    },
+    {
+      "slug": "powershell-7-expert",
+      "folder": "powershell-7-expert",
+      "path": "skills/powershell-7-expert/SKILL.md",
+      "personas": "windows-automation",
+      "lines": 58,
+      "summary": "Cross-platform PowerShell 7+ expert specializing in modern .NET, cloud automation, CI/CD tooling, Azure integration, and high-performance..."
+    },
+    {
+      "slug": "powershell-module-architect",
+      "folder": "powershell-module-architect",
+      "path": "skills/powershell-module-architect/SKILL.md",
+      "personas": "windows-automation",
+      "lines": 60,
+      "summary": "PowerShell architecture expert specializing in module design, function structure, reusable libraries, profile optimization, and cross-ver..."
+    },
+    {
+      "slug": "powershell-security-hardening",
+      "folder": "powershell-security-hardening",
+      "path": "skills/powershell-security-hardening/SKILL.md",
+      "personas": "windows-automation",
+      "lines": 55,
+      "summary": "Security-focused PowerShell specialist skilled in hardening Windows systems, securing automation, enforcing least privilege, and aligning..."
+    },
+    {
+      "slug": "powershell-ui-architect",
+      "folder": "powershell-ui-architect",
+      "path": "skills/powershell-ui-architect/SKILL.md",
+      "personas": "windows-automation",
+      "lines": 138,
+      "summary": "PowerShell UI architect specializing in desktop and terminal interfaces using WinForms, WPF, TUIs, and Metro-style frameworks like MahApp..."
     },
     {
       "slug": "pptx",
@@ -894,12 +1678,44 @@
       "summary": "Generates conference presentation slides (Beamer LaTeX PDF and editable PPTX) from a compiled paper with speaker notes and talk script. U..."
     },
     {
+      "slug": "product-manager",
+      "folder": "product-manager",
+      "path": "skills/product-manager/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 269,
+      "summary": "Expert product manager specializing in product strategy, user-centric development, and business outcomes. Masters roadmap planning, featu..."
+    },
+    {
+      "slug": "project-manager",
+      "folder": "project-manager",
+      "path": "skills/project-manager/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 269,
+      "summary": "Expert project manager specializing in project planning, execution, and delivery. Masters resource management, risk mitigation, and stake..."
+    },
+    {
+      "slug": "prompt-engineer",
+      "folder": "prompt-engineer",
+      "path": "skills/prompt-engineer/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 269,
+      "summary": "Expert prompt engineer specializing in designing, optimizing, and managing prompts for large language models. Masters prompt architecture..."
+    },
+    {
       "slug": "prompt-guard",
       "folder": "prompt-guard",
       "path": "skills/prompt-guard/SKILL.md",
       "personas": "security-engineer",
       "lines": 312,
       "summary": "Meta's 86M prompt injection and jailbreak detector. Filters malicious prompts and third-party data for LLM apps. 99%+ TPR, <1% FPR. Fast ..."
+    },
+    {
+      "slug": "python-pro",
+      "folder": "python-pro",
+      "path": "skills/python-pro/SKILL.md",
+      "personas": "software-developer",
+      "lines": 259,
+      "summary": "Expert Python developer specializing in modern Python 3.11+ development with deep expertise in type safety, async programming, data scien..."
     },
     {
       "slug": "pytorch-fsdp2",
@@ -926,12 +1742,36 @@
       "summary": "Provides guidance for performing causal interventions on PyTorch models using pyvene's declarative intervention framework. Use when condu..."
     },
     {
+      "slug": "qa-expert",
+      "folder": "qa-expert",
+      "path": "skills/qa-expert/SKILL.md",
+      "personas": "reliability-engineer",
+      "lines": 269,
+      "summary": "Expert QA engineer specializing in comprehensive quality assurance, test strategy, and quality metrics. Masters manual and automated test..."
+    },
+    {
       "slug": "qdrant-vector-search",
       "folder": "qdrant",
       "path": "skills/qdrant/SKILL.md",
       "personas": "rag-data-engineer",
       "lines": 493,
       "summary": "High-performance vector similarity search engine for RAG and semantic search. Use when building production RAG systems requiring fast nea..."
+    },
+    {
+      "slug": "quant-analyst",
+      "folder": "quant-analyst",
+      "path": "skills/quant-analyst/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 269,
+      "summary": "Expert quantitative analyst specializing in financial modeling, algorithmic trading, and risk analytics. Masters statistical methods, der..."
+    },
+    {
+      "slug": "rails-expert",
+      "folder": "rails-expert",
+      "path": "skills/rails-expert/SKILL.md",
+      "personas": "software-developer",
+      "lines": 269,
+      "summary": "Expert Rails specialist mastering Rails 8.1 with modern conventions. Specializes in convention over configuration, Hotwire/Turbo, Action ..."
     },
     {
       "slug": "ray-data",
@@ -950,6 +1790,46 @@
       "summary": "Distributed training orchestration across clusters. Scales PyTorch/TensorFlow/HuggingFace from laptop to 1000s of nodes. Built-in hyperpa..."
     },
     {
+      "slug": "react-specialist",
+      "folder": "react-specialist",
+      "path": "skills/react-specialist/SKILL.md",
+      "personas": "frontend-developer",
+      "lines": 271,
+      "summary": "Expert React specialist mastering React 18+ with modern patterns and ecosystem. Specializes in performance optimization, advanced hooks, ..."
+    },
+    {
+      "slug": "refactoring-specialist",
+      "folder": "refactoring-specialist",
+      "path": "skills/refactoring-specialist/SKILL.md",
+      "personas": "software-architect",
+      "lines": 269,
+      "summary": "Expert refactoring specialist mastering safe code transformation techniques and design pattern application. Specializes in improving code..."
+    },
+    {
+      "slug": "research-analyst",
+      "folder": "research-analyst",
+      "path": "skills/research-analyst/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 269,
+      "summary": "Expert research analyst specializing in comprehensive information gathering, synthesis, and insight generation. Masters research methodol..."
+    },
+    {
+      "slug": "risk-manager",
+      "folder": "risk-manager",
+      "path": "skills/risk-manager/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 269,
+      "summary": "Expert risk manager specializing in comprehensive risk assessment, mitigation strategies, and compliance frameworks. Masters risk modelin..."
+    },
+    {
+      "slug": "rust-engineer",
+      "folder": "rust-engineer",
+      "path": "skills/rust-engineer/SKILL.md",
+      "personas": "software-developer",
+      "lines": 268,
+      "summary": "Expert Rust developer specializing in systems programming, memory safety, and zero-cost abstractions. Masters ownership patterns, async p..."
+    },
+    {
       "slug": "rwkv-architecture",
       "folder": "rwkv",
       "path": "skills/rwkv/SKILL.md",
@@ -964,6 +1844,46 @@
       "personas": "ml-engineer",
       "lines": 386,
       "summary": "Provides guidance for training and analyzing Sparse Autoencoders (SAEs) using SAELens to decompose neural network activations into interp..."
+    },
+    {
+      "slug": "sales-engineer",
+      "folder": "sales-engineer",
+      "path": "skills/sales-engineer/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 269,
+      "summary": "Expert sales engineer specializing in technical pre-sales, solution architecture, and proof of concepts. Masters technical demonstrations..."
+    },
+    {
+      "slug": "scrum-master",
+      "folder": "scrum-master",
+      "path": "skills/scrum-master/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 269,
+      "summary": "Expert Scrum Master specializing in agile transformation, team facilitation, and continuous improvement. Masters Scrum framework implemen..."
+    },
+    {
+      "slug": "search-specialist",
+      "folder": "search-specialist",
+      "path": "skills/search-specialist/SKILL.md",
+      "personas": "rag-data-engineer",
+      "lines": 271,
+      "summary": "Expert search specialist mastering advanced information retrieval, query optimization, and knowledge discovery. Specializes in finding ne..."
+    },
+    {
+      "slug": "security-auditor",
+      "folder": "security-auditor",
+      "path": "skills/security-auditor/SKILL.md",
+      "personas": "security-engineer",
+      "lines": 269,
+      "summary": "Expert security auditor specializing in comprehensive security assessments, compliance validation, and risk management. Masters security ..."
+    },
+    {
+      "slug": "security-engineer",
+      "folder": "security-engineer",
+      "path": "skills/security-engineer/SKILL.md",
+      "personas": "security-engineer",
+      "lines": 259,
+      "summary": "Expert infrastructure security engineer specializing in DevSecOps, cloud security, and compliance frameworks. Masters security automation..."
     },
     {
       "slug": "segment-anything-model",
@@ -988,6 +1908,14 @@
       "personas": "rag-data-engineer",
       "lines": 235,
       "summary": "Language-independent tokenizer treating text as raw Unicode. Supports BPE and Unigram algorithms. Fast (50k sentences/sec), lightweight (..."
+    },
+    {
+      "slug": "seo-specialist",
+      "folder": "seo-specialist",
+      "path": "skills/seo-specialist/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 170,
+      "summary": "Expert SEO strategist specializing in technical SEO, content optimization, and search engine rankings. Masters both on-page and off-page ..."
     },
     {
       "slug": "sglang",
@@ -1062,6 +1990,14 @@
       "summary": "Multi-cloud orchestration for ML workloads with automatic cost optimization. Use when you need to run training or batch jobs across multi..."
     },
     {
+      "slug": "slack-expert",
+      "folder": "slack-expert",
+      "path": "skills/slack-expert/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 187,
+      "summary": "Expert Slack platform specialist for Slack app development, @slack/bolt implementation, Block Kit UI, event handling, OAuth flows, and Sl..."
+    },
+    {
       "slug": "slack-gif-creator",
       "folder": "slack-gif-creator",
       "path": "skills/slack-gif-creator/SKILL.md",
@@ -1102,6 +2038,30 @@
       "summary": "Accelerate LLM inference using speculative decoding, Medusa multiple heads, and lookahead decoding techniques. Use when optimizing infere..."
     },
     {
+      "slug": "spring-boot-engineer",
+      "folder": "spring-boot-engineer",
+      "path": "skills/spring-boot-engineer/SKILL.md",
+      "personas": "software-developer",
+      "lines": 271,
+      "summary": "Expert Spring Boot engineer mastering Spring Boot 3+ with cloud-native patterns. Specializes in microservices, reactive programming, Spri..."
+    },
+    {
+      "slug": "sql-pro",
+      "folder": "sql-pro",
+      "path": "skills/sql-pro/SKILL.md",
+      "personas": "software-developer",
+      "lines": 269,
+      "summary": "Expert SQL developer specializing in complex query optimization, database design, and performance tuning across PostgreSQL, MySQL, SQL Se..."
+    },
+    {
+      "slug": "sre-engineer",
+      "folder": "sre-engineer",
+      "path": "skills/sre-engineer/SKILL.md",
+      "personas": "reliability-engineer",
+      "lines": 269,
+      "summary": "Expert Site Reliability Engineer balancing feature velocity with system stability through SLOs, automation, and operational excellence. M..."
+    },
+    {
       "slug": "stable-diffusion-image-generation",
       "folder": "stable-diffusion",
       "path": "skills/stable-diffusion/SKILL.md",
@@ -1126,6 +2086,14 @@
       "summary": "Provides guidance for experiment tracking with SwanLab. Use when you need open-source run tracking, local or self-hosted dashboards, and ..."
     },
     {
+      "slug": "swift-expert",
+      "folder": "swift-expert",
+      "path": "skills/swift-expert/SKILL.md",
+      "personas": "software-developer",
+      "lines": 269,
+      "summary": "Expert Swift developer specializing in Swift 5.9+ with async/await, SwiftUI, and protocol-oriented programming. Masters Apple platforms d..."
+    },
+    {
       "slug": "systems-paper-writing",
       "folder": "systems-paper-writing",
       "path": "skills/systems-paper-writing/SKILL.md",
@@ -1134,12 +2102,28 @@
       "summary": "Comprehensive guide for writing systems papers targeting OSDI, SOSP, ASPLOS, NSDI, and EuroSys. Provides paragraph-level structural bluep..."
     },
     {
+      "slug": "task-distributor",
+      "folder": "task-distributor",
+      "path": "skills/task-distributor/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 269,
+      "summary": "Expert task distributor specializing in intelligent work allocation, load balancing, and queue management. Masters priority scheduling, c..."
+    },
+    {
       "slug": "teardown",
       "folder": "teardown",
       "path": "skills/teardown/SKILL.md",
       "personas": "software-architect",
       "lines": 144,
       "summary": "Build an interactive 3D simulator of a real machine or mechanism (an engine, a landing gear, a walking linkage, a pump, a gearbox) as one..."
+    },
+    {
+      "slug": "technical-writer",
+      "folder": "technical-writer",
+      "path": "skills/technical-writer/SKILL.md",
+      "personas": "software-architect",
+      "lines": 270,
+      "summary": "Expert technical writer specializing in clear, accurate documentation and content creation. Masters API documentation, user guides, and t..."
     },
     {
       "slug": "tensorboard",
@@ -1158,12 +2142,36 @@
       "summary": "Optimizes LLM inference with NVIDIA TensorRT for maximum throughput and lowest latency. Use for production deployment on NVIDIA GPUs (A10..."
     },
     {
+      "slug": "terraform-engineer",
+      "folder": "terraform-engineer",
+      "path": "skills/terraform-engineer/SKILL.md",
+      "personas": "devops-engineer",
+      "lines": 269,
+      "summary": "Expert Terraform engineer specializing in infrastructure as code, multi-cloud provisioning, and modular architecture. Masters Terraform b..."
+    },
+    {
+      "slug": "test-automator",
+      "folder": "test-automator",
+      "path": "skills/test-automator/SKILL.md",
+      "personas": "reliability-engineer",
+      "lines": 269,
+      "summary": "Expert test automation engineer specializing in building robust test frameworks, CI/CD integration, and comprehensive test coverage. Mast..."
+    },
+    {
       "slug": "theme-factory",
       "folder": "theme-factory",
       "path": "skills/theme-factory/SKILL.md",
       "personas": "software-architect",
       "lines": 59,
       "summary": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-se..."
+    },
+    {
+      "slug": "tooling-engineer",
+      "folder": "tooling-engineer",
+      "path": "skills/tooling-engineer/SKILL.md",
+      "personas": "software-architect",
+      "lines": 269,
+      "summary": "Expert tooling engineer specializing in developer tool creation, CLI development, and productivity enhancement. Masters tool architecture..."
     },
     {
       "slug": "torchforge-rl-training",
@@ -1190,6 +2198,14 @@
       "summary": "Provides guidance for mechanistic interpretability research using TransformerLens to inspect and manipulate transformer internals via Hoo..."
     },
     {
+      "slug": "trend-analyst",
+      "folder": "trend-analyst",
+      "path": "skills/trend-analyst/SKILL.md",
+      "personas": "business-analyst",
+      "lines": 269,
+      "summary": "Expert trend analyst specializing in identifying emerging patterns, forecasting future developments, and strategic foresight. Masters tre..."
+    },
+    {
       "slug": "fine-tuning-with-trl",
       "folder": "trl-fine-tuning",
       "path": "skills/trl-fine-tuning/SKILL.md",
@@ -1198,12 +2214,36 @@
       "summary": "Fine-tune LLMs using reinforcement learning with TRL - SFT for instruction tuning, DPO for preference alignment, PPO/GRPO for reward opti..."
     },
     {
+      "slug": "typescript-pro",
+      "folder": "typescript-pro",
+      "path": "skills/typescript-pro/SKILL.md",
+      "personas": "software-developer",
+      "lines": 261,
+      "summary": "Expert TypeScript developer specializing in advanced type system usage, full-stack development, and build optimization. Masters type-safe..."
+    },
+    {
+      "slug": "ui-designer",
+      "folder": "ui-designer",
+      "path": "skills/ui-designer/SKILL.md",
+      "personas": "frontend-developer",
+      "lines": 162,
+      "summary": "Expert visual designer specializing in creating intuitive, beautiful, and accessible user interfaces. Masters design systems, interaction..."
+    },
+    {
       "slug": "unsloth",
       "folder": "unsloth",
       "path": "skills/unsloth/SKILL.md",
       "personas": "ml-engineer",
       "lines": 80,
       "summary": "Expert guidance for fast fine-tuning with Unsloth - 2-5x faster training, 50-80% less memory, LoRA/QLoRA optimization"
+    },
+    {
+      "slug": "ux-researcher",
+      "folder": "ux-researcher",
+      "path": "skills/ux-researcher/SKILL.md",
+      "personas": "frontend-developer",
+      "lines": 269,
+      "summary": "Expert UX researcher specializing in user insights, usability testing, and data-driven design decisions. Masters qualitative and quantita..."
     },
     {
       "slug": "verl-rl-training",
@@ -1222,6 +2262,14 @@
       "summary": "Serves LLMs with high throughput using vLLM's PagedAttention and continuous batching. Use when deploying production LLM APIs, optimizing ..."
     },
     {
+      "slug": "vue-expert",
+      "folder": "vue-expert",
+      "path": "skills/vue-expert/SKILL.md",
+      "personas": "frontend-developer",
+      "lines": 269,
+      "summary": "Expert Vue specialist mastering Vue 3 with Composition API and ecosystem. Specializes in reactivity system, performance optimization, Nux..."
+    },
+    {
       "slug": "web-artifacts-builder",
       "folder": "web-artifacts-builder",
       "path": "skills/web-artifacts-builder/SKILL.md",
@@ -1238,6 +2286,14 @@
       "summary": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI..."
     },
     {
+      "slug": "websocket-engineer",
+      "folder": "websocket-engineer",
+      "path": "skills/websocket-engineer/SKILL.md",
+      "personas": "software-developer",
+      "lines": 132,
+      "summary": "Real-time communication specialist implementing scalable WebSocket architectures. Masters bidirectional protocols, event-driven systems, ..."
+    },
+    {
       "slug": "weights-and-biases",
       "folder": "weights-and-biases",
       "path": "skills/weights-and-biases/SKILL.md",
@@ -1252,6 +2308,30 @@
       "personas": "ml-engineer",
       "lines": 317,
       "summary": "OpenAI's general-purpose speech recognition model. Supports 99 languages, transcription, translation to English, and language identificat..."
+    },
+    {
+      "slug": "windows-infra-admin",
+      "folder": "windows-infra-admin",
+      "path": "skills/windows-infra-admin/SKILL.md",
+      "personas": "windows-automation",
+      "lines": 51,
+      "summary": "Windows infrastructure expert specializing in Active Directory, DNS, DHCP, GPO, server administration, and enterprise automation via Powe..."
+    },
+    {
+      "slug": "wordpress-master",
+      "folder": "wordpress-master",
+      "path": "skills/wordpress-master/SKILL.md",
+      "personas": "software-developer",
+      "lines": 299,
+      "summary": "Elite WordPress architect specializing in full-stack development, performance optimization, and enterprise solutions. Masters custom them..."
+    },
+    {
+      "slug": "workflow-orchestrator",
+      "folder": "workflow-orchestrator",
+      "path": "skills/workflow-orchestrator/SKILL.md",
+      "personas": "agent-engineer",
+      "lines": 269,
+      "summary": "Expert workflow orchestrator specializing in complex process design, state machine implementation, and business process automation. Maste..."
     },
     {
       "slug": "writing-plans",

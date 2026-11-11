@@ -1,6 +1,6 @@
 ---
 name: tool-discovery
-description: "Recommend the right workspace personas, utility subagents, and skills for any task across all 13 personas and 158 installed skills. Triggers on: which agent, which persona, which skill, what tool should I use, help me choose, recommend agent, find the right tool."
+description: "Recommend the right workspace personas, utility subagents, and skills for any task across all 19 personas and 293 installed skills. Triggers on: which agent, which persona, which skill, what tool should I use, help me choose, recommend agent, find the right tool."
 license: MIT
 allowed-tools: "Read Glob"
 metadata:
@@ -23,14 +23,14 @@ What kind of task is this?
 │   ├── Obvious 1-2 file edit → Spawn `cavecrew-builder`
 │   └── Diff / PR / branch audit → Spawn `cavecrew-reviewer` (or load `open-code-review`)
 └── 3. Domain Engineering, Architecture, or Research?
-    └── Match one of the 9 Domain Personas below → Load only the 1-2 skills needed from its roster
+    └── Match one of the 15 Domain Personas below → Load only the 1-2 skills needed from its roster
 ```
 
 **Core Rule:** Personas define the *role, reporting contract, and handoff boundaries*. Skills (`skills/<folder>/SKILL.md`) provide the *concrete workflow, recipes, and references*.
 
 ---
 
-## 1. Domain Personas (9) & Utility Subagents (4)
+## 1. Domain Personas (15) & Utility Subagents (4)
 
 | Persona / Subagent | When to Activate / Spawn | Key Skills (Slug → Folder if different) |
 |---|---|---|
@@ -43,6 +43,12 @@ What kind of task is this?
 | **`research-scientist`** | Research ideation, hypothesis generation, autonomous loops (`autoresearch`), ML/systems paper writing, plots, LaTeX posters, talks, ARA artifacts | `autoresearch` (`0-autoresearch-skill`), `hypothesis-generation` (`k-dense-ai-hypothesis-generation`), `ml-paper-writing`, `systems-paper-writing`, `academic-plotting`, `latex-posters` (`davila7-latex-posters`), `ara-compiler` |
 | **`security-engineer`** | SAST (`Semgrep`), DAST (`Nuclei`), SCA/container/IaC scanning (`Trivy`), LLM guardrails (`LlamaGuard`, `PromptGuard`, `NeMo Guardrails`, `Constitutional AI`) | `sast-semgrep` (`agentsecops-sast-semgrep`), `dast-nuclei` (`agentsecops-dast-nuclei`), `sca-trivy` (`agentsecops-sca-trivy`), `llamaguard`, `nemo-guardrails` |
 | **`devops-engineer`** | Cloud infra (AWS/GCP/Azure), Kubernetes, Terraform, CI/CD orchestration, incident troubleshooting, runbooks, DORA/infra reporting | `cloud-devops` (`sickn33-cloud-devops`), `senior-devops` (`alirezarezvani-senior-devops`), `devops-orchestrator` (`brownbull-devops-orchestrator`), `devops-troubleshooter` (`sickn33-devops-troubleshooter`), `devops-runbooks` (`89jobrien-devops-runbooks`) |
+| **`software-developer`** | Implement application code in any language/framework; DB access, GraphQL, embedded/game/IoT | `python-pro`, `javascript-pro`, `typescript-pro`, `golang-pro`, `rust-engineer`, `csharp-developer`, `java-architect`, `sql-pro`, `microservices-architect` |
+| **`frontend-developer`** | Web/mobile/desktop UI, design systems, UX research, accessibility | `angular-architect`, `react-specialist`, `vue-expert`, `nextjs-developer`, `flutter-expert`, `ui-designer`, `accessibility-tester` |
+| **`data-engineer`** | Data pipelines, ETL/ELT, analytics SQL, data science, database administration | `data-engineer`, `data-engineer-2` (`data-engineer-pro`), `data-analyst`, `database-administrator`, `database-optimizer` |
+| **`business-analyst`** | Market/product/quant analysis, GTM/SEO, project delivery, legal & fintech advisory | `market-researcher`, `product-manager`, `quant-analyst`, `risk-manager`, `payment-integration` |
+| **`windows-automation`** | PowerShell 5.1/7 scripting, Windows/AD/GPO/M365 administration, IT ops routing | `powershell-7-expert`, `powershell-module-architect`, `windows-infra-admin`, `m365-admin` |
+| **`reliability-engineer`** | SLOs, performance/load testing, chaos, incident response, QA & test automation | `sre-engineer`, `chaos-engineer`, `performance-engineer`, `qa-expert`, `test-automator` |
 | **`semble-search`** | Semantic code/docs/config search across repositories | Built-in `semble search` / `semble find-related` workflow |
 | **`cavecrew-investigator`** | Read-only symbol/call-site locator with ~60% token compression | Controlled via `cavecrew` meta-skill |
 | **`cavecrew-builder`** | Surgical 1–2 file edits with diff receipt | Controlled via `cavecrew` meta-skill |
@@ -69,4 +75,4 @@ What kind of task is this?
 ## Additional Resources
 
 - `./references/agents-catalog.md` — Full catalog of all 13 workspace personas and subagents
-- `./references/skills-catalog.md` — Complete mapping of all 158 skills (`slug`, `folder`, `persona`, and `description`)
+- `./references/skills-catalog.md` — Complete mapping of all 293 skills (`slug`, `folder`, `persona`, and `description`)

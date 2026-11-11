@@ -26,6 +26,14 @@ reliability, recovery time, and DORA metrics.
 `devops-runbooks` (`89jobrien-devops-runbooks`),
 `infrastructure-reporting` (`dataknifeai-infrastructure-reporting`)
 
+### Cloud, network & IaC
+`devops-engineer`, `azure-infra-engineer`, `cloud-architect`,
+`kubernetes-specialist`, `network-engineer`, `platform-engineer`,
+`terraform-engineer`
+
+### Build & release
+`build-engineer`, `deployment-engineer`
+
 ## When to spawn
 - Provision or refactor cloud/K8s/Terraform infrastructure
 - Build or repair CI/CD; automate deployment, rollback, secrets

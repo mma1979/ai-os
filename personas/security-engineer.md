@@ -22,6 +22,10 @@ with severity and remediation; never trades security for convenience.
 ### LLM guardrails & safety
 `llamaguard`, `prompt-guard`, `nemo-guardrails`, `constitutional-ai`
 
+### Audit, identity & offensive testing
+`security-engineer`, `ad-security-reviewer`, `penetration-tester`,
+`security-auditor`, `compliance-auditor`
+
 ## When to spawn
 - Scan repo, image, or running endpoint for CVEs/misconfig
 - Security review of a diff or auth flow; threat-model a feature

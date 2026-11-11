@@ -28,7 +28,7 @@ throughput/latency budgeting. Optimizes tokens/sec and memory, not training loss
 `optimizing-attention-flash` (`flash-attention`)
 
 ### Architecture knowledge
-`mamba-architecture` (`mamba`), `rwkv-architecture` (`rwkv`)
+`mamba-architecture` (`mamba`), `rwkv-architecture` (`rwkv`), `llm-architect`
 
 ## When to spawn
 - Deploy a model behind an API, pick engine + parallelism + dtype

@@ -1,8 +1,8 @@
 # Workspace Personas & Subagents Catalog
 
-Complete reference of all **9 Domain Personas** and **4 Utility Subagents** in `D:\workspaces\agents\personas\`.
+Complete reference of all **15 Domain Personas** and **4 Utility Subagents** in `D:\workspaces\agents\personas\`.
 
-## Domain Personas (9)
+## Domain Personas (15)
 
 | Persona | File | Primary Scope | Handoff Targets |
 |---|---|---|---|
@@ -14,7 +14,13 @@ Complete reference of all **9 Domain Personas** and **4 Utility Subagents** in `
 | `software-architect` | `personas/software-architect.md` | System architecture, C4/Mermaid diagrams, backend/API SOPs, CLI/tool design, implementation plans (`writing-plans`), frontend UI (`frontend-design`, `web-artifacts-builder`), 3D interactive explainers (`teardown`), Playwright E2E testing (`webapp-testing`) | Bounded 1-2 file edits → `cavecrew-builder`; cloud/CI/CD → `devops-engineer`; KPI analytics → `rag-data-engineer` |
 | `research-scientist` | `personas/research-scientist.md` | Research ideation, hypothesis generation, autonomous experiment loops (`autoresearch`), ML & systems paper writing, publication plots (`academic-plotting`), LaTeX posters, conference talks, Agent-Native Research Artifacts (`ara-*`) | Training runs → `ml-engineer`; benchmark evals → `mlops-engineer` |
 | `security-engineer` | `personas/security-engineer.md` | Static analysis (`sast-semgrep`), dynamic scanning (`dast-nuclei`), software composition & container/IaC scanning (`sca-trivy`), LLM guardrails (`llamaguard`, `prompt-guard`, `nemo-guardrails`, `constitutional-ai`) | Infra provisioning → `devops-engineer`; system design → `software-architect` |
-| `devops-engineer` | `personas/devops-engineer.md` | Cloud infrastructure (AWS/GCP/Azure), Kubernetes, Terraform, CI/CD orchestration (`devops-orchestrator`), incident troubleshooting, runbooks (`devops-runbooks`), infrastructure/DORA reporting | ML GPU orchestration → `mlops-engineer`; application design → `software-architect`; vuln scanning → `security-engineer` |
+| `devops-engineer` | `personas/devops-engineer.md` | Cloud infrastructure (AWS/GCP/Azure), Kubernetes, Terraform, CI/CD orchestration (`devops-orchestrator`), incident troubleshooting, runbooks (`devops-runbooks`), infrastructure/DORA reporting, build & release | ML GPU orchestration → `mlops-engineer`; application design → `software-architect`; vuln scanning → `security-engineer` |
+| `software-developer` | `personas/software-developer.md` | Application code in any language/framework (Python, JS/TS, Go, Rust, C++, C#, Java, Kotlin, Swift, PHP, Ruby, Elixir), web backends (Django/Spring/Laravel/Rails), SQL/Postgres, GraphQL, WebSockets, embedded/game/IoT, blockchain | System shape/ADR → `software-architect`; UI/UX → `frontend-developer`; infra/CI → `devops-engineer`; model training → `ml-engineer` |
+| `frontend-developer` | `personas/frontend-developer.md` | Web frameworks (Angular/React/Vue/Next.js), mobile (React Native/Flutter), Electron desktop, UI design systems, UX research, accessibility testing | Server-side code → `software-developer`; API contracts → `software-architect`; branded artifacts → `software-architect` |
+| `data-engineer` | `personas/data-engineer.md` | Data pipelines/ETL, analytics SQL, data science, data research, database administration & optimization | Vector/RAG retrieval → `rag-data-engineer`; business analysis → `business-analyst`; infra → `devops-engineer` |
+| `business-analyst` | `personas/business-analyst.md` | Market/competitive/trend research, product/project/scrum management, quant & risk modeling, fintech/payments, GTM, SEO/content, sales, legal advisory | Pipelines/SQL → `data-engineer`; KPI analytics on retrieved data → `rag-data-engineer`; implementation → `software-developer` |
+| `windows-automation` | `personas/windows-automation.md` | PowerShell 5.1/7 scripting and module design, hardening, WinForms/WPF UI, AD/DNS/DHCP/GPO, M365 (Exchange/Teams/Graph), IT ops routing | Cloud/IaC → `devops-engineer`; app code → `software-developer`; vuln review → `security-engineer` |
+| `reliability-engineer` | `personas/reliability-engineer.md` | SLOs/SLIs & capacity, performance/load testing, chaos experiments, incident response & postmortems, distributed error diagnosis, QA strategy & test automation | Infra provisioning → `devops-engineer`; app fixes → `software-developer`; system shape → `software-architect` |
 
 ## Utility Subagents (4)
 

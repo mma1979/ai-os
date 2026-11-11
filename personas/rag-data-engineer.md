@@ -23,6 +23,9 @@ layer on top of data. Also covers embedding-model selection and tokenizer work.
 ### Embeddings & tokenization
 `sentence-transformers`, `sentencepiece`, `huggingface-tokenizers`
 
+### Search
+`search-specialist`
+
 ### Analytics
 `business-analyst` (`sickn33-business-analyst`)
 
